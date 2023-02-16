@@ -1,0 +1,311 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Regression Test,,,,2023-02-16 14:00:49,2023-02-16 14:12:55,"12m - 6,228s",FAILED
+,,,,,,,
+Test Cases/Login Google,,,,2023-02-16 14:00:49,2023-02-16 14:01:45,"55,887s",PASSED
+"startExistingApplication(""com.artico.delivery.pedidos"")",,inicio de app,,2023-02-16 14:00:50,2023-02-16 14:01:08,"18,565s",PASSED
+"delay(5, STOP_ON_FAILURE)",,,,2023-02-16 14:01:08,2023-02-16 14:01:13,"5,091s",PASSED
+"verifyElementExist(findTestObject(""Login email/android.widget.ImageView Logo inicio""), 0)",,,,2023-02-16 14:01:13,2023-02-16 14:01:14,"0,626s",PASSED
+"tap(findTestObject(""Object Repository/Login Google/android.widget.TextView - Google""), 0)",,click en google,,2023-02-16 14:01:14,2023-02-16 14:01:14,"0,368s",PASSED
+"delay(5, STOP_ON_FAILURE)",,,,2023-02-16 14:01:14,2023-02-16 14:01:19,"5,015s",PASSED
+"tap(findTestObject(""Object Repository/Login Google/android.widget.ImageView cuenta""), 0)",,click en cuenta google,,2023-02-16 14:01:19,2023-02-16 14:01:20,"0,504s",PASSED
+"delay(5, STOP_ON_FAILURE)",,,,2023-02-16 14:01:20,2023-02-16 14:01:25,"5,020s",PASSED
+"tap(findTestObject(""Object Repository/Login Google/android.widget.Button - Continuar""), 0)",,aceptar permiso de cuenta,,2023-02-16 14:01:25,2023-02-16 14:01:26,"1,552s",PASSED
+"delay(5, STOP_ON_FAILURE)",,,,2023-02-16 14:01:26,2023-02-16 14:01:31,"5,013s",PASSED
+"getText(findTestObject(""Object Repository/Login Google/android.widget.TextView - A dnde enviamos tu pedido""), 0)",,validacion de modal direccion,,2023-02-16 14:01:31,2023-02-16 14:01:36,"4,380s",PASSED
+"tap(findTestObject(""Object Repository/Login Google/android.widget.TextView - direccion""), 0)",,seleccion de direccion,,2023-02-16 14:01:36,2023-02-16 14:01:36,"0,483s",PASSED
+"delay(5, STOP_ON_FAILURE)",,,,2023-02-16 14:01:36,2023-02-16 14:01:41,"5,010s",PASSED
+"tap(findTestObject(""Login Facebook/android.widget.TextView - menu lateral""), 0)",,,,2023-02-16 14:01:41,2023-02-16 14:01:42,"1,024s",PASSED
+"tap(findTestObject(""Login email/android.widget.TextView - Cerrar Sesion""), 0)",,,,2023-02-16 14:01:42,2023-02-16 14:01:45,"2,850s",PASSED
+,,,,,,,
+Test Cases/Login Facebook,,,,2023-02-16 14:01:45,2023-02-16 14:02:23,"37,841s",PASSED
+"startExistingApplication(""com.artico.delivery.pedidos"")",,inicio de app,,2023-02-16 14:01:45,2023-02-16 14:01:57,"11,451s",PASSED
+"delay(3, STOP_ON_FAILURE)",,,,2023-02-16 14:01:57,2023-02-16 14:02:00,"3,021s",PASSED
+"verifyElementExist(findTestObject(""Login email/android.widget.ImageView Logo inicio""), 0)",,,,2023-02-16 14:02:00,2023-02-16 14:02:01,"0,848s",PASSED
+"tap(findTestObject(""Object Repository/Login Facebook/android.widget.TextView - Facebook""), 0)",,click en facebook,,2023-02-16 14:02:01,2023-02-16 14:02:01,"0,408s",PASSED
+"delay(10, STOP_ON_FAILURE)",,,,2023-02-16 14:02:01,2023-02-16 14:02:11,"10,008s",PASSED
+"getText(findTestObject(""Object Repository/Login Facebook/android.widget.TextView - A dnde enviamos tu pedido""), 0)",,validacion de modal direccion,,2023-02-16 14:02:11,2023-02-16 14:02:15,"4,165s",PASSED
+"tap(findTestObject(""Object Repository/Login Facebook/android.widget.TextView -""), 0)",,seleccion de direccion,,2023-02-16 14:02:15,2023-02-16 14:02:16,"0,553s",PASSED
+"delay(5, STOP_ON_FAILURE)",,,,2023-02-16 14:02:16,2023-02-16 14:02:21,"5,019s",PASSED
+"tap(findTestObject(""Login Facebook/android.widget.TextView - menu lateral""), 0)",,menu lateral,,2023-02-16 14:02:21,2023-02-16 14:02:21,"0,490s",PASSED
+"tap(findTestObject(""Login email/android.widget.TextView - Cerrar Sesion""), 0)",,cerrar sesion,,2023-02-16 14:02:21,2023-02-16 14:02:23,"1,651s",PASSED
+,,,,,,,
+Test Cases/Login email,,,,2023-02-16 14:02:23,2023-02-16 14:02:55,"31,842s",PASSED
+"startExistingApplication(""com.artico.delivery.pedidos"")",,Inicio de app,,2023-02-16 14:02:23,2023-02-16 14:02:34,"11,165s",PASSED
+"delay(3, STOP_ON_FAILURE)",,,,2023-02-16 14:02:34,2023-02-16 14:02:37,"3,017s",PASSED
+"verifyElementExist(findTestObject(""Login email/android.widget.ImageView Logo inicio""), 0)",,Verifica logo en inicio de sesión,,2023-02-16 14:02:37,2023-02-16 14:02:38,"0,536s",PASSED
+"tap(findTestObject(""Object Repository/Login email/android.widget.TextView - Ingresar con E-mail""), 0)",,Ingresar con email,,2023-02-16 14:02:38,2023-02-16 14:02:38,"0,388s",PASSED
+"setText(findTestObject(""Object Repository/Login email/android.widget.EditText - Correo""), ""carlosrolon@monchis.com.py"", 0)",,Ingreso de usuario,,2023-02-16 14:02:38,2023-02-16 14:02:40,"1,546s",PASSED
+"setText(findTestObject(""Object Repository/Login email/android.widget.EditText - Contrasea""), ""123456"", 0)",,Ingreso de pass,,2023-02-16 14:02:40,2023-02-16 14:02:42,"1,796s",PASSED
+"tap(findTestObject(""Login email/android.widget.TextView - Boton Ingresar""), 0)",,click en ingresar,,2023-02-16 14:02:42,2023-02-16 14:02:42,"0,772s",PASSED
+"delay(5, STOP_ON_FAILURE)",,,,2023-02-16 14:02:42,2023-02-16 14:02:47,"5,012s",PASSED
+"getText(findTestObject(""Object Repository/Login email/android.widget.TextView - A dnde enviamos tu pedido""), 0)",,validacion de modal direccion,,2023-02-16 14:02:47,2023-02-16 14:02:51,"3,542s",PASSED
+"tituloDireccion = getText(findTestObject(""Login email/android.widget.TextView - Titulo de direccion Selector""), 0)",,extrae texto del titulo de direccion,,2023-02-16 14:02:51,2023-02-16 14:02:52,"1,513s",PASSED
+println(tituloDireccion),,imprime texto del titulo de direccion,,2023-02-16 14:02:52,2023-02-16 14:02:53,"0,014s",PASSED
+"tituloCalles = getText(findTestObject(""Login email/android.widget.TextView - Descripcion de calles Selector""), 0)",,extrae texto de calles,,2023-02-16 14:02:53,2023-02-16 14:02:53,"0,918s",PASSED
+println(tituloCalles),,imprime texto de las calles,,2023-02-16 14:02:53,2023-02-16 14:02:53,"0,001s",PASSED
+"tap(findTestObject(""Object Repository/Login email/android.widget.TextView - direccion""), 0)",,seleccion de direccion,,2023-02-16 14:02:53,2023-02-16 14:02:55,"1,417s",PASSED
+,,,,,,,
+Test Cases/Crear direccion,,,,2023-02-16 14:02:55,2023-02-16 14:03:40,"45,118s",PASSED
+"startExistingApplication(""com.artico.delivery.pedidos"")",,,,2023-02-16 14:02:55,2023-02-16 14:03:06,"10,741s",PASSED
+"tap(findTestObject(""Crear direccion/android.widget.TextView - abre direcciones""), 0)",,abrir modal de direcciones,,2023-02-16 14:03:06,2023-02-16 14:03:07,"1,370s",PASSED
+"tap(findTestObject(""Object Repository/Crear direccion/android.widget.TextView - Aadir nueva direccin""), 0)",,nueva direccion,,2023-02-16 14:03:07,2023-02-16 14:03:10,"2,333s",PASSED
+"delay(5, STOP_ON_FAILURE)",,,,2023-02-16 14:03:10,2023-02-16 14:03:15,"5,010s",PASSED
+"tap(findTestObject(""Crear direccion/android.widget.TextView - Siguiente""), 0)",,siguiente confirmar ubicacion ,,2023-02-16 14:03:15,2023-02-16 14:03:20,"5,045s",PASSED
+"setText(findTestObject(""Object Repository/Crear direccion/android.widget.EditText - Calle Principal""), ""Calle principal"", 0)",,calle principal,,2023-02-16 14:03:20,2023-02-16 14:03:25,"5,578s",PASSED
+"setText(findTestObject(""Object Repository/Crear direccion/android.widget.EditText - Calle Secundaria""), ""Calle secundaria"", 0)",,calle secundaria,,2023-02-16 14:03:25,2023-02-16 14:03:26,"1,273s",PASSED
+"setText(findTestObject(""Object Repository/Crear direccion/android.widget.EditText - Nmero de Casa""), ""123"", 0)",,numero de casa,,2023-02-16 14:03:26,2023-02-16 14:03:28,"1,351s",PASSED
+"setText(findTestObject(""Object Repository/Crear direccion/android.widget.EditText - Referencia (Color del portn, etc.)""), ""Referencia"", 0)",,referencia,,2023-02-16 14:03:28,2023-02-16 14:03:29,"1,331s",PASSED
+"tap(findTestObject(""Crear direccion/android.widget.ImageView Logo direccion (1)""), 0)",,logo,,2023-02-16 14:03:29,2023-02-16 14:03:30,"0,862s",PASSED
+"setText(findTestObject(""Object Repository/Crear direccion/android.widget.EditText - Casa, Oficina""), ""Direccion prueba"", 0)",,nombre de direccion,,2023-02-16 14:03:30,2023-02-16 14:03:32,"1,985s",PASSED
+"tap(findTestObject(""Object Repository/Crear direccion/android.widget.TextView - Agregar""), 0)",,crear direccion,,2023-02-16 14:03:32,2023-02-16 14:03:33,"0,830s",PASSED
+"delay(5, STOP_ON_FAILURE)",,,,2023-02-16 14:03:33,2023-02-16 14:03:38,"5,009s",PASSED
+"getText(findTestObject(""Object Repository/Crear direccion/android.widget.TextView - Enviar a Direccion prueba""), 0)",,validacion de direccion creada,,2023-02-16 14:03:38,2023-02-16 14:03:40,"1,755s",PASSED
+"tap(findTestObject(""Crear direccion/android.widget.TextView - Enviar a Direccion prueba""), 0)",,,,2023-02-16 14:03:40,2023-02-16 14:03:40,"0,418s",PASSED
+,,,,,,,
+Test Cases/Edicion direccion,,,,2023-02-16 14:03:40,2023-02-16 14:04:58,"1m - 17,562s",PASSED
+"startExistingApplication(""com.artico.delivery.pedidos"")",,,,2023-02-16 14:03:40,2023-02-16 14:03:51,"10,549s",PASSED
+"tap(findTestObject(""Edicion direccion/android.view.ViewGroup Menu Cupon""), 0)",,abrir modal de direccion,,2023-02-16 14:03:51,2023-02-16 14:03:52,"1,325s",PASSED
+"tap(findTestObject(""Edicion direccion/android.widget.TextView - Direcciones""), 0)",,,,2023-02-16 14:03:52,2023-02-16 14:04:04,"12,027s",PASSED
+"tap(findTestObject(""Edicion direccion/android.widget.ImageView tres puntitos""), 0)",,click en tres puntos,,2023-02-16 14:04:04,2023-02-16 14:04:06,"2,384s",PASSED
+"delay(2, STOP_ON_FAILURE)",,,,2023-02-16 14:04:06,2023-02-16 14:04:09,"2,019s",PASSED
+"tap(findTestObject(""Edicion direccion/android.widget.ImageView lapiz edicion""), 0)",,click en lapiz,,2023-02-16 14:04:09,2023-02-16 14:04:09,"0,588s",PASSED
+"delay(5, STOP_ON_FAILURE)",,,,2023-02-16 14:04:09,2023-02-16 14:04:14,"5,008s",PASSED
+"tap(findTestObject(""Object Repository/Edicion direccion/android.widget.TextView - Siguiente""), 0)",,siguiente confirma ubicacion,,2023-02-16 14:04:14,2023-02-16 14:04:15,"0,412s",PASSED
+"setText(findTestObject(""Object Repository/Edicion direccion/android.widget.EditText - Calle principal (1)""), ""Calle principal editado"", 0)",,edicion de calle principal,,2023-02-16 14:04:15,2023-02-16 14:04:17,"2,218s",PASSED
+"setText(findTestObject(""Object Repository/Edicion direccion/android.widget.EditText - Calle secundaria""), ""Calle secundaria editado"", 0)",,edicion de calle secundaria,,2023-02-16 14:04:17,2023-02-16 14:04:19,"2,005s",PASSED
+"setText(findTestObject(""Object Repository/Edicion direccion/android.widget.EditText - 123""), ""456"", 0)",,edicion de nro de calle,,2023-02-16 14:04:19,2023-02-16 14:04:21,"2,218s",PASSED
+"setText(findTestObject(""Object Repository/Edicion direccion/android.widget.EditText - Referencia (1)""), ""Referencia editado"", 0)",,edicion de referencia,,2023-02-16 14:04:21,2023-02-16 14:04:23,"2,041s",PASSED
+"tap(findTestObject(""Edicion direccion/android.widget.ImageView logo edicion""), 0)",,edicion logo,,2023-02-16 14:04:23,2023-02-16 14:04:24,"0,964s",PASSED
+"setText(findTestObject(""Object Repository/Edicion direccion/android.widget.EditText - Direccion prueba""), ""Direccion prueba editado"", 0)",,edicion de nombre direccion,,2023-02-16 14:04:24,2023-02-16 14:04:26,"2,421s",PASSED
+"tap(findTestObject(""Object Repository/Edicion direccion/android.widget.TextView - Guardar""), 0)",,guardar edicion direccion,,2023-02-16 14:04:26,2023-02-16 14:04:27,"0,922s",PASSED
+"delay(5, STOP_ON_FAILURE)",,,,2023-02-16 14:04:27,2023-02-16 14:04:32,"5,008s",PASSED
+"tap(findTestObject(""Edicion direccion/android.widget.TextView - Direccion prueba editado""), 0)",,,,2023-02-16 14:04:32,2023-02-16 14:04:46,"13,376s",PASSED
+"delay(5, STOP_ON_FAILURE)",,,,2023-02-16 14:04:46,2023-02-16 14:04:51,"5,018s",PASSED
+"tap(findTestObject(""Edicion direccion/android.view.ViewGroup Menu Cupon""), 0)",,abrir modal direccion,,2023-02-16 14:04:51,2023-02-16 14:04:52,"1,378s",PASSED
+"tap(findTestObject(""Edicion direccion/android.widget.TextView - Direcciones""), 0)",,,,2023-02-16 14:04:52,2023-02-16 14:04:55,"2,980s",PASSED
+"getText(findTestObject(""Object Repository/Edicion direccion/android.widget.TextView - Direccion prueba editado""), 0)",,validacion de direccion editado,,2023-02-16 14:04:55,2023-02-16 14:04:57,"2,175s",PASSED
+pressBack(),,,,2023-02-16 14:04:57,2023-02-16 14:04:58,"0,306s",PASSED
+,,,,,,,
+Test Cases/Buscador General,,,,2023-02-16 14:04:58,2023-02-16 14:05:39,"41,523s",PASSED
+"startExistingApplication(""com.artico.delivery.pedidos"")",,,,2023-02-16 14:04:58,2023-02-16 14:05:08,"10,402s",PASSED
+"tap(findTestObject(""Buscador General/android.widget.EditText - Buscador home""), 0)",,,,2023-02-16 14:05:08,2023-02-16 14:05:10,"1,258s",PASSED
+"setText(findTestObject(""Buscador General/android.widget.EditText - Buscador home""), ""masapan"" + ""\n"", 0)",,texto para buscar,,2023-02-16 14:05:10,2023-02-16 14:05:14,"4,567s",PASSED
+"delay(5, STOP_ON_FAILURE)",,,,2023-02-16 14:05:14,2023-02-16 14:05:19,"5,009s",PASSED
+"getText(findTestObject(""Object Repository/Buscador General/android.widget.TextView - Encontramos esto para vos""), 0)",,Validacion de resultado exitoso,,2023-02-16 14:05:19,2023-02-16 14:05:20,"0,506s",PASSED
+"getText(findTestObject(""Buscador General/android.widget.TextView - Masapan (1)""), 0)",,Validacion de comercio,,2023-02-16 14:05:20,2023-02-16 14:05:20,"0,600s",PASSED
+"tap(findTestObject(""Buscador General/android.widget.EditText - Bucador de locales""), 0)",,,,2023-02-16 14:05:20,2023-02-16 14:05:22,"1,328s",PASSED
+"setText(findTestObject(""Buscador General/android.widget.EditText - Bucador de locales""), ""alberdin"" + ""\n"", 0)",,texto para buscar,,2023-02-16 14:05:22,2023-02-16 14:05:23,"1,656s",PASSED
+"delay(5, STOP_ON_FAILURE)",,,,2023-02-16 14:05:23,2023-02-16 14:05:28,"5,018s",PASSED
+"getText(findTestObject(""Object Repository/Buscador General/android.widget.TextView - Encontramos esto para vos""), 0)",,Validacion de resultado exitoso,,2023-02-16 14:05:28,2023-02-16 14:05:29,"0,498s",PASSED
+"getText(findTestObject(""Buscador General/android.widget.TextView - Alberdin (1)""), 0)",,validacion de comercio,,2023-02-16 14:05:29,2023-02-16 14:05:29,"0,376s",PASSED
+"tap(findTestObject(""Buscador General/android.widget.EditText - Bucador de locales""), 0)",,,,2023-02-16 14:05:29,2023-02-16 14:05:30,"1,220s",PASSED
+"setText(findTestObject(""Buscador General/android.widget.EditText - Bucador de locales""), ""nutritiva store"" + ""\n"", 0)",,texto para buscar,,2023-02-16 14:05:30,2023-02-16 14:05:32,"1,942s",PASSED
+"delay(5, STOP_ON_FAILURE)",,,,2023-02-16 14:05:32,2023-02-16 14:05:37,"5,017s",PASSED
+"getText(findTestObject(""Object Repository/Buscador General/android.widget.TextView - Encontramos esto para vos""), 0)",,Validacion de resultado exitoso,,2023-02-16 14:05:37,2023-02-16 14:05:38,"0,438s",PASSED
+"getText(findTestObject(""Buscador General/android.widget.TextView - Nutritiva Store (1)""), 0)",,validacion de comercio,,2023-02-16 14:05:38,2023-02-16 14:05:38,"0,368s",PASSED
+"tap(findTestObject(""Object Repository/Buscador General/android.widget.TextView - ir atras buscador""), 0)",,atras buscador,,2023-02-16 14:05:38,2023-02-16 14:05:39,"0,999s",PASSED
+,,,,,,,
+Test Cases/Finalizar Pedido - Efectivo,,,,2023-02-16 14:05:39,2023-02-16 14:06:54,"1m - 14,523s",PASSED
+"startExistingApplication(""com.artico.delivery.pedidos"", STOP_ON_FAILURE)",,Abre la app,,2023-02-16 14:05:39,2023-02-16 14:05:50,"10,163s",PASSED
+"delay(15, STOP_ON_FAILURE)",,,,2023-02-16 14:05:50,2023-02-16 14:05:50,"0,000s",NOT_RUN
+"tap(findTestObject(""Object Repository/Finalizar Efectivo/android.view.ViewGroup - SeleccionaDireccion""), 0)",,Selección de dirección,,2023-02-16 14:05:50,2023-02-16 14:05:50,"0,000s",NOT_RUN
+"delay(5, STOP_ON_FAILURE)",,,,2023-02-16 14:05:50,2023-02-16 14:05:50,"0,000s",NOT_RUN
+"tap(findTestObject(""Finalizar Efectivo/android.widget.EditText - Busc locales o productos (1)""), 0)",,Click en campo de búsqueda,,2023-02-16 14:05:50,2023-02-16 14:05:53,"3,117s",PASSED
+"setText(findTestObject(""Finalizar Efectivo/android.widget.EditText - Busc locales o productos (1)""), ""masapan"" + ""\n"", 0)",,,,2023-02-16 14:05:53,2023-02-16 14:05:55,"1,981s",PASSED
+"delay(5, STOP_ON_FAILURE)",,,,2023-02-16 14:05:55,2023-02-16 14:06:00,"5,012s",PASSED
+"getText(findTestObject(""Finalizar Efectivo/android.widget.TextView - Titulo Masapan""), 0)",,Verifica resultado solo para santa fe,,2023-02-16 14:06:00,2023-02-16 14:06:01,"1,025s",PASSED
+"tap(findTestObject(""Finalizar Efectivo/android.widget.TextView - Titulo Masapan""), 0)",,Entra en el comercio solo santa fe,,2023-02-16 14:06:01,2023-02-16 14:06:06,"5,325s",PASSED
+"delay(3, STOP_ON_FAILURE)",,,,2023-02-16 14:06:06,2023-02-16 14:06:09,"3,017s",PASSED
+"tap(findTestObject(""Finalizar Efectivo/android.view.ViewGroup Primera card producto""), 0)",,Entra en el primer producto,,2023-02-16 14:06:09,2023-02-16 14:06:10,"0,611s",PASSED
+"tap(findTestObject(""Object Repository/Finalizar Efectivo/android.widget.TextView - SumaProducto""), 0)",,Suma la cantidad del producto +1,,2023-02-16 14:06:10,2023-02-16 14:06:14,"4,047s",PASSED
+"tap(findTestObject(""Finalizar Efectivo/android.widget.TextView - Agregar a carrito""), 0)",,Agregar al carrito,,2023-02-16 14:06:14,2023-02-16 14:06:15,"1,032s",PASSED
+"tap(findTestObject(""Finalizar Efectivo/android.widget.TextView - Carrito (1)""), 0)",,Abrir carrito,,2023-02-16 14:06:15,2023-02-16 14:06:20,"5,562s",PASSED
+"tap(findTestObject(""Finalizar Efectivo/android.widget.TextView - suma carrito""), 0)",,,,2023-02-16 14:06:20,2023-02-16 14:06:21,"0,931s",PASSED
+"delay(2, STOP_ON_FAILURE)",,,,2023-02-16 14:06:21,2023-02-16 14:06:23,"2,006s",PASSED
+"tap(findTestObject(""Finalizar Efectivo/android.widget.TextView - resta carrito""), 0)",,,,2023-02-16 14:06:23,2023-02-16 14:06:24,"0,561s",PASSED
+"delay(2, STOP_ON_FAILURE)",,,,2023-02-16 14:06:24,2023-02-16 14:06:26,"2,020s",PASSED
+"tap(findTestObject(""Object Repository/Finalizar Efectivo/android.widget.TextView - Pago y Facturacin""), 0)",,Pasar a pago y facturación,,2023-02-16 14:06:26,2023-02-16 14:06:26,"0,460s",PASSED
+"delay(3, STOP_ON_FAILURE)",,,,2023-02-16 14:06:26,2023-02-16 14:06:29,"3,005s",PASSED
+"tap(findTestObject(""Finalizar Efectivo/android.widget.ImageView Seleccion de pago""), 0)",,Abrir selector de método de pagos,,2023-02-16 14:06:29,2023-02-16 14:06:31,"2,139s",PASSED
+"tap(findTestObject(""Object Repository/Finalizar Efectivo/android.widget.TextView - Efectivo""), 0)",,Seleccionar Efectivo,,2023-02-16 14:06:31,2023-02-16 14:06:33,"1,554s",PASSED
+"extractFinalize = TextView - Total finalize sin cupon""), 0).replaceAll(""[^0-9]"", """")",,obtiene monto total del finalize,,2023-02-16 14:06:33,2023-02-16 14:06:34,"1,280s",PASSED
+println(extractFinalize),,imprime monto (solo numero),,2023-02-16 14:06:34,2023-02-16 14:06:34,"0,001s",PASSED
+"tap(findTestObject(""Object Repository/Finalizar Efectivo/android.widget.TextView - Finalizar Orden""), 0)",,Finalizar orden,,2023-02-16 14:06:34,2023-02-16 14:06:35,"0,877s",PASSED
+"getText(findTestObject(""Finalizar con Cupon/android.widget.TextView - Ya casi estamos, procesando pago""), 0)",,Verifica proceso de pago,,2023-02-16 14:06:35,2023-02-16 14:06:36,"1,099s",PASSED
+"delay(5, STOP_ON_FAILURE)",,,,2023-02-16 14:06:36,2023-02-16 14:06:41,"5,006s",PASSED
+"getText(findTestObject(""Object Repository/Finalizar Efectivo/android.widget.TextView - Recibido""), 0)",,Verifica pedido finalizado,,2023-02-16 14:06:41,2023-02-16 14:06:42,"0,844s",PASSED
+"getText(findTestObject(""Finalizar con Cupon/android.widget.TextView - CONTANOS TU EXPERIENCIA""), 0)",,,,2023-02-16 14:06:42,2023-02-16 14:06:42,"0,391s",PASSED
+"getText(findTestObject(""Finalizar Efectivo/android.widget.TextView - Pago en Efectivo""), 0)",,,,2023-02-16 14:06:42,2023-02-16 14:06:43,"0,486s",PASSED
+"delay(3, STOP_ON_FAILURE)",,,,2023-02-16 14:06:43,2023-02-16 14:06:46,"3,011s",PASSED
+"extractEstado = TextView - Estado Total""), 0).replaceAll(""[^0-9]"", """")",,obtiene monto total en estado de pedido,,2023-02-16 14:06:46,2023-02-16 14:06:46,"0,467s",PASSED
+println(extractEstado),,imprime monto total estado (solo numero),,2023-02-16 14:06:46,2023-02-16 14:06:46,"0,001s",PASSED
+if (extractFinalize == extractEstado),,validacion de monto en finalize y estado de pedido (exito),,2023-02-16 14:06:46,2023-02-16 14:06:46,"0,020s",PASSED
+"tap(findTestObject(""Object Repository/Finalizar Efectivo/android.widget.TextView - Estado Total""), 0)",,,,2023-02-16 14:06:46,2023-02-16 14:06:47,"0,518s",PASSED
+"delay(3, STOP_ON_FAILURE)",,,,2023-02-16 14:06:47,2023-02-16 14:06:50,"3,005s",PASSED
+"extractTotalDetalleCabecera = TextView - Total cabecera detalle""), 0).replaceAll(""[^0-9]"", """")",,obtiene monto total del detalle de orden de la cabecera,,2023-02-16 14:06:50,2023-02-16 14:06:50,"0,325s",PASSED
+println(extractTotalDetalleCabecera),,imprime monto total del detalle de orden (solo numero),,2023-02-16 14:06:50,2023-02-16 14:06:50,"0,001s",PASSED
+if (extractFinalize == extractTotalDetalleCabecera),,validacion de monto total y descuento en detalle de orden de la cabecera,,2023-02-16 14:06:50,2023-02-16 14:06:50,"0,000s",PASSED
+"extractTotalDetalle = TextView - Total detalle orden sin cupon""), 0).replaceAll(""[^0-9]"", """")",,obtiene monto total del detalle de orden,,2023-02-16 14:06:50,2023-02-16 14:06:51,"0,295s",PASSED
+println(extractTotalDetalle),,imprime monto total del detalle de orden (solo numero),,2023-02-16 14:06:51,2023-02-16 14:06:51,"0,000s",PASSED
+if (extractFinalize == extractTotalDetalle),,validacion de monto total y descuento en detalle de orden,,2023-02-16 14:06:51,2023-02-16 14:06:51,"0,001s",PASSED
+"tap(findTestObject(""Finalizar Efectivo/android.widget.TextView - Ir atras""), 0)",,atras para volver al estado de la orden,,2023-02-16 14:06:51,2023-02-16 14:06:51,"0,387s",PASSED
+"delay(2, STOP_ON_FAILURE)",,,,2023-02-16 14:06:51,2023-02-16 14:06:53,"2,007s",PASSED
+"tap(findTestObject(""Finalizar Efectivo/android.widget.TextView - Ir atras""), 0)",,atras para volver a la home,,2023-02-16 14:06:53,2023-02-16 14:06:54,"0,586s",PASSED
+,,,,,,,
+Test Cases/Finalizar Pedido - POS,,,,2023-02-16 14:06:54,2023-02-16 14:08:43,"1m - 48,938s",FAILED
+"startExistingApplication(""com.artico.delivery.pedidos"")",,Abre la app,,2023-02-16 14:06:54,2023-02-16 14:07:05,"10,723s",PASSED
+"delay(5, STOP_ON_FAILURE)",,,,2023-02-16 14:07:05,2023-02-16 14:07:10,"5,004s",PASSED
+"tap(findTestObject(""Finalizar Efectivo/android.view.ViewGroup - SeleccionaDireccion""), 0)",,Selección de dirección,,2023-02-16 14:07:10,2023-02-16 14:07:10,"0,001s",NOT_RUN
+"tap(findTestObject(""Finalizar POS/android.view.ViewGroup Banner de comida""), 0)",,Click en banner comida,,2023-02-16 14:07:10,2023-02-16 14:07:11,"1,117s",PASSED
+"delay(5, STOP_ON_FAILURE)",,,,2023-02-16 14:07:11,2023-02-16 14:07:16,"5,017s",PASSED
+"tap(findTestObject(""Finalizar POS/android.widget.TextView - Pago con POS""), 0)",,Seleccionar filtro POS,,2023-02-16 14:07:16,2023-02-16 14:07:16,"0,661s",PASSED
+"delay(8, STOP_ON_FAILURE)",,,,2023-02-16 14:07:16,2023-02-16 14:07:24,"8,008s",PASSED
+"tap(findTestObject(""Finalizar POS/android.widget.EditText - Buscar en todas las categoras""), 0)",,Entrar en campo de busqueda,,2023-02-16 14:07:24,2023-02-16 14:07:27,"2,245s",PASSED
+"setText(findTestObject(""Finalizar POS/android.widget.EditText - Buscar en todas las categoras""), ""masapan"" + ""\n"", 0)",,busqueda de comercio,,2023-02-16 14:07:27,2023-02-16 14:07:29,"2,041s",PASSED
+"delay(5, STOP_ON_FAILURE)",,,,2023-02-16 14:07:29,2023-02-16 14:07:34,"5,012s",PASSED
+"tap(findTestObject(""Finalizar Efectivo/android.widget.TextView - Titulo Masapan""), 0)",,entrar en comercio,,2023-02-16 14:07:34,2023-02-16 14:07:37,"2,979s",PASSED
+"tap(findTestObject(""Finalizar POS/android.widget.TextView - Monchis Store""), 0)",,Entra en el comercio solo monchis store,,2023-02-16 14:07:37,2023-02-16 14:07:37,"0,002s",NOT_RUN
+"delay(5, STOP_ON_FAILURE)",,,,2023-02-16 14:07:37,2023-02-16 14:07:42,"5,011s",PASSED
+"tap(findTestObject(""Finalizar POS/android.view.ViewGroup Primera card producto""), 0)",,Entra en el primer producto,,2023-02-16 14:07:42,2023-02-16 14:07:42,"0,656s",PASSED
+"tap(findTestObject(""Finalizar Efectivo/android.widget.TextView - SumaProducto""), 0)",,suma cantidad de producto,,2023-02-16 14:07:42,2023-02-16 14:07:44,"1,672s",PASSED
+"tap(findTestObject(""Finalizar POS/android.widget.TextView - Agregar a carrito""), 0)",,Agrega el producto,,2023-02-16 14:07:44,2023-02-16 14:07:45,"0,949s",PASSED
+"tap(findTestObject(""Finalizar POS/android.widget.TextView - Carrito (1)""), 0)",,Abrir carrito,,2023-02-16 14:07:45,2023-02-16 14:07:50,"4,777s",PASSED
+"tap(findTestObject(""Finalizar Efectivo/android.widget.TextView - Pago y Facturacin""), 0)",,Pasar a pago y facturación,,2023-02-16 14:07:50,2023-02-16 14:07:51,"0,867s",PASSED
+"delay(7, STOP_ON_FAILURE)",,,,2023-02-16 14:07:51,2023-02-16 14:07:58,"7,007s",PASSED
+"tap(findTestObject(""Finalizar POS/android.widget.ImageView Seleccion de pago""), 0)",,Abrir selector de método de pagos,,2023-02-16 14:07:58,2023-02-16 14:07:58,"0,501s",PASSED
+"tap(findTestObject(""Finalizar POS/android.widget.TextView - Seleccionar Pago con POS""), 0)",,Seleccionar POS,,2023-02-16 14:07:58,2023-02-16 14:08:00,"1,648s",PASSED
+"extractFinalize = TextView - Total finalize sin cupon""), 0).replaceAll(""[^0-9]"", """")",,obtiene monto total del finalize,,2023-02-16 14:08:00,2023-02-16 14:08:01,"1,284s",PASSED
+println(extractFinalize),,imprime monto (solo numero),,2023-02-16 14:08:01,2023-02-16 14:08:01,"0,001s",PASSED
+"tap(findTestObject(""Finalizar Efectivo/android.widget.TextView - Finalizar Orden""), 0)",,Finalizar orden,,2023-02-16 14:08:01,2023-02-16 14:08:02,"0,445s",PASSED
+"getText(findTestObject(""Finalizar con Cupon/android.widget.TextView - Ya casi estamos, procesando pago""), 0)",,Verifica proceso de pago,,2023-02-16 14:08:02,2023-02-16 14:08:02,"0,001s",NOT_RUN
+"delay(5, STOP_ON_FAILURE)",,,,2023-02-16 14:08:02,2023-02-16 14:08:07,"5,018s",PASSED
+"getText(findTestObject(""Finalizar Efectivo/android.widget.TextView - Recibido""), 0)",,Verifica pedido finalizado,,2023-02-16 14:08:07,2023-02-16 14:08:08,"1,054s",PASSED
+"getText(findTestObject(""Finalizar con Cupon/android.widget.TextView - CONTANOS TU EXPERIENCIA""), 0)",,verifica banner de calificacion,,2023-02-16 14:08:08,2023-02-16 14:08:08,"0,424s",PASSED
+"getText(findTestObject(""Finalizar POS/android.widget.TextView - Pago con POS""), 0)",,,,2023-02-16 14:08:08,2023-02-16 14:08:09,"0,455s",PASSED
+"delay(3, STOP_ON_FAILURE)",,,,2023-02-16 14:08:09,2023-02-16 14:08:12,"3,016s",PASSED
+"extractEstado = TextView - Total del estado de pedido""), 0).replaceAll(""[^0-9]"", """")",,obtiene monto total en estado de pedido,,2023-02-16 14:08:12,2023-02-16 14:08:43,"31,014s",FAILED
+,,,,,,,
+Test Cases/Finalizar Pedido - Pago online sin cupon,,,,2023-02-16 14:08:43,2023-02-16 14:09:55,"1m - 12,527s",PASSED
+"startExistingApplication(""com.artico.delivery.pedidos"")",,,,2023-02-16 14:08:43,2023-02-16 14:08:54,"11,076s",PASSED
+"delay(3, STOP_ON_FAILURE)",,,,2023-02-16 14:08:54,2023-02-16 14:08:54,"0,000s",NOT_RUN
+"tap(findTestObject(""Object Repository/Finalizar con Cupon/android.view.ViewGroup - Selector de direccion""), 0)",,Seleccion de primer direccion,,2023-02-16 14:08:54,2023-02-16 14:08:54,"0,001s",NOT_RUN
+"tap(findTestObject(""Finalizar con Cupon/android.view.ViewGroup Banner de comida""), 0)",,Banner comida,,2023-02-16 14:08:54,2023-02-16 14:08:55,"1,483s",PASSED
+"delay(3, STOP_ON_FAILURE)",,,,2023-02-16 14:08:55,2023-02-16 14:08:58,"3,009s",PASSED
+"tap(findTestObject(""Object Repository/Finalizar con Cupon/android.widget.TextView - Pago Online""), 0)",,Filtro pago online,,2023-02-16 14:08:58,2023-02-16 14:09:01,"2,407s",PASSED
+"delay(3, STOP_ON_FAILURE)",,,,2023-02-16 14:09:01,2023-02-16 14:09:04,"3,013s",PASSED
+"tap(findTestObject(""Finalizar POS/android.widget.EditText - Buscar en todas las categoras""), 0)",,Entrar en campo de busqueda,,2023-02-16 14:09:04,2023-02-16 14:09:06,"1,691s",PASSED
+"setText(findTestObject(""Finalizar POS/android.widget.EditText - Buscar en todas las categoras""), ""masapan"" + ""\n"", 0)",,busqueda de comercio,,2023-02-16 14:09:06,2023-02-16 14:09:08,"2,822s",PASSED
+"delay(2, STOP_ON_FAILURE)",,,,2023-02-16 14:09:08,2023-02-16 14:09:10,"2,013s",PASSED
+"tap(findTestObject(""Finalizar Efectivo/android.widget.TextView - Titulo Masapan""), 0)",,entra en el comercio,,2023-02-16 14:09:10,2023-02-16 14:09:13,"3,051s",PASSED
+"delay(2, STOP_ON_FAILURE)",,,,2023-02-16 14:09:13,2023-02-16 14:09:15,"2,013s",PASSED
+"tap(findTestObject(""Finalizar con Cupon/android.view.ViewGroup Primera card producto""), 0)",,Entra en el primer producto,,2023-02-16 14:09:15,2023-02-16 14:09:16,"0,601s",PASSED
+"tap(findTestObject(""Finalizar con Cupon/android.widget.TextView - Suma cantidad""), 0)",,Suma cantidad,,2023-02-16 14:09:16,2023-02-16 14:09:18,"1,515s",PASSED
+"tap(findTestObject(""Finalizar con Cupon/android.widget.TextView - Agregar a carrito""), 0)",,Agrega al carrito,,2023-02-16 14:09:18,2023-02-16 14:09:18,"0,942s",PASSED
+"tap(findTestObject(""Finalizar con Cupon/android.widget.TextView - Carrito (1)""), 0)",,Va al carrito,,2023-02-16 14:09:18,2023-02-16 14:09:23,"4,902s",PASSED
+"tap(findTestObject(""Object Repository/Finalizar con Cupon/android.widget.TextView - Pago y Facturacin""), 0)",,Pago y facturacion,,2023-02-16 14:09:23,2023-02-16 14:09:25,"1,151s",PASSED
+"delay(3, STOP_ON_FAILURE)",,,,2023-02-16 14:09:25,2023-02-16 14:09:28,"3,018s",PASSED
+"tap(findTestObject(""Finalizar con Cupon/android.widget.ImageView Seleccion de pago""), 0)",,Abre selector de metodo pago,,2023-02-16 14:09:28,2023-02-16 14:09:28,"0,742s",PASSED
+"tap(findTestObject(""Object Repository/Finalizar con Cupon/android.widget.TextView - BANCARD - CHECK - ENT. PRUEBA 1""), 0)",,Seleccion de tarjeta,,2023-02-16 14:09:28,2023-02-16 14:09:29,"1,155s",PASSED
+"extractFinalize = TextView - Total finalize sin cupon""), 0).replaceAll(""[^0-9]"", """")",,obtiene monto total del finalize,,2023-02-16 14:09:29,2023-02-16 14:09:31,"1,246s",PASSED
+println(extractFinalize),,imprime monto finalize (solo numero),,2023-02-16 14:09:31,2023-02-16 14:09:31,"0,001s",PASSED
+"delay(2, STOP_ON_FAILURE)",,,,2023-02-16 14:09:31,2023-02-16 14:09:33,"2,003s",PASSED
+"tap(findTestObject(""Object Repository/Finalizar con Cupon/android.widget.TextView - Finalizar Orden""), 0)",,Finalizar,,2023-02-16 14:09:33,2023-02-16 14:09:33,"0,525s",PASSED
+"getText(findTestObject(""Object Repository/Finalizar con Cupon/android.widget.TextView - Ya casi estamos, procesando pago""), 0)",,Verifica proceso de pago,,2023-02-16 14:09:33,2023-02-16 14:09:34,"1,091s",PASSED
+"delay(10, STOP_ON_FAILURE)",,,,2023-02-16 14:09:34,2023-02-16 14:09:44,"10,010s",PASSED
+"getText(findTestObject(""Finalizar con Cupon/android.widget.TextView - Recibido Estado de Pedido""), 0)",,Verifica estado recibido,,2023-02-16 14:09:44,2023-02-16 14:09:45,"0,485s",PASSED
+"getText(findTestObject(""Object Repository/Finalizar con Cupon/android.widget.TextView - Pago Online""), 0)",,Verifica descripcion de pago online,,2023-02-16 14:09:45,2023-02-16 14:09:46,"0,909s",PASSED
+"getText(findTestObject(""Object Repository/Finalizar con Cupon/android.widget.TextView - CONTANOS TU EXPERIENCIA""), 0)",,Verifica banner de calificacion,,2023-02-16 14:09:46,2023-02-16 14:09:46,"0,437s",PASSED
+"delay(2, STOP_ON_FAILURE)",,,,2023-02-16 14:09:46,2023-02-16 14:09:48,"2,015s",PASSED
+"extractEstado = TextView - Estado Total""), 0).replaceAll(""[^0-9]"", """")",,obtiene monto total en estado de pedido,,2023-02-16 14:09:48,2023-02-16 14:09:49,"0,626s",PASSED
+println(extractEstado),,imprime monto total estado (solo numero),,2023-02-16 14:09:49,2023-02-16 14:09:49,"0,001s",PASSED
+if (extractFinalize == extractEstado),,validacion de monto en finalize y estado de pedido (exito),,2023-02-16 14:09:49,2023-02-16 14:09:49,"0,002s",PASSED
+"tap(findTestObject(""Object Repository/Finalizar con Cupon/android.widget.TextView - Estado Total""), 0)",,,,2023-02-16 14:09:49,2023-02-16 14:09:49,"0,611s",PASSED
+"delay(2, STOP_ON_FAILURE)",,,,2023-02-16 14:09:49,2023-02-16 14:09:51,"2,019s",PASSED
+"extractTotalDetalleCabecera = TextView - Total cabecera detalle""), 0).replaceAll(""[^0-9]"", """")",,obtiene monto total del detalle de orden de la cabecera,,2023-02-16 14:09:51,2023-02-16 14:09:52,"0,447s",PASSED
+println(extractTotalDetalleCabecera),,imprime monto total del detalle de orden (solo numero),,2023-02-16 14:09:52,2023-02-16 14:09:52,"0,001s",PASSED
+if (extractFinalize == extractTotalDetalleCabecera),,validacion de monto total y descuento en detalle de orden de la cabecera,,2023-02-16 14:09:52,2023-02-16 14:09:52,"0,003s",PASSED
+"extractTotalDetalle = TextView - Total detalle orden sin cupon""), 0).replaceAll(""[^0-9]"", """")",,obtiene monto total del detalle de orden,,2023-02-16 14:09:52,2023-02-16 14:09:52,"0,371s",PASSED
+println(extractTotalDetalle),,imprime monto total del detalle de orden (solo numero),,2023-02-16 14:09:52,2023-02-16 14:09:52,"0,000s",PASSED
+if (extractFinalize == extractTotalDetalle),,validacion de monto total y descuento en detalle de orden,,2023-02-16 14:09:52,2023-02-16 14:09:52,"0,001s",PASSED
+"tap(findTestObject(""Finalizar Efectivo/android.widget.TextView - Ir atras""), 0)",,atras para volver al estado de la orden,,2023-02-16 14:09:52,2023-02-16 14:09:53,"0,353s",PASSED
+"delay(2, STOP_ON_FAILURE)",,,,2023-02-16 14:09:53,2023-02-16 14:09:55,"2,009s",PASSED
+"tap(findTestObject(""Finalizar Efectivo/android.widget.TextView - Ir atras""), 0)",,atras para volver a la home,,2023-02-16 14:09:55,2023-02-16 14:09:55,"0,489s",PASSED
+,,,,,,,
+Test Cases/Finalizar Pedido - Pago online con cupon (monto),,,,2023-02-16 14:09:55,2023-02-16 14:11:20,"1m - 24,585s",PASSED
+"startExistingApplication(""com.artico.delivery.pedidos"")",,,,2023-02-16 14:09:55,2023-02-16 14:10:10,"14,701s",PASSED
+"delay(5, STOP_ON_FAILURE)",,,,2023-02-16 14:10:10,2023-02-16 14:10:10,"0,001s",NOT_RUN
+"tap(findTestObject(""Object Repository/Finalizar con Cupon/android.view.ViewGroup - Selector de direccion""), 0)",,Seleccion de primer direccion,,2023-02-16 14:10:10,2023-02-16 14:10:10,"0,001s",NOT_RUN
+"tap(findTestObject(""Finalizar con Cupon/android.view.ViewGroup Banner de comida""), 0)",,Banner comida,,2023-02-16 14:10:10,2023-02-16 14:10:11,"1,273s",PASSED
+"delay(3, STOP_ON_FAILURE)",,,,2023-02-16 14:10:11,2023-02-16 14:10:14,"3,010s",PASSED
+"tap(findTestObject(""Object Repository/Finalizar con Cupon/android.widget.TextView - Pago Online""), 0)",,Filtro pago online,,2023-02-16 14:10:14,2023-02-16 14:10:16,"1,926s",PASSED
+"delay(3, STOP_ON_FAILURE)",,,,2023-02-16 14:10:16,2023-02-16 14:10:19,"3,016s",PASSED
+"tap(findTestObject(""Finalizar POS/android.widget.EditText - Buscar en todas las categoras""), 0)",,Entrar en campo de busqueda,,2023-02-16 14:10:19,2023-02-16 14:10:20,"0,795s",PASSED
+"setText(findTestObject(""Finalizar POS/android.widget.EditText - Buscar en todas las categoras""), ""masapan"" + ""\n"", 0)",,busqueda de comercio,,2023-02-16 14:10:20,2023-02-16 14:10:23,"3,279s",PASSED
+"delay(3, STOP_ON_FAILURE)",,,,2023-02-16 14:10:23,2023-02-16 14:10:26,"3,014s",PASSED
+"tap(findTestObject(""Finalizar Efectivo/android.widget.TextView - Titulo Masapan""), 0)",,entra en el comercio,,2023-02-16 14:10:26,2023-02-16 14:10:30,"3,934s",PASSED
+"delay(2, STOP_ON_FAILURE)",,,,2023-02-16 14:10:30,2023-02-16 14:10:32,"2,010s",PASSED
+"tap(findTestObject(""Finalizar con Cupon/android.view.ViewGroup Primera card producto""), 0)",,Entra en el primer producto,,2023-02-16 14:10:32,2023-02-16 14:10:33,"0,384s",PASSED
+"tap(findTestObject(""Finalizar con Cupon/android.widget.TextView - Suma cantidad""), 0)",,Suma cantidad,,2023-02-16 14:10:33,2023-02-16 14:10:34,"1,684s",PASSED
+"tap(findTestObject(""Finalizar con Cupon/android.widget.TextView - Agregar a carrito""), 0)",,Agrega al carrito,,2023-02-16 14:10:34,2023-02-16 14:10:35,"1,000s",PASSED
+"tap(findTestObject(""Finalizar con Cupon/android.widget.TextView - Carrito (1)""), 0)",,Va al carrito,,2023-02-16 14:10:35,2023-02-16 14:10:40,"4,797s",PASSED
+"tap(findTestObject(""Object Repository/Finalizar con Cupon/android.widget.TextView - Pago y Facturacin""), 0)",,Pago y facturacion,,2023-02-16 14:10:40,2023-02-16 14:10:41,"0,916s",PASSED
+"delay(3, STOP_ON_FAILURE)",,,,2023-02-16 14:10:41,2023-02-16 14:10:44,"3,006s",PASSED
+"tap(findTestObject(""Finalizar con Cupon/android.widget.ImageView Seleccion de pago""), 0)",,Abre selector de metodo pago,,2023-02-16 14:10:44,2023-02-16 14:10:45,"0,870s",PASSED
+"tap(findTestObject(""Object Repository/Finalizar con Cupon/android.widget.TextView - BANCARD - CHECK - ENT. PRUEBA 1""), 0)",,Seleccion de tarjeta,,2023-02-16 14:10:45,2023-02-16 14:10:46,"1,156s",PASSED
+"tap(findTestObject(""Object Repository/Finalizar con Cupon/android.widget.TextView - Cupones de descuentos""), 0)",,Abre selector de cupones,,2023-02-16 14:10:46,2023-02-16 14:10:47,"1,352s",PASSED
+"extractCupon = TextView -  monto de cupon fixed""), 0).replaceAll(""[^0-9]"", """")",,obtiene monto del cupon,,2023-02-16 14:10:47,2023-02-16 14:10:49,"1,581s",PASSED
+println(extractCupon),,imprime monto cupon (solo numero),,2023-02-16 14:10:49,2023-02-16 14:10:49,"0,001s",PASSED
+"tap(findTestObject(""Object Repository/Finalizar con Cupon/android.widget.TextView - Seleccionar primer cupon""), 0)",,Seleccionar primer cupon,,2023-02-16 14:10:49,2023-02-16 14:10:49,"0,374s",PASSED
+"getText(findTestObject(""Finalizar con Cupon/android.widget.TextView - Cupn verificado exitosamente""), 0)",,Verifica mensaje de exito,,2023-02-16 14:10:49,2023-02-16 14:10:53,"3,292s",PASSED
+"tap(findTestObject(""Object Repository/Finalizar con Cupon/android.view.ViewGroup - Cierra mensaje de cupon""), 0)",,Cierra mensaje de cupon,,2023-02-16 14:10:53,2023-02-16 14:10:53,"0,322s",PASSED
+"extractDescuento = TextView - Monto finalize descontado""), 0).replaceAll(""[^0-9]"", """")",,obtiene monto de descuento,,2023-02-16 14:10:53,2023-02-16 14:10:55,"1,596s",PASSED
+println(extractDescuento),,imprime monto descuento (solo numero),,2023-02-16 14:10:55,2023-02-16 14:10:55,"0,001s",PASSED
+if (extractCupon == extractDescuento),,validacion de monto de cupon y monto descontado (exito),,2023-02-16 14:10:55,2023-02-16 14:10:55,"0,003s",PASSED
+"extractFinalize = TextView - Total con cupon finalize""), 0).replaceAll(""[^0-9]"", """")",,obtiene monto total del finalize,,2023-02-16 14:10:55,2023-02-16 14:10:55,"0,402s",PASSED
+println(extractFinalize),,imprime monto finalize (solo numero),,2023-02-16 14:10:55,2023-02-16 14:10:55,"0,001s",PASSED
+"delay(2, STOP_ON_FAILURE)",,,,2023-02-16 14:10:55,2023-02-16 14:10:57,"2,018s",PASSED
+"tap(findTestObject(""Object Repository/Finalizar con Cupon/android.widget.TextView - Finalizar Orden""), 0)",,Finalizar,,2023-02-16 14:10:57,2023-02-16 14:10:57,"0,496s",PASSED
+"getText(findTestObject(""Object Repository/Finalizar con Cupon/android.widget.TextView - Ya casi estamos, procesando pago""), 0)",,Verifica proceso de pago,,2023-02-16 14:10:57,2023-02-16 14:10:59,"1,088s",PASSED
+"delay(10, STOP_ON_FAILURE)",,,,2023-02-16 14:10:59,2023-02-16 14:11:09,"10,018s",PASSED
+"getText(findTestObject(""Finalizar con Cupon/android.widget.TextView - Recibido Estado de Pedido""), 0)",,Verifica estado recibido,,2023-02-16 14:11:09,2023-02-16 14:11:09,"0,410s",PASSED
+"getText(findTestObject(""Object Repository/Finalizar con Cupon/android.widget.TextView - Pago Online - Cupn Descuento""), 0)",,Verifica descripcion de pago y cupon,,2023-02-16 14:11:09,2023-02-16 14:11:09,"0,451s",PASSED
+"getText(findTestObject(""Object Repository/Finalizar con Cupon/android.widget.TextView - CONTANOS TU EXPERIENCIA""), 0)",,Verifica banner de calificacion,,2023-02-16 14:11:09,2023-02-16 14:11:10,"0,561s",PASSED
+"delay(2, STOP_ON_FAILURE)",,,,2023-02-16 14:11:10,2023-02-16 14:11:12,"2,017s",PASSED
+"extractEstado = TextView - Estado Total""), 0).replaceAll(""[^0-9]"", """")",,obtiene monto total en estado de pedido,,2023-02-16 14:11:12,2023-02-16 14:11:13,"0,984s",PASSED
+println(extractEstado),,imprime monto total estado (solo numero),,2023-02-16 14:11:13,2023-02-16 14:11:13,"0,001s",PASSED
+if (extractFinalize == extractEstado),,validacion de monto en finalize y estado de pedido (exito),,2023-02-16 14:11:13,2023-02-16 14:11:13,"0,003s",PASSED
+"tap(findTestObject(""Object Repository/Finalizar con Cupon/android.widget.TextView - Estado Total""), 0)",,,,2023-02-16 14:11:13,2023-02-16 14:11:14,"0,515s",PASSED
+"delay(2, STOP_ON_FAILURE)",,,,2023-02-16 14:11:14,2023-02-16 14:11:16,"2,018s",PASSED
+"extractTotalDetallleCabecera = TextView - Total cabecera detalle""), 0).replaceAll(""[^0-9]"", """")",,obtiene monto total del detalle de orden de la cabecera,,2023-02-16 14:11:16,2023-02-16 14:11:16,"0,637s",PASSED
+println(extractTotalDetallleCabecera),,imprime monto total del detalle de orden (solo numero),,2023-02-16 14:11:16,2023-02-16 14:11:16,"0,002s",PASSED
+if (extractFinalize == extractTotalDetallleCabecera),,validacion de monto total y descuento en detalle de orden de la cabecera,,2023-02-16 14:11:16,2023-02-16 14:11:16,"0,002s",PASSED
+"extractDescuentoDetalle = TextView - Monto descontado detalle orden""), 0).replaceAll(""[^0-9]"", """")",,obtiene monto descuento del detalle de orden,,2023-02-16 14:11:16,2023-02-16 14:11:17,"0,347s",PASSED
+println(extractDescuentoDetalle),,imprime monto descuento en detalle de orden (solo numero),,2023-02-16 14:11:17,2023-02-16 14:11:17,"0,000s",PASSED
+if (extractCupon == extractDescuentoDetalle),,validacion de monto de descuento y descuento en detalle de orden,,2023-02-16 14:11:17,2023-02-16 14:11:17,"0,001s",PASSED
+"extractTotalDetallle = TextView - Total con cupon detalle de orden""), 0).replaceAll(""[^0-9]"", """")",,obtiene monto total del detalle de orden,,2023-02-16 14:11:17,2023-02-16 14:11:17,"0,299s",PASSED
+println(extractTotalDetallle),,imprime monto total del detalle de orden (solo numero),,2023-02-16 14:11:17,2023-02-16 14:11:17,"0,000s",PASSED
+if (extractFinalize == extractTotalDetallle),,validacion de monto total y descuento en detalle de orden,,2023-02-16 14:11:17,2023-02-16 14:11:17,"0,001s",PASSED
+"tap(findTestObject(""Finalizar Efectivo/android.widget.TextView - Ir atras""), 0)",,atras para volver al estado de la orden,,2023-02-16 14:11:17,2023-02-16 14:11:17,"0,322s",PASSED
+"delay(2, STOP_ON_FAILURE)",,,,2023-02-16 14:11:17,2023-02-16 14:11:19,"2,009s",PASSED
+"tap(findTestObject(""Finalizar Efectivo/android.widget.TextView - Ir atras""), 0)",,atras para volver a la home,,2023-02-16 14:11:19,2023-02-16 14:11:20,"0,491s",PASSED
+,,,,,,,
+Test Cases/Finalizar Pedido - Pago online con cupon (porcentaje),,,,2023-02-16 14:11:20,2023-02-16 14:12:55,"1m - 35,550s",FAILED
+"startExistingApplication(""com.artico.delivery.pedidos"")",,,,2023-02-16 14:11:20,2023-02-16 14:11:31,"11,192s",PASSED
+"delay(5, STOP_ON_FAILURE)",,,,2023-02-16 14:11:31,2023-02-16 14:11:36,"5,005s",PASSED
+"tap(findTestObject(""Object Repository/Finalizar con Cupon/android.view.ViewGroup - Selector de direccion""), 0)",,Seleccion de primer direccion,,2023-02-16 14:11:36,2023-02-16 14:11:36,"0,002s",NOT_RUN
+"tap(findTestObject(""Finalizar con Cupon/android.view.ViewGroup Banner de comida""), 0)",,Banner comida,,2023-02-16 14:11:36,2023-02-16 14:11:38,"1,537s",PASSED
+"delay(5, STOP_ON_FAILURE)",,,,2023-02-16 14:11:38,2023-02-16 14:11:43,"5,009s",PASSED
+"tap(findTestObject(""Object Repository/Finalizar con Cupon/android.widget.TextView - Pago Online""), 0)",,Filtro pago online,,2023-02-16 14:11:43,2023-02-16 14:11:45,"1,917s",PASSED
+"delay(5, STOP_ON_FAILURE)",,,,2023-02-16 14:11:45,2023-02-16 14:11:50,"5,018s",PASSED
+"tap(findTestObject(""Finalizar POS/android.widget.EditText - Buscar en todas las categoras""), 0)",,Entrar en campo de busqueda,,2023-02-16 14:11:50,2023-02-16 14:11:52,"2,329s",PASSED
+"setText(findTestObject(""Finalizar POS/android.widget.EditText - Buscar en todas las categoras""), ""masapan"" + ""\n"", 0)",,busqueda de comercio,,2023-02-16 14:11:52,2023-02-16 14:11:55,"3,382s",PASSED
+"delay(5, STOP_ON_FAILURE)",,,,2023-02-16 14:11:55,2023-02-16 14:12:00,"5,014s",PASSED
+"tap(findTestObject(""Finalizar Efectivo/android.widget.TextView - Titulo Masapan""), 0)",,entra en el comercio,,2023-02-16 14:12:00,2023-02-16 14:12:03,"3,077s",PASSED
+"delay(5, STOP_ON_FAILURE)",,,,2023-02-16 14:12:03,2023-02-16 14:12:08,"5,009s",PASSED
+"tap(findTestObject(""Finalizar con Cupon/android.view.ViewGroup Primera card producto""), 0)",,Entra en el primer producto,,2023-02-16 14:12:08,2023-02-16 14:12:09,"0,487s",PASSED
+"tap(findTestObject(""Finalizar con Cupon/android.widget.TextView - Suma cantidad""), 0)",,Suma cantidad,,2023-02-16 14:12:09,2023-02-16 14:12:10,"1,512s",PASSED
+"tap(findTestObject(""Finalizar con Cupon/android.widget.TextView - Agregar a carrito""), 0)",,Agrega al carrito,,2023-02-16 14:12:10,2023-02-16 14:12:11,"0,934s",PASSED
+"tap(findTestObject(""Finalizar con Cupon/android.widget.TextView - Carrito (1)""), 0)",,Va al carrito,,2023-02-16 14:12:11,2023-02-16 14:12:16,"4,826s",PASSED
+"tap(findTestObject(""Object Repository/Finalizar con Cupon/android.widget.TextView - Pago y Facturacin""), 0)",,Pago y facturacion,,2023-02-16 14:12:16,2023-02-16 14:12:17,"0,898s",PASSED
+"delay(7, STOP_ON_FAILURE)",,,,2023-02-16 14:12:17,2023-02-16 14:12:24,"7,010s",PASSED
+"extractFinalize = TextView - Total finalize con cupon""), 0).replaceAll(""[^0-9]"", """")",,obtiene el total sin descuento del finalize,,2023-02-16 14:12:24,2023-02-16 14:12:55,"31,067s",FAILED

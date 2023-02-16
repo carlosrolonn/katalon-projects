@@ -67,6 +67,13 @@ Mobile.tap(findTestObject('Object Repository/Finalizar con Cupon/android.widget.
 
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
+'obtiene el total sin descuento del finalize'
+String extractFinalize = Mobile.getText(findTestObject('Object Repository/Finalizar con Cupon/android.widget.TextView - Total finalize sin cupon'),
+	0).replaceAll('[^0-9]', '')
+
+'imprime monto finalize sin descuento (solo numero)'
+println(extractFinalize)
+
 'Abre selector de metodo pago'
 Mobile.tap(findTestObject('Finalizar con Cupon/android.widget.ImageView Seleccion de pago'), 0)
 
@@ -93,14 +100,27 @@ Mobile.getText(findTestObject('Finalizar con Cupon/android.widget.TextView - Cup
 'Cierra mensaje de cupon'
 Mobile.tap(findTestObject('Object Repository/Finalizar con Cupon/android.view.ViewGroup - Cierra mensaje de cupon'), 0)
 
-'obtiene monto de descuento'
+'obtiene monto de descuento aplicado'
 String extractDescuento = Mobile.getText(findTestObject('Object Repository/Finalizar con Cupon/android.widget.TextView - Monto finalize descontado'), 
     0).replaceAll('[^0-9]', '')
 
 'imprime monto descuento (solo numero)'
 println(extractDescuento)
 
-'validacion de monto de cupon y monto descontado (exito)'
+'calculo de cupon con monto'
+int calculoMonto = (extractFinalize.toInteger() - extractDescuento.toInteger())
+
+'imprime calculo de monto de descuento'
+println(calculoMonto)
+
+'obtiene monto total del finalize con descuento'
+String extractFinalizeDescontado = Mobile.getText(findTestObject('Object Repository/Finalizar con Cupon/android.widget.TextView - Total con cupon finalize'),
+	0).replaceAll('[^0-9]', '')
+
+'imprime monto finalize con descuento (solo numero)'
+println(extractFinalizeDescontado)
+
+'validacion de monto de cupon y monto descontado'
 if (extractCupon == extractDescuento) {
     KeywordUtil.markPassed(((((((('EL MONTO DEL CUPON:' + ' ') + extractCupon) + ' ') + 'Y EL MONTO DE DESCUENTO:') + ' ') + 
         extractDescuento) + ' ') + 'COINCIDEN CORRECTAMENTE')
@@ -109,12 +129,14 @@ if (extractCupon == extractDescuento) {
         ' ') + extractDescuento) + ' ') + 'NO COINCIDEN')
 }
 
-'obtiene monto total del finalize'
-String extractFinalize = Mobile.getText(findTestObject('Object Repository/Finalizar con Cupon/android.widget.TextView - Total con cupon finalize'), 
-    0).replaceAll('[^0-9]', '')
-
-'imprime monto finalize (solo numero)'
-println(extractFinalize)
+'validacion de total restando el monto descontado'
+if (extractFinalizeDescontado == calculoMonto.toString()) {
+	KeywordUtil.markPassed(((((((('EL CALCULO DE MONTO A DESCONTAR:' + ' ') + calculoMonto.toString()) + ' ') +
+		'Y EL MONTO TOTAL CON DESCUENTO:') + ' ') + extractFinalizeDescontado) + ' ') + 'COINCIDEN CORRECTAMENTE')
+} else {
+	KeywordUtil.markFailedAndStop(((((((('EL CALCULO DE MONTO A DESCONTAR:' + ' ') + calculoMonto.toString()) +
+		' ') + 'Y EL MONTO TOTAL CON DESCUENTO:') + ' ') + extractFinalizeDescontado) + ' ') + 'NO COINCIDEN')
+}
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
@@ -148,11 +170,11 @@ String extractEstado = Mobile.getText(findTestObject('Object Repository/Finaliza
 println(extractEstado)
 
 'validacion de monto en finalize y estado de pedido (exito)'
-if (extractFinalize == extractEstado) {
-    KeywordUtil.markPassed(((((((('EL MONTO TOTAL DEL FINALIZE:' + ' ') + extractFinalize) + ' ') + 'Y EL MONTO TOTAL DEL ESTADO DE LA ORDEN:') + 
+if (extractFinalizeDescontado == extractEstado) {
+    KeywordUtil.markPassed(((((((('EL MONTO TOTAL DEL FINALIZE:' + ' ') + extractFinalizeDescontado) + ' ') + 'Y EL MONTO TOTAL DEL ESTADO DE LA ORDEN:') + 
         ' ') + extractEstado) + ' ') + 'COINCIDEN CORRECTAMENTE')
 } else {
-    KeywordUtil.markFailedAndStop(((((((('EL MONTO TOTAL DEL FINALIZE:' + ' ') + extractFinalize) + ' ') + 'Y EL MONTO TOTAL DEL ESTADO DE LA ORDEN:') + 
+    KeywordUtil.markFailedAndStop(((((((('EL MONTO TOTAL DEL FINALIZE:' + ' ') + extractFinalizeDescontado) + ' ') + 'Y EL MONTO TOTAL DEL ESTADO DE LA ORDEN:') + 
         ' ') + extractEstado) + ' ') + 'NO COINCIDEN')
 }
 
@@ -168,11 +190,11 @@ String extractTotalDetallleCabecera = Mobile.getText(findTestObject('Object Repo
 println(extractTotalDetallleCabecera)
 
 'validacion de monto total y descuento en detalle de orden de la cabecera'
-if (extractFinalize == extractTotalDetallleCabecera) {
-    KeywordUtil.markPassed(((((((('EL MONTO TOTAL DEL FINALIZE:' + ' ') + extractFinalize) + ' ') + 'Y EL MONTO TOTAL DEL DETALLE DE LA ORDEN EN CABECERA:') + 
+if (extractFinalizeDescontado == extractTotalDetallleCabecera) {
+    KeywordUtil.markPassed(((((((('EL MONTO TOTAL DEL FINALIZE:' + ' ') + extractFinalizeDescontado) + ' ') + 'Y EL MONTO TOTAL DEL DETALLE DE LA ORDEN EN CABECERA:') + 
         ' ') + extractTotalDetallleCabecera) + ' ') + 'COINCIDEN CORRECTAMENTE')
 } else {
-    KeywordUtil.markFailedAndStop(((((((('EL MONTO TOTAL DEL FINALIZE:' + ' ') + extractFinalize) + ' ') + 'Y EL MONTO TOTAL DEL DETALLE DE LA ORDEN EN CABECERA:') + 
+    KeywordUtil.markFailedAndStop(((((((('EL MONTO TOTAL DEL FINALIZE:' + ' ') + extractFinalizeDescontado) + ' ') + 'Y EL MONTO TOTAL DEL DETALLE DE LA ORDEN EN CABECERA:') + 
         ' ') + extractTotalDetallleCabecera) + ' ') + 'NO COINCIDEN')
 }
 
@@ -200,11 +222,11 @@ String extractTotalDetallle = Mobile.getText(findTestObject('Object Repository/F
 println(extractTotalDetallle)
 
 'validacion de monto total y descuento en detalle de orden'
-if (extractFinalize == extractTotalDetallle) {
-    KeywordUtil.markPassed(((((((('EL MONTO TOTAL DEL FINALIZE:' + ' ') + extractFinalize) + ' ') + 'Y EL MONTO TOTAL DEL DETALLE DE LA ORDEN:') + 
+if (extractFinalizeDescontado == extractTotalDetallle) {
+    KeywordUtil.markPassed(((((((('EL MONTO TOTAL DEL FINALIZE:' + ' ') + extractFinalizeDescontado) + ' ') + 'Y EL MONTO TOTAL DEL DETALLE DE LA ORDEN:') + 
         ' ') + extractTotalDetallle) + ' ') + 'COINCIDEN CORRECTAMENTE')
 } else {
-    KeywordUtil.markFailedAndStop(((((((('EL MONTO TOTAL DEL FINALIZE:' + ' ') + extractFinalize) + ' ') + 'Y EL MONTO TOTAL DEL DETALLE DE LA ORDEN:') + 
+    KeywordUtil.markFailedAndStop(((((((('EL MONTO TOTAL DEL FINALIZE:' + ' ') + extractFinalizeDescontado) + ' ') + 'Y EL MONTO TOTAL DEL DETALLE DE LA ORDEN:') + 
         ' ') + extractTotalDetallle) + ' ') + 'NO COINCIDEN')
 }
 

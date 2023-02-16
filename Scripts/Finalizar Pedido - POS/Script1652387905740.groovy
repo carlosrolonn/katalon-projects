@@ -28,12 +28,12 @@ not_run: Mobile.tap(findTestObject('Finalizar Efectivo/android.view.ViewGroup - 
 'Click en banner comida'
 Mobile.tap(findTestObject('Finalizar POS/android.view.ViewGroup Banner de comida'), 0)
 
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
 'Seleccionar filtro POS'
 Mobile.tap(findTestObject('Finalizar POS/android.widget.TextView - Pago con POS'), 0)
 
-Mobile.delay(8, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
 'Entrar en campo de busqueda'
 Mobile.tap(findTestObject('Finalizar POS/android.widget.EditText - Buscar en todas las categoras'), 0)
@@ -42,7 +42,7 @@ Mobile.tap(findTestObject('Finalizar POS/android.widget.EditText - Buscar en tod
 Mobile.setText(findTestObject('Finalizar POS/android.widget.EditText - Buscar en todas las categoras'), 'masapan' + '\\n', 
     0)
 
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
 'entrar en comercio'
 Mobile.tap(findTestObject('Finalizar Efectivo/android.widget.TextView - Titulo Masapan'), 0)
@@ -50,7 +50,7 @@ Mobile.tap(findTestObject('Finalizar Efectivo/android.widget.TextView - Titulo M
 'Entra en el comercio solo monchis store'
 not_run: Mobile.tap(findTestObject('Finalizar POS/android.widget.TextView - Monchis Store'), 0)
 
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
 'Entra en el primer producto'
 Mobile.tap(findTestObject('Finalizar POS/android.view.ViewGroup Primera card producto'), 0)
@@ -76,7 +76,7 @@ Mobile.tap(findTestObject('Finalizar POS/android.widget.ImageView Seleccion de p
 Mobile.tap(findTestObject('Finalizar POS/android.widget.TextView - Seleccionar Pago con POS'), 0)
 
 'obtiene monto total del finalize'
-String extractFinalize = Mobile.getText(findTestObject('Object Repository/Finalizar POS/android.widget.TextView - Total finalize sin cupon'), 
+String extractFinalize = Mobile.getText(findTestObject('Object Repository/Finalizar Efectivo/android.widget.TextView - Total finalize sin cupon'), 
     0).replaceAll('[^0-9]', '')
 
 'imprime monto (solo numero)'
@@ -102,7 +102,7 @@ Mobile.getText(findTestObject('Finalizar POS/android.widget.TextView - Pago con 
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
 'obtiene monto total en estado de pedido'
-String extractEstado = Mobile.getText(findTestObject('Object Repository/Finalizar con Cupon/android.widget.TextView - Total del estado de pedido'), 
+String extractEstado = Mobile.getText(findTestObject('Object Repository/Finalizar Efectivo/android.widget.TextView - Estado Total'), 
     0).replaceAll('[^0-9]', '')
 
 'imprime monto total estado (solo numero)'
@@ -117,13 +117,13 @@ if (extractFinalize == extractEstado) {
         ' ') + extractEstado) + ' ') + 'NO COINCIDEN')
 }
 
-Mobile.tap(findTestObject('Object Repository/Finalizar con Cupon/android.widget.TextView - Total del estado de pedido'), 
+Mobile.tap(findTestObject('Object Repository/Finalizar Efectivo/android.widget.TextView - Estado Total'), 
     0)
 
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
 'obtiene monto total del detalle de orden de la cabecera'
-String extractTotalDetalleCabecera = Mobile.getText(findTestObject('Object Repository/Finalizar con Cupon/android.widget.TextView - Total detalle cabecera'), 
+String extractTotalDetalleCabecera = Mobile.getText(findTestObject('Object Repository/Finalizar Efectivo/android.widget.TextView - Total cabecera detalle'), 
     0).replaceAll('[^0-9]', '')
 
 'imprime monto total del detalle de orden (solo numero)'
@@ -139,7 +139,7 @@ if (extractFinalize == extractTotalDetalleCabecera) {
 }
 
 'obtiene monto total del detalle de orden'
-String extractTotalDetalle = Mobile.getText(findTestObject('Object Repository/Finalizar con Cupon/android.widget.TextView - total detalle de orden sin cupon'), 
+String extractTotalDetalle = Mobile.getText(findTestObject('Object Repository/Finalizar Efectivo/android.widget.TextView - Total detalle orden sin cupon'), 
     0).replaceAll('[^0-9]', '')
 
 'imprime monto total del detalle de orden (solo numero)'

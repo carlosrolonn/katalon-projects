@@ -65,10 +65,10 @@ Mobile.tap(findTestObject('Finalizar con Cupon/android.widget.TextView - Carrito
 'Pago y facturacion'
 Mobile.tap(findTestObject('Object Repository/Finalizar con Cupon/android.widget.TextView - Pago y Facturacin'), 0)
 
-Mobile.delay(7, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
 'obtiene el total sin descuento del finalize'
-String extractFinalize = Mobile.getText(findTestObject('Object Repository/Finalizar con Cupon/android.widget.TextView - Total finalize con cupon'), 
+String extractFinalize = Mobile.getText(findTestObject('Object Repository/Finalizar con Cupon/android.widget.TextView - Total finalize sin cupon'), 
     0).replaceAll('[^0-9]', '')
 
 'imprime monto finalize sin descuento (solo numero)'
@@ -120,7 +120,7 @@ String extractFinalizeDescontado = Mobile.getText(findTestObject('Object Reposit
 'imprime monto finalize con descuento (solo numero)'
 println(extractFinalizeDescontado)
 
-'validacion de monto de cupon y monto descontado (exito)'
+'validacion de monto de cupon y monto descontado'
 if (extractCupon == calculoPorcentaje.toString()) {
     KeywordUtil.markPassed(((((((('EL CALCULO DE PORCENTAJE A DESCONTAR:' + ' ') + calculoPorcentaje.toString()) + ' ') + 
         'Y EL PORCENTAJE DESCONTADO:') + ' ') + extractCupon) + ' ') + 'COINCIDEN CORRECTAMENTE')

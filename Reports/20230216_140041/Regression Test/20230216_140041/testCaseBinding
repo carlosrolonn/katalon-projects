@@ -1,0 +1,11 @@
+{"testCaseName":"Test Cases/Login Google","testCaseId":"Test Cases/Login Google","iterationVariableName":""}
+{"testCaseName":"Test Cases/Login Facebook","testCaseId":"Test Cases/Login Facebook","iterationVariableName":""}
+{"testCaseName":"Test Cases/Login email","testCaseId":"Test Cases/Login email","iterationVariableName":""}
+{"testCaseName":"Test Cases/Crear direccion","testCaseId":"Test Cases/Crear direccion","iterationVariableName":""}
+{"testCaseName":"Test Cases/Edicion direccion","testCaseId":"Test Cases/Edicion direccion","iterationVariableName":""}
+{"testCaseName":"Test Cases/Buscador General","testCaseId":"Test Cases/Buscador General","iterationVariableName":""}
+{"testCaseName":"Test Cases/Finalizar Pedido - Efectivo","testCaseId":"Test Cases/Finalizar Pedido - Efectivo","iterationVariableName":""}
+{"testCaseName":"Test Cases/Finalizar Pedido - POS","testCaseId":"Test Cases/Finalizar Pedido - POS","iterationVariableName":""}
+{"testCaseName":"Test Cases/Finalizar Pedido - Pago online sin cupon","testCaseId":"Test Cases/Finalizar Pedido - Pago online sin cupon","iterationVariableName":""}
+{"testCaseName":"Test Cases/Finalizar Pedido - Pago online con cupon (monto)","testCaseId":"Test Cases/Finalizar Pedido - Pago online con cupon (monto)","iterationVariableName":""}
+{"testCaseName":"Test Cases/Finalizar Pedido - Pago online con cupon (porcentaje)","testCaseId":"Test Cases/Finalizar Pedido - Pago online con cupon (porcentaje)","iterationVariableName":""}
