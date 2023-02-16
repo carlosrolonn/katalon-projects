@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Finalizar Pedido - Pago online sin cupon</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f4d5a765-3c02-4e7c-b3ac-f561a7d4672b</testCaseGuid>
+</TestCaseEntity>

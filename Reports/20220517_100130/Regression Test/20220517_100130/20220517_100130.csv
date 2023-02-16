@@ -1,0 +1,76 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Regression Test,,,,2022-05-17 10:01:42,2022-05-17 10:06:22,"4m - 40,011s",FAILED
+,,,,,,,
+Test Cases/Finalizar Pedido - Efectivo,,,,2022-05-17 10:01:42,2022-05-17 10:03:10,"1m - 27,493s",PASSED
+"startExistingApplication(""com.artico.delivery.pedidos"")",,Abre la app,,2022-05-17 10:01:43,2022-05-17 10:02:04,"21,197s",PASSED
+"delay(5, STOP_ON_FAILURE)",,,,2022-05-17 10:02:04,2022-05-17 10:02:09,"5,086s",PASSED
+"tap(findTestObject(""Object Repository/Finalizar Efectivo/android.view.ViewGroup - SeleccionaDireccion""), 0)",,Selección de dirección,,2022-05-17 10:02:09,2022-05-17 10:02:17,"7,767s",PASSED
+"tap(findTestObject(""Finalizar Efectivo/android.widget.EditText - Busc locales o productos (1)""), 0)",,Click en campo de búsqueda,,2022-05-17 10:02:17,2022-05-17 10:02:23,"5,972s",PASSED
+"setText(findTestObject(""Finalizar Efectivo/android.widget.EditText - Busc locales o productos (1)""), ""santa fe"" + ""\n"", 0)",,,,2022-05-17 10:02:23,2022-05-17 10:02:25,"2,065s",PASSED
+"delay(3, STOP_ON_FAILURE)",,,,2022-05-17 10:02:25,2022-05-17 10:02:28,"3,010s",PASSED
+"getText(findTestObject(""Object Repository/Finalizar Efectivo/android.widget.TextView - Santa Fe Oporto Empanadas""), 0)",,Verifica resultado solo para santa fe,,2022-05-17 10:02:28,2022-05-17 10:02:31,"3,005s",PASSED
+"tap(findTestObject(""Finalizar Efectivo/android.widget.TextView - Santa Fe Oporto Empanadas""), 0)",,Entra en el comercio solo santa fe,,2022-05-17 10:02:31,2022-05-17 10:02:33,"1,909s",PASSED
+"tap(findTestObject(""Object Repository/Finalizar Efectivo/android.view.ViewGroup - PrimerProducto""), 0)",,Entra en el primer producto,,2022-05-17 10:02:33,2022-05-17 10:02:37,"4,162s",PASSED
+"tap(findTestObject(""Object Repository/Finalizar Efectivo/android.widget.TextView - SumaProducto""), 0)",,Suma la cantidad del producto +1,,2022-05-17 10:02:37,2022-05-17 10:02:41,"3,428s",PASSED
+"tap(findTestObject(""Object Repository/Finalizar Efectivo/android.widget.TextView - SumaProducto""), 0)",,Suma la cantidad del producto +1,,2022-05-17 10:02:41,2022-05-17 10:02:42,"1,268s",PASSED
+"tap(findTestObject(""Object Repository/Finalizar Efectivo/android.widget.TextView - SumaProducto""), 0)",,Suma la cantidad del producto +1,,2022-05-17 10:02:42,2022-05-17 10:02:43,"1,318s",PASSED
+"tap(findTestObject(""Object Repository/Finalizar Efectivo/android.widget.TextView - Agregar""), 0)",,Agregar al carrito,,2022-05-17 10:02:43,2022-05-17 10:02:45,"1,505s",PASSED
+"tap(findTestObject(""Object Repository/Finalizar Efectivo/android.view.ViewGroup - AbrirCarrito""), 0)",,Abrir carrito,,2022-05-17 10:02:45,2022-05-17 10:02:50,"5,147s",PASSED
+"tap(findTestObject(""Object Repository/Finalizar Efectivo/android.widget.TextView - Pago y Facturacin""), 0)",,Pasar a pago y facturación,,2022-05-17 10:02:50,2022-05-17 10:02:51,"0,929s",PASSED
+"tap(findTestObject(""Finalizar Efectivo/android.widget.ImageView - SelectorMetodoPago""), 0)",,Abrir selector de método de pagos,,2022-05-17 10:02:51,2022-05-17 10:02:56,"5,545s",PASSED
+"tap(findTestObject(""Object Repository/Finalizar Efectivo/android.widget.TextView - Efectivo""), 0)",,Seleccionar Efectivo,,2022-05-17 10:02:56,2022-05-17 10:02:59,"2,204s",PASSED
+"tap(findTestObject(""Object Repository/Finalizar Efectivo/android.widget.TextView - Finalizar Orden""), 0)",,Finalizar orden,,2022-05-17 10:02:59,2022-05-17 10:02:59,"0,790s",PASSED
+"getText(findTestObject(""Finalizar con Cupon/android.widget.TextView - Ya casi estamos, procesando pago""), 0)",,Verifica proceso de pago,,2022-05-17 10:02:59,2022-05-17 10:03:00,"1,152s",PASSED
+"delay(5, STOP_ON_FAILURE)",,,,2022-05-17 10:03:00,2022-05-17 10:03:05,"5,006s",PASSED
+"getText(findTestObject(""Object Repository/Finalizar Efectivo/android.widget.TextView - Recibido""), 0)",,Verifica pedido finalizado,,2022-05-17 10:03:05,2022-05-17 10:03:09,"3,270s",PASSED
+closeApplication(),,,,2022-05-17 10:03:09,2022-05-17 10:03:10,"0,815s",PASSED
+,,,,,,,
+Test Cases/Finalizar Pedido - POS,,,,2022-05-17 10:03:10,2022-05-17 10:04:16,"1m - 6,565s",PASSED
+"startExistingApplication(""com.artico.delivery.pedidos"")",,Abre la app,,2022-05-17 10:03:10,2022-05-17 10:03:25,"15,156s",PASSED
+"delay(5, STOP_ON_FAILURE)",,,,2022-05-17 10:03:25,2022-05-17 10:03:30,"5,014s",PASSED
+"tap(findTestObject(""Object Repository/Finalizar Efectivo/android.view.ViewGroup - SeleccionaDireccion""), 0)",,Selección de dirección,,2022-05-17 10:03:30,2022-05-17 10:03:34,"3,495s",PASSED
+"tap(findTestObject(""Finalizar POS/android.view.ViewGroup - BannerComida""), 0)",,Click en banner comida,,2022-05-17 10:03:34,2022-05-17 10:03:37,"2,664s",PASSED
+"delay(3, STOP_ON_FAILURE)",,,,2022-05-17 10:03:37,2022-05-17 10:03:40,"3,017s",PASSED
+"tap(findTestObject(""Finalizar POS/android.widget.TextView - Pago con POS""), 0)",,Seleccionar filtro POS,,2022-05-17 10:03:40,2022-05-17 10:03:42,"2,323s",PASSED
+"tap(findTestObject(""Finalizar POS/android.widget.TextView - Monchis Store""), 0)",,Entra en el comercio solo monchis store,,2022-05-17 10:03:42,2022-05-17 10:03:46,"4,069s",PASSED
+"tap(findTestObject(""Finalizar POS/android.view.ViewGroup - PrimerProducto Monchis Store""), 0)",,Entra en el primer producto,,2022-05-17 10:03:46,2022-05-17 10:03:49,"3,305s",PASSED
+"tap(findTestObject(""Finalizar POS/android.widget.TextView - Agregar ProductoMonchis""), 0)",,Agrega el producto,,2022-05-17 10:03:49,2022-05-17 10:03:52,"2,896s",PASSED
+"tap(findTestObject(""Finalizar POS/android.widget.TextView - Abrir Carrito""), 0)",,Abrir carrito,,2022-05-17 10:03:52,2022-05-17 10:03:56,"4,164s",PASSED
+"tap(findTestObject(""Object Repository/Finalizar Efectivo/android.widget.TextView - Pago y Facturacin""), 0)",,Pasar a pago y facturación,,2022-05-17 10:03:56,2022-05-17 10:03:59,"3,041s",PASSED
+"tap(findTestObject(""Finalizar Efectivo/android.widget.ImageView - SelectorMetodoPago""), 0)",,Abrir selector de método de pagos,,2022-05-17 10:03:59,2022-05-17 10:04:03,"3,837s",PASSED
+"tap(findTestObject(""Finalizar POS/android.widget.TextView - Seleccionar Pago con POS""), 0)",,Seleccionar POS,,2022-05-17 10:04:03,2022-05-17 10:04:05,"2,191s",PASSED
+"tap(findTestObject(""Object Repository/Finalizar Efectivo/android.widget.TextView - Finalizar Orden""), 0)",,Finalizar orden,,2022-05-17 10:04:05,2022-05-17 10:04:08,"2,930s",PASSED
+"getText(findTestObject(""Finalizar con Cupon/android.widget.TextView - Ya casi estamos, procesando pago""), 0)",,Verifica proceso de pago,,2022-05-17 10:04:08,2022-05-17 10:04:10,"1,163s",PASSED
+"delay(5, STOP_ON_FAILURE)",,,,2022-05-17 10:04:10,2022-05-17 10:04:15,"5,014s",PASSED
+"getText(findTestObject(""Object Repository/Finalizar Efectivo/android.widget.TextView - Recibido""), 0)",,Verifica pedido finalizado,,2022-05-17 10:04:15,2022-05-17 10:04:16,"1,070s",PASSED
+closeApplication(),,,,2022-05-17 10:04:16,2022-05-17 10:04:16,"0,513s",PASSED
+,,,,,,,
+Test Cases/Finalizar Pedido - Pago online sin cupon,,,,2022-05-17 10:04:16,2022-05-17 10:06:00,"1m - 44,282s",FAILED
+"startExistingApplication(""com.artico.delivery.pedidos"")",,,,2022-05-17 10:04:17,2022-05-17 10:04:31,"14,126s",PASSED
+"delay(5, STOP_ON_FAILURE)",,,,2022-05-17 10:04:31,2022-05-17 10:04:36,"5,013s",PASSED
+"tap(findTestObject(""Object Repository/Finalizar con Cupon/android.view.ViewGroup - Selector de direccion""), 0)",,Seleccion de primer direccion,,2022-05-17 10:04:36,2022-05-17 10:04:37,"0,814s",PASSED
+"tap(findTestObject(""Object Repository/Finalizar con Cupon/android.view.ViewGroup - Banner comida""), 0)",,Banner comida,,2022-05-17 10:04:37,2022-05-17 10:04:40,"2,896s",PASSED
+"delay(3, STOP_ON_FAILURE)",,,,2022-05-17 10:04:40,2022-05-17 10:04:43,"3,022s",PASSED
+"tap(findTestObject(""Object Repository/Finalizar con Cupon/android.widget.TextView - Pago Online""), 0)",,Filtro pago online,,2022-05-17 10:04:43,2022-05-17 10:04:45,"2,066s",PASSED
+"tap(findTestObject(""Object Repository/Finalizar con Cupon/android.widget.TextView - Santa Fe Oporto Empanadas""), 0)",,Entrar en local solo Santa Fe,,2022-05-17 10:04:45,2022-05-17 10:04:48,"3,701s",PASSED
+"tap(findTestObject(""Object Repository/Finalizar con Cupon/android.view.ViewGroup - Primer producto""), 0)",,Seleccion de primer producto,,2022-05-17 10:04:48,2022-05-17 10:04:53,"4,905s",PASSED
+"tap(findTestObject(""Object Repository/Finalizar con Cupon/android.widget.TextView - Suma cantidad""), 0)",,Suma cantidad,,2022-05-17 10:04:53,2022-05-17 10:04:56,"2,604s",PASSED
+"tap(findTestObject(""Finalizar con Cupon/android.widget.TextView - Suma cantidad""), 0)",,Suma cantidad,,2022-05-17 10:04:56,2022-05-17 10:04:58,"1,902s",PASSED
+"tap(findTestObject(""Finalizar con Cupon/android.widget.TextView - Suma cantidad""), 0)",,Suma cantidad,,2022-05-17 10:04:58,2022-05-17 10:05:00,"1,692s",PASSED
+"tap(findTestObject(""Object Repository/Finalizar con Cupon/android.widget.TextView - Agregar""), 0)",,Agrega al carrito,,2022-05-17 10:05:00,2022-05-17 10:05:02,"2,905s",PASSED
+"tap(findTestObject(""Object Repository/Finalizar con Cupon/android.widget.TextView - Carrito""), 0)",,Va al carrito,,2022-05-17 10:05:02,2022-05-17 10:05:06,"4,045s",PASSED
+"tap(findTestObject(""Object Repository/Finalizar con Cupon/android.widget.TextView - Pago y Facturacin""), 0)",,Pago y facturacion,,2022-05-17 10:05:06,2022-05-17 10:05:09,"2,735s",PASSED
+"delay(5, STOP_ON_FAILURE)",,,,2022-05-17 10:05:09,2022-05-17 10:05:14,"5,012s",PASSED
+"tap(findTestObject(""Object Repository/Finalizar con Cupon/android.widget.ImageView - Abre selector de metodo pago""), 0)",,Abre selector de metodo pago,,2022-05-17 10:05:14,2022-05-17 10:05:16,"1,793s",PASSED
+"tap(findTestObject(""Object Repository/Finalizar con Cupon/android.widget.TextView - BANCARD - CHECK - ENT. PRUEBA 1""), 0)",,Seleccion de tarjeta,,2022-05-17 10:05:16,2022-05-17 10:05:17,"1,183s",PASSED
+"tap(findTestObject(""Object Repository/Finalizar con Cupon/android.view.ViewGroup - Cierra mensaje de cupon""), 0)",,Cierra mensaje de cupon,,2022-05-17 10:05:17,2022-05-17 10:05:42,"25,134s",PASSED
+"tap(findTestObject(""Object Repository/Finalizar con Cupon/android.widget.TextView - Finalizar Orden""), 0)",,Finalizar,,2022-05-17 10:05:42,2022-05-17 10:05:45,"2,914s",PASSED
+"getText(findTestObject(""Object Repository/Finalizar con Cupon/android.widget.TextView - Ya casi estamos, procesando pago""), 0)",,Verifica proceso de pago,,2022-05-17 10:05:45,2022-05-17 10:05:47,"1,828s",PASSED
+"delay(7, STOP_ON_FAILURE)",,,,2022-05-17 10:05:47,2022-05-17 10:05:54,"7,015s",PASSED
+"getText(findTestObject(""Finalizar con Cupon/android.widget.TextView - Recibido (1)""), 0)",,Verifica estado recibido,,2022-05-17 10:05:54,2022-05-17 10:06:00,"6,329s",FAILED
+,,,,,,,
+Test Cases/Finalizar Pedido - Pago online con cupon,,,,2022-05-17 10:06:00,2022-05-17 10:06:22,"21,096s",FAILED
+"startExistingApplication(""com.artico.delivery.pedidos"")",,,,2022-05-17 10:06:01,2022-05-17 10:06:14,"12,425s",PASSED
+"delay(5, STOP_ON_FAILURE)",,,,2022-05-17 10:06:14,2022-05-17 10:06:19,"5,012s",PASSED
+"tap(findTestObject(""Object Repository/Finalizar con Cupon/android.view.ViewGroup - Selector de direccion""), 0)",,Seleccion de primer direccion,,2022-05-17 10:06:19,2022-05-17 10:06:19,"0,879s",PASSED
+"tap(findTestObject(""Object Repository/Finalizar con Cupon/android.view.ViewGroup - Banner comida""), 0)",,Banner comida,,2022-05-17 10:06:19,2022-05-17 10:06:22,"2,112s",FAILED

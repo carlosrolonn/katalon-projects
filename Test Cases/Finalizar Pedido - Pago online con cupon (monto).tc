@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Finalizar Pedido - Pago online con cupon (monto)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a3f46871-5829-4f09-969f-6b69078a243d</testCaseGuid>
+</TestCaseEntity>

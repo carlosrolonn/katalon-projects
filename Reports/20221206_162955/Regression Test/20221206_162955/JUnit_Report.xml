@@ -1,0 +1,1032 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Regression Test" time="505.123" tests="4" failures="3" errors="0">
+   <testsuite name="Regression Test" tests="4" failures="3" errors="0" time="505.123" skipped="0" timestamp="2022-12-06 16:30:04" hostname="carlo - ASUS-CARLOS" id="Test Suites/Regression Test">
+      <properties>
+         <property name="deviceName" value="samsung SM-A715F (Android 12)"/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\carlo\\Documentos\\AUTOMATIZACION V4\\Android V4\\Reports\\20221206_162955\\Regression Test\\20221206_162955"/>
+         <property name="logFiles" value="C:\\Users\\carlo\\Documentos\\AUTOMATIZACION V4\\Android V4\\Reports\\20221206_162955\\Regression Test\\20221206_162955\\appium.log, C:\\Users\\carlo\\Documentos\\AUTOMATIZACION V4\\Android V4\\Reports\\20221206_162955\\Regression Test\\20221206_162955\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\carlo\\Documentos\\AUTOMATIZACION V4\\Android V4\\Reports\\20221206_162955\\Regression Test\\20221206_162955\\1670355132286.png, C:\\Users\\carlo\\Documentos\\AUTOMATIZACION V4\\Android V4\\Reports\\20221206_162955\\Regression Test\\20221206_162955\\1670355274725.png"/>
+         <property name="hostName" value="carlo - ASUS-CARLOS"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="appiumServerStatus" value="{&quot;value&quot;:{&quot;build&quot;:{&quot;version&quot;:&quot;1.22.3&quot;}},&quot;sessionId&quot;:null,&quot;status&quot;:0}"/>
+         <property name="katalonVersion" value="8.5.2.208"/>
+         <property name="deviceOS" value="Android"/>
+         <property name="appiumVersion" value="1.22.3"/>
+         <property name="deviceModel" value="SM-A715F"/>
+         <property name="hostAddress" value="192.168.100.43"/>
+         <property name="deviceManufacturer" value="samsung"/>
+         <property name="deviceId" value="R58NB4N6MVF"/>
+         <property name="deviceName" value="samsung SM-A715F (Android 12)"/>
+         <property name="deviceOSVersion" value="12"/>
+      </properties>
+      <testcase name="Test Cases/Finalizar Pedido - Efectivo" time="128.157" classname="Test Cases/Finalizar Pedido - Efectivo" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Finalizar Pedido - Efectivo FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Object Object Repository/Finalizar Efectivo/android.widget.TextView - Total estado de pedido not found
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword$_getText_closure1.doCall(GetTextKeyword.groovy:74)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword$_getText_closure1.call(GetTextKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:21)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword.getText(GetTextKeyword.groovy:80)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword.execute(GetTextKeyword.groovy:64)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.getText(MobileBuiltInKeywords.groovy:1274)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$getText$2.call(Unknown Source)
+	at Finalizar Pedido - Efectivo.run(Finalizar Pedido - Efectivo:98)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:151)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1670354995232.run(TempTestSuite1670354995232.groovy:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+"/>
+         <system-out><![CDATA[2022-12-06 16:30:05 - [TEST_CASE][FAILED] - Test Cases/Finalizar Pedido - Efectivo: Test Cases/Finalizar Pedido - Efectivo FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Object Object Repository/Finalizar Efectivo/android.widget.TextView - Total estado de pedido not found
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword$_getText_closure1.doCall(GetTextKeyword.groovy:74)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword$_getText_closure1.call(GetTextKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:21)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword.getText(GetTextKeyword.groovy:80)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword.execute(GetTextKeyword.groovy:64)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.getText(MobileBuiltInKeywords.groovy:1274)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$getText$2.call(Unknown Source)
+	at Finalizar Pedido - Efectivo.run(Finalizar Pedido - Efectivo:98)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:151)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1670354995232.run(TempTestSuite1670354995232.groovy:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+
+
+2022-12-06 16:30:05 - [TEST_STEP][PASSED] - startExistingApplication("com.artico.delivery.pedidos", STOP_ON_FAILURE): Starting app with application ID: 'com.artico.delivery.pedidos'
+
+2022-12-06 16:30:05 - [MESSAGE][INFO] - Detected NodeJS location: "C:\Program Files\nodejs\node.exe"
+
+2022-12-06 16:30:06 - [MESSAGE][INFO] - Appium server started on port 50.615
+
+2022-12-06 16:30:21 - [MESSAGE][PASSED] - Starting app with application ID: 'com.artico.delivery.pedidos'
+
+2022-12-06 16:30:21 - [TEST_STEP][NOT_RUN] - delay(15, STOP_ON_FAILURE): NOT_RUN: delay(15, STOP_ON_FAILURE)
+
+2022-12-06 16:30:21 - [MESSAGE][NOT_RUN] - NOT_RUN: delay(15, STOP_ON_FAILURE)
+
+2022-12-06 16:30:21 - [TEST_STEP][NOT_RUN] - tap(findTestObject("Object Repository/Finalizar Efectivo/android.view.ViewGroup - SeleccionaDireccion"), 0): NOT_RUN: tap(findTestObject("Object Repository/Finalizar Efectivo/android.view.ViewGroup - SeleccionaDireccion"), 0)
+
+2022-12-06 16:30:21 - [MESSAGE][NOT_RUN] - NOT_RUN: tap(findTestObject("Object Repository/Finalizar Efectivo/android.view.ViewGroup - SeleccionaDireccion"), 0)
+
+2022-12-06 16:30:21 - [TEST_STEP][NOT_RUN] - delay(5, STOP_ON_FAILURE): NOT_RUN: delay(5, STOP_ON_FAILURE)
+
+2022-12-06 16:30:21 - [MESSAGE][NOT_RUN] - NOT_RUN: delay(5, STOP_ON_FAILURE)
+
+2022-12-06 16:30:21 - [TEST_STEP][PASSED] - tap(findTestObject("Finalizar Efectivo/android.widget.EditText - Busc locales o productos (1)"), 0): Tapped on element 'Object Repository/Finalizar Efectivo/android.widget.EditText - Busc locales o productos (1)'
+
+2022-12-06 16:30:21 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:30:22 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar Efectivo/android.widget.EditText - Busc locales o productos (1)'
+
+2022-12-06 16:30:22 - [TEST_STEP][PASSED] - setText(findTestObject("Finalizar Efectivo/android.widget.EditText - Busc locales o productos (1)"), "masapan" + "\n", 0): Text 'masapan\n' has been set to element 'Object Repository/Finalizar Efectivo/android.widget.EditText - Busc locales o productos (1)'
+
+2022-12-06 16:30:22 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:30:25 - [MESSAGE][PASSED] - Text 'masapan\n' has been set to element 'Object Repository/Finalizar Efectivo/android.widget.EditText - Busc locales o productos (1)'
+
+2022-12-06 16:30:25 - [TEST_STEP][PASSED] - delay(5, STOP_ON_FAILURE): Delayed 5 second(s)
+
+2022-12-06 16:30:30 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2022-12-06 16:30:30 - [TEST_STEP][PASSED] - getText(findTestObject("Finalizar Efectivo/android.widget.TextView - Titulo Masapan"), 0): Text of element 'Object Repository/Finalizar Efectivo/android.widget.TextView - Titulo Masapan' is: 'Masapan'
+
+2022-12-06 16:30:30 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:30:31 - [MESSAGE][PASSED] - Text of element 'Object Repository/Finalizar Efectivo/android.widget.TextView - Titulo Masapan' is: 'Masapan'
+
+2022-12-06 16:30:31 - [TEST_STEP][PASSED] - tap(findTestObject("Finalizar Efectivo/android.widget.TextView - Titulo Masapan"), 0): Tapped on element 'Object Repository/Finalizar Efectivo/android.widget.TextView - Titulo Masapan'
+
+2022-12-06 16:30:31 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:30:33 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar Efectivo/android.widget.TextView - Titulo Masapan'
+
+2022-12-06 16:30:33 - [TEST_STEP][PASSED] - delay(5, STOP_ON_FAILURE): Delayed 5 second(s)
+
+2022-12-06 16:30:38 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2022-12-06 16:30:38 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/Finalizar Efectivo/android.view.ViewGroup - PrimerProducto"), 0): Tapped on element 'Object Repository/Finalizar Efectivo/android.view.ViewGroup - PrimerProducto'
+
+2022-12-06 16:30:38 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:30:40 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar Efectivo/android.view.ViewGroup - PrimerProducto'
+
+2022-12-06 16:30:40 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/Finalizar Efectivo/android.widget.TextView - SumaProducto"), 0): Tapped on element 'Object Repository/Finalizar Efectivo/android.widget.TextView - SumaProducto'
+
+2022-12-06 16:30:40 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:30:45 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar Efectivo/android.widget.TextView - SumaProducto'
+
+2022-12-06 16:30:45 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/Finalizar Efectivo/android.widget.TextView - Agregar"), 0): Tapped on element 'Object Repository/Finalizar Efectivo/android.widget.TextView - Agregar'
+
+2022-12-06 16:30:45 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:30:46 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar Efectivo/android.widget.TextView - Agregar'
+
+2022-12-06 16:30:46 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/Finalizar Efectivo/android.view.ViewGroup - AbrirCarrito"), 0): Tapped on element 'Object Repository/Finalizar Efectivo/android.view.ViewGroup - AbrirCarrito'
+
+2022-12-06 16:30:46 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:30:50 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar Efectivo/android.view.ViewGroup - AbrirCarrito'
+
+2022-12-06 16:30:50 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/Finalizar Efectivo/android.widget.TextView - Pago y Facturacin"), 0): Tapped on element 'Object Repository/Finalizar Efectivo/android.widget.TextView - Pago y Facturacin'
+
+2022-12-06 16:30:50 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:30:53 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar Efectivo/android.widget.TextView - Pago y Facturacin'
+
+2022-12-06 16:30:53 - [TEST_STEP][PASSED] - delay(3, STOP_ON_FAILURE): Delayed 3 second(s)
+
+2022-12-06 16:30:56 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2022-12-06 16:30:56 - [TEST_STEP][PASSED] - tap(findTestObject("Finalizar Efectivo/android.widget.ImageView - SelectorMetodoPago"), 0): Tapped on element 'Object Repository/Finalizar Efectivo/android.widget.ImageView - SelectorMetodoPago'
+
+2022-12-06 16:30:56 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:31:01 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar Efectivo/android.widget.ImageView - SelectorMetodoPago'
+
+2022-12-06 16:31:01 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/Finalizar Efectivo/android.widget.TextView - Efectivo"), 0): Tapped on element 'Object Repository/Finalizar Efectivo/android.widget.TextView - Efectivo'
+
+2022-12-06 16:31:01 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:31:02 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar Efectivo/android.widget.TextView - Efectivo'
+
+2022-12-06 16:31:02 - [TEST_STEP][PASSED] - extractInt1 = TextView - Monto total finalize"), 0).replaceAll("[^0-9]", ""): Text of element 'Object Repository/Finalizar Efectivo/android.widget.TextView - Monto total finalize' is: 'Gs. 35.000'
+
+2022-12-06 16:31:02 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:31:06 - [MESSAGE][PASSED] - Text of element 'Object Repository/Finalizar Efectivo/android.widget.TextView - Monto total finalize' is: 'Gs. 35.000'
+
+2022-12-06 16:31:06 - [TEST_STEP][PASSED] - println(extractInt1): null
+
+2022-12-06 16:31:06 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/Finalizar Efectivo/android.widget.TextView - Finalizar Orden"), 0): Tapped on element 'Object Repository/Finalizar Efectivo/android.widget.TextView - Finalizar Orden'
+
+2022-12-06 16:31:06 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:31:09 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar Efectivo/android.widget.TextView - Finalizar Orden'
+
+2022-12-06 16:31:09 - [TEST_STEP][PASSED] - getText(findTestObject("Finalizar con Cupon/android.widget.TextView - Ya casi estamos, procesando pago"), 0): Text of element 'Object Repository/Finalizar con Cupon/android.widget.TextView - Ya casi estamos, procesando pago' is: 'Ya casi estamos, procesando pago'
+
+2022-12-06 16:31:09 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:31:10 - [MESSAGE][PASSED] - Text of element 'Object Repository/Finalizar con Cupon/android.widget.TextView - Ya casi estamos, procesando pago' is: 'Ya casi estamos, procesando pago'
+
+2022-12-06 16:31:10 - [TEST_STEP][PASSED] - delay(5, STOP_ON_FAILURE): Delayed 5 second(s)
+
+2022-12-06 16:31:15 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2022-12-06 16:31:15 - [TEST_STEP][PASSED] - getText(findTestObject("Object Repository/Finalizar Efectivo/android.widget.TextView - Recibido"), 0): Text of element 'Object Repository/Finalizar Efectivo/android.widget.TextView - Recibido' is: 'Recibido'
+
+2022-12-06 16:31:15 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:31:22 - [MESSAGE][PASSED] - Text of element 'Object Repository/Finalizar Efectivo/android.widget.TextView - Recibido' is: 'Recibido'
+
+2022-12-06 16:31:22 - [TEST_STEP][PASSED] - getText(findTestObject("Finalizar con Cupon/android.widget.TextView - CONTANOS TU EXPERIENCIA"), 0): Text of element 'Object Repository/Finalizar con Cupon/android.widget.TextView - CONTANOS TU EXPERIENCIA' is: '¡CONTANOS TU EXPERIENCIA!'
+
+2022-12-06 16:31:22 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:31:37 - [MESSAGE][PASSED] - Text of element 'Object Repository/Finalizar con Cupon/android.widget.TextView - CONTANOS TU EXPERIENCIA' is: '¡CONTANOS TU EXPERIENCIA!'
+
+2022-12-06 16:31:37 - [TEST_STEP][NOT_RUN] - tap(findTestObject("Finalizar Efectivo/android.widget.ImageView Ticket detalle de orden"), 0): NOT_RUN: tap(findTestObject("Finalizar Efectivo/android.widget.ImageView Ticket detalle de orden"), 0)
+
+2022-12-06 16:31:37 - [MESSAGE][NOT_RUN] - NOT_RUN: tap(findTestObject("Finalizar Efectivo/android.widget.ImageView Ticket detalle de orden"), 0)
+
+2022-12-06 16:31:37 - [TEST_STEP][PASSED] - delay(3, STOP_ON_FAILURE): Delayed 3 second(s)
+
+2022-12-06 16:31:40 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2022-12-06 16:31:40 - [TEST_STEP][FAILED] - extractInt2 = TextView - Total estado de pedido"), 0).replaceAll("[^0-9]", ""): Failed to get text from element (Root cause: com.kms.katalon.core.exception.StepFailedException: Object Object Repository/Finalizar Efectivo/android.widget.TextView - Total estado de pedido not found
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword$_getText_closure1.doCall(GetTextKeyword.groovy:74)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword$_getText_closure1.call(GetTextKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:21)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword.getText(GetTextKeyword.groovy:80)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword.execute(GetTextKeyword.groovy:64)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.getText(MobileBuiltInKeywords.groovy:1274)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$getText$2.call(Unknown Source)
+	at Finalizar Pedido - Efectivo.run(Finalizar Pedido - Efectivo:98)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:151)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1670354995232.run(TempTestSuite1670354995232.groovy:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+)
+
+2022-12-06 16:31:40 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:32:12 - [MESSAGE][FAILED] - Object Object Repository/Finalizar Efectivo/android.widget.TextView - Total estado de pedido not found
+
+2022-12-06 16:32:13 - [MESSAGE][FAILED] - Failed to get text from element (Root cause: com.kms.katalon.core.exception.StepFailedException: Object Object Repository/Finalizar Efectivo/android.widget.TextView - Total estado de pedido not found
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword$_getText_closure1.doCall(GetTextKeyword.groovy:74)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword$_getText_closure1.call(GetTextKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:21)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword.getText(GetTextKeyword.groovy:80)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword.execute(GetTextKeyword.groovy:64)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.getText(MobileBuiltInKeywords.groovy:1274)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$getText$2.call(Unknown Source)
+	at Finalizar Pedido - Efectivo.run(Finalizar Pedido - Efectivo:98)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:151)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1670354995232.run(TempTestSuite1670354995232.groovy:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+)
+[[ATTACHMENT|C:\\Users\\carlo\\Documentos\\AUTOMATIZACION V4\\Android V4\\Reports\\20221206_162955\\Regression Test\\20221206_162955\\1670355132286.png]]]]></system-out>
+         <system-err><![CDATA[2022-12-06 16:30:05 - [TEST_CASE][FAILED] - Test Cases/Finalizar Pedido - Efectivo: Test Cases/Finalizar Pedido - Efectivo FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Object Object Repository/Finalizar Efectivo/android.widget.TextView - Total estado de pedido not found
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword$_getText_closure1.doCall(GetTextKeyword.groovy:74)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword$_getText_closure1.call(GetTextKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:21)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword.getText(GetTextKeyword.groovy:80)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword.execute(GetTextKeyword.groovy:64)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.getText(MobileBuiltInKeywords.groovy:1274)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$getText$2.call(Unknown Source)
+	at Finalizar Pedido - Efectivo.run(Finalizar Pedido - Efectivo:98)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:151)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1670354995232.run(TempTestSuite1670354995232.groovy:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Finalizar Pedido - POS" time="142.398" classname="Test Cases/Finalizar Pedido - POS" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Finalizar Pedido - POS FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Object Object Repository/Finalizar POS/android.widget.TextView - Total en estado de pedido not found
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword$_getText_closure1.doCall(GetTextKeyword.groovy:74)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword$_getText_closure1.call(GetTextKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:21)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword.getText(GetTextKeyword.groovy:80)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword.execute(GetTextKeyword.groovy:64)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.getText(MobileBuiltInKeywords.groovy:1274)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$getText$2.call(Unknown Source)
+	at Finalizar Pedido - POS.run(Finalizar Pedido - POS:109)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:151)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1670354995232.run(TempTestSuite1670354995232.groovy:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+"/>
+         <system-out><![CDATA[2022-12-06 16:32:13 - [TEST_CASE][FAILED] - Test Cases/Finalizar Pedido - POS: Test Cases/Finalizar Pedido - POS FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Object Object Repository/Finalizar POS/android.widget.TextView - Total en estado de pedido not found
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword$_getText_closure1.doCall(GetTextKeyword.groovy:74)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword$_getText_closure1.call(GetTextKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:21)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword.getText(GetTextKeyword.groovy:80)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword.execute(GetTextKeyword.groovy:64)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.getText(MobileBuiltInKeywords.groovy:1274)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$getText$2.call(Unknown Source)
+	at Finalizar Pedido - POS.run(Finalizar Pedido - POS:109)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:151)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1670354995232.run(TempTestSuite1670354995232.groovy:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+
+
+2022-12-06 16:32:13 - [TEST_STEP][PASSED] - startExistingApplication("com.artico.delivery.pedidos"): Starting app with application ID: 'com.artico.delivery.pedidos'
+
+2022-12-06 16:32:23 - [MESSAGE][PASSED] - Starting app with application ID: 'com.artico.delivery.pedidos'
+
+2022-12-06 16:32:23 - [TEST_STEP][PASSED] - delay(5, STOP_ON_FAILURE): Delayed 5 second(s)
+
+2022-12-06 16:32:28 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2022-12-06 16:32:28 - [TEST_STEP][NOT_RUN] - tap(findTestObject("Finalizar Efectivo/android.view.ViewGroup - SeleccionaDireccion"), 0): NOT_RUN: tap(findTestObject("Finalizar Efectivo/android.view.ViewGroup - SeleccionaDireccion"), 0)
+
+2022-12-06 16:32:28 - [MESSAGE][NOT_RUN] - NOT_RUN: tap(findTestObject("Finalizar Efectivo/android.view.ViewGroup - SeleccionaDireccion"), 0)
+
+2022-12-06 16:32:28 - [TEST_STEP][PASSED] - tap(findTestObject("Finalizar POS/android.view.ViewGroup - BannerComida"), 0): Tapped on element 'Object Repository/Finalizar POS/android.view.ViewGroup - BannerComida'
+
+2022-12-06 16:32:28 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:32:33 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar POS/android.view.ViewGroup - BannerComida'
+
+2022-12-06 16:32:33 - [TEST_STEP][PASSED] - delay(5, STOP_ON_FAILURE): Delayed 5 second(s)
+
+2022-12-06 16:32:38 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2022-12-06 16:32:38 - [TEST_STEP][PASSED] - tap(findTestObject("Finalizar POS/android.widget.TextView - Pago con POS"), 0): Tapped on element 'Object Repository/Finalizar POS/android.widget.TextView - Pago con POS'
+
+2022-12-06 16:32:38 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:32:39 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar POS/android.widget.TextView - Pago con POS'
+
+2022-12-06 16:32:39 - [TEST_STEP][PASSED] - delay(8, STOP_ON_FAILURE): Delayed 8 second(s)
+
+2022-12-06 16:32:47 - [MESSAGE][PASSED] - Delayed 8 second(s)
+
+2022-12-06 16:32:47 - [TEST_STEP][PASSED] - tap(findTestObject("Finalizar POS/android.widget.EditText - Buscar en todas las categoras"), 0): Tapped on element 'Object Repository/Finalizar POS/android.widget.EditText - Buscar en todas las categoras'
+
+2022-12-06 16:32:47 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:32:49 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar POS/android.widget.EditText - Buscar en todas las categoras'
+
+2022-12-06 16:32:49 - [TEST_STEP][PASSED] - setText(findTestObject("Finalizar POS/android.widget.EditText - Buscar en todas las categoras"), "masapan" + "\n", 0): Text 'masapan\n' has been set to element 'Object Repository/Finalizar POS/android.widget.EditText - Buscar en todas las categoras'
+
+2022-12-06 16:32:49 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:32:53 - [MESSAGE][PASSED] - Text 'masapan\n' has been set to element 'Object Repository/Finalizar POS/android.widget.EditText - Buscar en todas las categoras'
+
+2022-12-06 16:32:53 - [TEST_STEP][PASSED] - delay(5, STOP_ON_FAILURE): Delayed 5 second(s)
+
+2022-12-06 16:32:58 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2022-12-06 16:32:58 - [TEST_STEP][PASSED] - tap(findTestObject("Finalizar Efectivo/android.widget.TextView - Titulo Masapan"), 0): Tapped on element 'Object Repository/Finalizar Efectivo/android.widget.TextView - Titulo Masapan'
+
+2022-12-06 16:32:58 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:32:59 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar Efectivo/android.widget.TextView - Titulo Masapan'
+
+2022-12-06 16:32:59 - [TEST_STEP][NOT_RUN] - tap(findTestObject("Finalizar POS/android.widget.TextView - Monchis Store"), 0): NOT_RUN: tap(findTestObject("Finalizar POS/android.widget.TextView - Monchis Store"), 0)
+
+2022-12-06 16:32:59 - [MESSAGE][NOT_RUN] - NOT_RUN: tap(findTestObject("Finalizar POS/android.widget.TextView - Monchis Store"), 0)
+
+2022-12-06 16:32:59 - [TEST_STEP][PASSED] - delay(5, STOP_ON_FAILURE): Delayed 5 second(s)
+
+2022-12-06 16:33:04 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2022-12-06 16:33:04 - [TEST_STEP][PASSED] - tap(findTestObject("Finalizar POS/android.view.ViewGroup - PrimerProducto Monchis Store"), 0): Tapped on element 'Object Repository/Finalizar POS/android.view.ViewGroup - PrimerProducto Monchis Store'
+
+2022-12-06 16:33:04 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:33:05 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar POS/android.view.ViewGroup - PrimerProducto Monchis Store'
+
+2022-12-06 16:33:05 - [TEST_STEP][PASSED] - tap(findTestObject("Finalizar Efectivo/android.widget.TextView - SumaProducto"), 0): Tapped on element 'Object Repository/Finalizar Efectivo/android.widget.TextView - SumaProducto'
+
+2022-12-06 16:33:05 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:33:08 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar Efectivo/android.widget.TextView - SumaProducto'
+
+2022-12-06 16:33:08 - [TEST_STEP][PASSED] - tap(findTestObject("Finalizar Efectivo/android.widget.TextView - SumaProducto"), 0): Tapped on element 'Object Repository/Finalizar Efectivo/android.widget.TextView - SumaProducto'
+
+2022-12-06 16:33:08 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:33:10 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar Efectivo/android.widget.TextView - SumaProducto'
+
+2022-12-06 16:33:10 - [TEST_STEP][PASSED] - tap(findTestObject("Finalizar Efectivo/android.widget.TextView - SumaProducto"), 0): Tapped on element 'Object Repository/Finalizar Efectivo/android.widget.TextView - SumaProducto'
+
+2022-12-06 16:33:10 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:33:12 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar Efectivo/android.widget.TextView - SumaProducto'
+
+2022-12-06 16:33:12 - [TEST_STEP][PASSED] - tap(findTestObject("Finalizar POS/android.widget.TextView - Agregar ProductoMonchis"), 0): Tapped on element 'Object Repository/Finalizar POS/android.widget.TextView - Agregar ProductoMonchis'
+
+2022-12-06 16:33:12 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:33:15 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar POS/android.widget.TextView - Agregar ProductoMonchis'
+
+2022-12-06 16:33:15 - [TEST_STEP][PASSED] - tap(findTestObject("Finalizar POS/android.widget.TextView - Abrir Carrito"), 0): Tapped on element 'Object Repository/Finalizar POS/android.widget.TextView - Abrir Carrito'
+
+2022-12-06 16:33:16 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:33:19 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar POS/android.widget.TextView - Abrir Carrito'
+
+2022-12-06 16:33:19 - [TEST_STEP][PASSED] - tap(findTestObject("Finalizar Efectivo/android.widget.TextView - Pago y Facturacin"), 0): Tapped on element 'Object Repository/Finalizar Efectivo/android.widget.TextView - Pago y Facturacin'
+
+2022-12-06 16:33:20 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:33:24 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar Efectivo/android.widget.TextView - Pago y Facturacin'
+
+2022-12-06 16:33:24 - [TEST_STEP][PASSED] - delay(7, STOP_ON_FAILURE): Delayed 7 second(s)
+
+2022-12-06 16:33:31 - [MESSAGE][PASSED] - Delayed 7 second(s)
+
+2022-12-06 16:33:31 - [TEST_STEP][PASSED] - tap(findTestObject("Finalizar Efectivo/android.widget.ImageView - SelectorMetodoPago"), 0): Tapped on element 'Object Repository/Finalizar Efectivo/android.widget.ImageView - SelectorMetodoPago'
+
+2022-12-06 16:33:31 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:33:35 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar Efectivo/android.widget.ImageView - SelectorMetodoPago'
+
+2022-12-06 16:33:35 - [TEST_STEP][PASSED] - tap(findTestObject("Finalizar POS/android.widget.TextView - Seleccionar Pago con POS"), 0): Tapped on element 'Object Repository/Finalizar POS/android.widget.TextView - Seleccionar Pago con POS'
+
+2022-12-06 16:33:35 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:33:36 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar POS/android.widget.TextView - Seleccionar Pago con POS'
+
+2022-12-06 16:33:36 - [TEST_STEP][PASSED] - extractInt1 = TextView - Monto total finalize"), 0).replaceAll("[^0-9]", ""): Text of element 'Object Repository/Finalizar Efectivo/android.widget.TextView - Monto total finalize' is: 'Gs. 55.000'
+
+2022-12-06 16:33:36 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:33:41 - [MESSAGE][PASSED] - Text of element 'Object Repository/Finalizar Efectivo/android.widget.TextView - Monto total finalize' is: 'Gs. 55.000'
+
+2022-12-06 16:33:41 - [TEST_STEP][PASSED] - println(extractInt1): null
+
+2022-12-06 16:33:41 - [TEST_STEP][PASSED] - tap(findTestObject("Finalizar Efectivo/android.widget.TextView - Finalizar Orden"), 0): Tapped on element 'Object Repository/Finalizar Efectivo/android.widget.TextView - Finalizar Orden'
+
+2022-12-06 16:33:41 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:33:45 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar Efectivo/android.widget.TextView - Finalizar Orden'
+
+2022-12-06 16:33:45 - [TEST_STEP][PASSED] - getText(findTestObject("Finalizar con Cupon/android.widget.TextView - Ya casi estamos, procesando pago"), 0): Text of element 'Object Repository/Finalizar con Cupon/android.widget.TextView - Ya casi estamos, procesando pago' is: 'Ya casi estamos, procesando pago'
+
+2022-12-06 16:33:45 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:33:46 - [MESSAGE][PASSED] - Text of element 'Object Repository/Finalizar con Cupon/android.widget.TextView - Ya casi estamos, procesando pago' is: 'Ya casi estamos, procesando pago'
+
+2022-12-06 16:33:46 - [TEST_STEP][PASSED] - delay(5, STOP_ON_FAILURE): Delayed 5 second(s)
+
+2022-12-06 16:33:51 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2022-12-06 16:33:51 - [TEST_STEP][PASSED] - getText(findTestObject("Finalizar Efectivo/android.widget.TextView - Recibido"), 0): Text of element 'Object Repository/Finalizar Efectivo/android.widget.TextView - Recibido' is: 'Recibido'
+
+2022-12-06 16:33:51 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:33:57 - [MESSAGE][PASSED] - Text of element 'Object Repository/Finalizar Efectivo/android.widget.TextView - Recibido' is: 'Recibido'
+
+2022-12-06 16:33:57 - [TEST_STEP][PASSED] - getText(findTestObject("Finalizar con Cupon/android.widget.TextView - CONTANOS TU EXPERIENCIA"), 0): Text of element 'Object Repository/Finalizar con Cupon/android.widget.TextView - CONTANOS TU EXPERIENCIA' is: '¡CONTANOS TU EXPERIENCIA!'
+
+2022-12-06 16:33:57 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:34:01 - [MESSAGE][PASSED] - Text of element 'Object Repository/Finalizar con Cupon/android.widget.TextView - CONTANOS TU EXPERIENCIA' is: '¡CONTANOS TU EXPERIENCIA!'
+
+2022-12-06 16:34:01 - [TEST_STEP][NOT_RUN] - tap(findTestObject("Finalizar Efectivo/android.widget.ImageView Ticket detalle de orden"), 0): NOT_RUN: tap(findTestObject("Finalizar Efectivo/android.widget.ImageView Ticket detalle de orden"), 0)
+
+2022-12-06 16:34:01 - [MESSAGE][NOT_RUN] - NOT_RUN: tap(findTestObject("Finalizar Efectivo/android.widget.ImageView Ticket detalle de orden"), 0)
+
+2022-12-06 16:34:01 - [TEST_STEP][PASSED] - delay(3, STOP_ON_FAILURE): Delayed 3 second(s)
+
+2022-12-06 16:34:04 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2022-12-06 16:34:04 - [TEST_STEP][FAILED] - extractInt2 = TextView - Total en estado de pedido"), 0).replaceAll("[^0-9]", ""): Failed to get text from element (Root cause: com.kms.katalon.core.exception.StepFailedException: Object Object Repository/Finalizar POS/android.widget.TextView - Total en estado de pedido not found
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword$_getText_closure1.doCall(GetTextKeyword.groovy:74)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword$_getText_closure1.call(GetTextKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:21)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword.getText(GetTextKeyword.groovy:80)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword.execute(GetTextKeyword.groovy:64)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.getText(MobileBuiltInKeywords.groovy:1274)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$getText$2.call(Unknown Source)
+	at Finalizar Pedido - POS.run(Finalizar Pedido - POS:109)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:151)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1670354995232.run(TempTestSuite1670354995232.groovy:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+)
+
+2022-12-06 16:34:04 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:34:34 - [MESSAGE][FAILED] - Object Object Repository/Finalizar POS/android.widget.TextView - Total en estado de pedido not found
+
+2022-12-06 16:34:35 - [MESSAGE][FAILED] - Failed to get text from element (Root cause: com.kms.katalon.core.exception.StepFailedException: Object Object Repository/Finalizar POS/android.widget.TextView - Total en estado de pedido not found
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword$_getText_closure1.doCall(GetTextKeyword.groovy:74)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword$_getText_closure1.call(GetTextKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:21)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword.getText(GetTextKeyword.groovy:80)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword.execute(GetTextKeyword.groovy:64)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.getText(MobileBuiltInKeywords.groovy:1274)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$getText$2.call(Unknown Source)
+	at Finalizar Pedido - POS.run(Finalizar Pedido - POS:109)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:151)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1670354995232.run(TempTestSuite1670354995232.groovy:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+)
+[[ATTACHMENT|C:\\Users\\carlo\\Documentos\\AUTOMATIZACION V4\\Android V4\\Reports\\20221206_162955\\Regression Test\\20221206_162955\\1670355274725.png]]]]></system-out>
+         <system-err><![CDATA[2022-12-06 16:32:13 - [TEST_CASE][FAILED] - Test Cases/Finalizar Pedido - POS: Test Cases/Finalizar Pedido - POS FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Object Object Repository/Finalizar POS/android.widget.TextView - Total en estado de pedido not found
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.stepFailed(MobileKeywordMain.groovy:40)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword$_getText_closure1.doCall(GetTextKeyword.groovy:74)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword$_getText_closure1.call(GetTextKeyword.groovy)
+	at com.kms.katalon.core.mobile.keyword.internal.MobileKeywordMain.runKeyword(MobileKeywordMain.groovy:21)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword.getText(GetTextKeyword.groovy:80)
+	at com.kms.katalon.core.mobile.keyword.builtin.GetTextKeyword.execute(GetTextKeyword.groovy:64)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords.getText(MobileBuiltInKeywords.groovy:1274)
+	at com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords$getText$2.call(Unknown Source)
+	at Finalizar Pedido - POS.run(Finalizar Pedido - POS:109)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:151)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1670354995232.run(TempTestSuite1670354995232.groovy:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Finalizar Pedido - Pago online sin cupon" time="119.476" classname="Test Cases/Finalizar Pedido - Pago online sin cupon" status="PASSED">
+         <system-out><![CDATA[2022-12-06 16:34:35 - [TEST_CASE][PASSED] - Test Cases/Finalizar Pedido - Pago online sin cupon: Test Cases/Finalizar Pedido - Pago online sin cupon
+
+2022-12-06 16:34:35 - [TEST_STEP][PASSED] - startExistingApplication("com.artico.delivery.pedidos"): Starting app with application ID: 'com.artico.delivery.pedidos'
+
+2022-12-06 16:34:47 - [MESSAGE][PASSED] - Starting app with application ID: 'com.artico.delivery.pedidos'
+
+2022-12-06 16:34:47 - [TEST_STEP][PASSED] - delay(5, STOP_ON_FAILURE): Delayed 5 second(s)
+
+2022-12-06 16:34:52 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2022-12-06 16:34:52 - [TEST_STEP][NOT_RUN] - tap(findTestObject("Object Repository/Finalizar con Cupon/android.view.ViewGroup - Selector de direccion"), 0): NOT_RUN: tap(findTestObject("Object Repository/Finalizar con Cupon/android.view.ViewGroup - Selector de direccion"), 0)
+
+2022-12-06 16:34:52 - [MESSAGE][NOT_RUN] - NOT_RUN: tap(findTestObject("Object Repository/Finalizar con Cupon/android.view.ViewGroup - Selector de direccion"), 0)
+
+2022-12-06 16:34:52 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/Finalizar con Cupon/android.view.ViewGroup - Banner comida"), 0): Tapped on element 'Object Repository/Finalizar con Cupon/android.view.ViewGroup - Banner comida'
+
+2022-12-06 16:34:52 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:34:53 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar con Cupon/android.view.ViewGroup - Banner comida'
+
+2022-12-06 16:34:53 - [TEST_STEP][PASSED] - delay(5, STOP_ON_FAILURE): Delayed 5 second(s)
+
+2022-12-06 16:34:58 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2022-12-06 16:34:58 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/Finalizar con Cupon/android.widget.TextView - Pago Online"), 0): Tapped on element 'Object Repository/Finalizar con Cupon/android.widget.TextView - Pago Online'
+
+2022-12-06 16:34:58 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:34:59 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar con Cupon/android.widget.TextView - Pago Online'
+
+2022-12-06 16:34:59 - [TEST_STEP][PASSED] - delay(5, STOP_ON_FAILURE): Delayed 5 second(s)
+
+2022-12-06 16:35:04 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2022-12-06 16:35:04 - [TEST_STEP][PASSED] - tap(findTestObject("Finalizar POS/android.widget.EditText - Buscar en todas las categoras"), 0): Tapped on element 'Object Repository/Finalizar POS/android.widget.EditText - Buscar en todas las categoras'
+
+2022-12-06 16:35:04 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:35:05 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar POS/android.widget.EditText - Buscar en todas las categoras'
+
+2022-12-06 16:35:05 - [TEST_STEP][PASSED] - setText(findTestObject("Finalizar POS/android.widget.EditText - Buscar en todas las categoras"), "masapan" + "\n", 0): Text 'masapan\n' has been set to element 'Object Repository/Finalizar POS/android.widget.EditText - Buscar en todas las categoras'
+
+2022-12-06 16:35:05 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:35:10 - [MESSAGE][PASSED] - Text 'masapan\n' has been set to element 'Object Repository/Finalizar POS/android.widget.EditText - Buscar en todas las categoras'
+
+2022-12-06 16:35:10 - [TEST_STEP][PASSED] - tap(findTestObject("Finalizar Efectivo/android.widget.TextView - Titulo Masapan"), 0): Tapped on element 'Object Repository/Finalizar Efectivo/android.widget.TextView - Titulo Masapan'
+
+2022-12-06 16:35:10 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:35:14 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar Efectivo/android.widget.TextView - Titulo Masapan'
+
+2022-12-06 16:35:14 - [TEST_STEP][PASSED] - delay(5, STOP_ON_FAILURE): Delayed 5 second(s)
+
+2022-12-06 16:35:19 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2022-12-06 16:35:19 - [TEST_STEP][PASSED] - delay(5, STOP_ON_FAILURE): Delayed 5 second(s)
+
+2022-12-06 16:35:24 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2022-12-06 16:35:24 - [TEST_STEP][PASSED] - tap(findTestObject("Finalizar POS/android.view.ViewGroup - PrimerProducto Monchis Store"), 0): Tapped on element 'Object Repository/Finalizar POS/android.view.ViewGroup - PrimerProducto Monchis Store'
+
+2022-12-06 16:35:24 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:35:28 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar POS/android.view.ViewGroup - PrimerProducto Monchis Store'
+
+2022-12-06 16:35:28 - [TEST_STEP][PASSED] - tap(findTestObject("Finalizar con Cupon/android.widget.TextView - Suma cantidad"), 0): Tapped on element 'Object Repository/Finalizar con Cupon/android.widget.TextView - Suma cantidad'
+
+2022-12-06 16:35:28 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:35:30 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar con Cupon/android.widget.TextView - Suma cantidad'
+
+2022-12-06 16:35:30 - [TEST_STEP][PASSED] - tap(findTestObject("Finalizar con Cupon/android.widget.TextView - Suma cantidad"), 0): Tapped on element 'Object Repository/Finalizar con Cupon/android.widget.TextView - Suma cantidad'
+
+2022-12-06 16:35:30 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:35:32 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar con Cupon/android.widget.TextView - Suma cantidad'
+
+2022-12-06 16:35:32 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/Finalizar con Cupon/android.widget.TextView - Agregar"), 0): Tapped on element 'Object Repository/Finalizar con Cupon/android.widget.TextView - Agregar'
+
+2022-12-06 16:35:32 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:35:33 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar con Cupon/android.widget.TextView - Agregar'
+
+2022-12-06 16:35:33 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/Finalizar con Cupon/android.widget.TextView - Carrito"), 0): Tapped on element 'Object Repository/Finalizar con Cupon/android.widget.TextView - Carrito'
+
+2022-12-06 16:35:34 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:35:39 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar con Cupon/android.widget.TextView - Carrito'
+
+2022-12-06 16:35:39 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/Finalizar con Cupon/android.widget.TextView - Pago y Facturacin"), 0): Tapped on element 'Object Repository/Finalizar con Cupon/android.widget.TextView - Pago y Facturacin'
+
+2022-12-06 16:35:39 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:35:42 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar con Cupon/android.widget.TextView - Pago y Facturacin'
+
+2022-12-06 16:35:42 - [TEST_STEP][PASSED] - delay(7, STOP_ON_FAILURE): Delayed 7 second(s)
+
+2022-12-06 16:35:49 - [MESSAGE][PASSED] - Delayed 7 second(s)
+
+2022-12-06 16:35:49 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/Finalizar con Cupon/android.widget.ImageView - Abre selector de metodo pago"), 0): Tapped on element 'Object Repository/Finalizar con Cupon/android.widget.ImageView - Abre selector de metodo pago'
+
+2022-12-06 16:35:49 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:35:53 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar con Cupon/android.widget.ImageView - Abre selector de metodo pago'
+
+2022-12-06 16:35:53 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/Finalizar con Cupon/android.widget.TextView - BANCARD - CHECK - ENT. PRUEBA 1"), 0): Tapped on element 'Object Repository/Finalizar con Cupon/android.widget.TextView - BANCARD - CHECK - ENT. PRUEBA 1'
+
+2022-12-06 16:35:53 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:35:54 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar con Cupon/android.widget.TextView - BANCARD - CHECK - ENT. PRUEBA 1'
+
+2022-12-06 16:35:54 - [TEST_STEP][PASSED] - extractInt1 = TextView - Monto total finalize"), 0).replaceAll("[^0-9]", ""): Text of element 'Object Repository/Finalizar Efectivo/android.widget.TextView - Monto total finalize' is: 'Gs. 45.000'
+
+2022-12-06 16:35:54 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:35:59 - [MESSAGE][PASSED] - Text of element 'Object Repository/Finalizar Efectivo/android.widget.TextView - Monto total finalize' is: 'Gs. 45.000'
+
+2022-12-06 16:35:59 - [TEST_STEP][PASSED] - println(extractInt1): null
+
+2022-12-06 16:35:59 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/Finalizar con Cupon/android.widget.TextView - Finalizar Orden"), 0): Tapped on element 'Object Repository/Finalizar con Cupon/android.widget.TextView - Finalizar Orden'
+
+2022-12-06 16:35:59 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:36:03 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar con Cupon/android.widget.TextView - Finalizar Orden'
+
+2022-12-06 16:36:03 - [TEST_STEP][PASSED] - getText(findTestObject("Object Repository/Finalizar con Cupon/android.widget.TextView - Ya casi estamos, procesando pago"), 0): Text of element 'Object Repository/Finalizar con Cupon/android.widget.TextView - Ya casi estamos, procesando pago' is: 'Ya casi estamos, procesando pago'
+
+2022-12-06 16:36:03 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:36:04 - [MESSAGE][PASSED] - Text of element 'Object Repository/Finalizar con Cupon/android.widget.TextView - Ya casi estamos, procesando pago' is: 'Ya casi estamos, procesando pago'
+
+2022-12-06 16:36:04 - [TEST_STEP][PASSED] - delay(10, STOP_ON_FAILURE): Delayed 10 second(s)
+
+2022-12-06 16:36:14 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2022-12-06 16:36:14 - [TEST_STEP][PASSED] - getText(findTestObject("Finalizar con Cupon/android.widget.TextView - Recibido (1)"), 0): Text of element 'Object Repository/Finalizar con Cupon/android.widget.TextView - Recibido (1)' is: 'Recibido'
+
+2022-12-06 16:36:14 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:36:20 - [MESSAGE][PASSED] - Text of element 'Object Repository/Finalizar con Cupon/android.widget.TextView - Recibido (1)' is: 'Recibido'
+
+2022-12-06 16:36:20 - [TEST_STEP][PASSED] - getText(findTestObject("Object Repository/Finalizar con Cupon/android.widget.TextView - CONTANOS TU EXPERIENCIA"), 0): Text of element 'Object Repository/Finalizar con Cupon/android.widget.TextView - CONTANOS TU EXPERIENCIA' is: '¡CONTANOS TU EXPERIENCIA!'
+
+2022-12-06 16:36:20 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:36:24 - [MESSAGE][PASSED] - Text of element 'Object Repository/Finalizar con Cupon/android.widget.TextView - CONTANOS TU EXPERIENCIA' is: '¡CONTANOS TU EXPERIENCIA!'
+
+2022-12-06 16:36:24 - [TEST_STEP][PASSED] - delay(3, STOP_ON_FAILURE): Delayed 3 second(s)
+
+2022-12-06 16:36:27 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2022-12-06 16:36:27 - [TEST_STEP][PASSED] - extractInt2 = TextView - TOTAL estado de pedido"), 0).replaceAll("[^0-9]", ""): Text of element 'Object Repository/Finalizar con Cupon/android.widget.TextView - TOTAL estado de pedido' is: 'Total: 45.000 Gs.'
+
+2022-12-06 16:36:27 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:36:32 - [MESSAGE][PASSED] - Text of element 'Object Repository/Finalizar con Cupon/android.widget.TextView - TOTAL estado de pedido' is: 'Total: 45.000 Gs.'
+
+2022-12-06 16:36:32 - [TEST_STEP][PASSED] - println(extractInt2): null
+
+2022-12-06 16:36:32 - [TEST_STEP][PASSED] - if (extractInt1 == extractInt2): EL MONTO TOTAL DEL FINALIZE: 45000 Y EL MONTO TOTAL DEL DETALLE DE LA ORDEN: 45000 COINCIDEN CORRECTAMENTE
+
+2022-12-06 16:36:32 - [TEST_STEP][PASSED] - markPassed("EL MONTO TOTAL DEL FINALIZE:" + " " + extractInt1 + " " + "Y EL MONTO TOTAL DEL DETALLE DE LA ORDEN:" + " " + extractInt2 + " " + "COINCIDEN CORRECTAMENTE"): EL MONTO TOTAL DEL FINALIZE: 45000 Y EL MONTO TOTAL DEL DETALLE DE LA ORDEN: 45000 COINCIDEN CORRECTAMENTE
+
+2022-12-06 16:36:32 - [MESSAGE][PASSED] - EL MONTO TOTAL DEL FINALIZE: 45000 Y EL MONTO TOTAL DEL DETALLE DE LA ORDEN: 45000 COINCIDEN CORRECTAMENTE
+
+2022-12-06 16:36:32 - [TEST_STEP][PASSED] - delay(3, STOP_ON_FAILURE): Delayed 3 second(s)
+
+2022-12-06 16:36:35 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2022-12-06 16:36:35 - [TEST_STEP][NOT_RUN] - tap(findTestObject("Finalizar Efectivo/android.widget.TextView - Ir atras"), 0): NOT_RUN: tap(findTestObject("Finalizar Efectivo/android.widget.TextView - Ir atras"), 0)
+
+2022-12-06 16:36:35 - [MESSAGE][NOT_RUN] - NOT_RUN: tap(findTestObject("Finalizar Efectivo/android.widget.TextView - Ir atras"), 0)]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Finalizar Pedido - Pago online con cupon" time="114.781" classname="Test Cases/Finalizar Pedido - Pago online con cupon" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Finalizar Pedido - Pago online con cupon FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: EL MONTO DEL CUPON: 16710000 Y EL MONTO DE DESCUENTO: 10000 NO COINCIDEN
+	at com.kms.katalon.core.util.KeywordUtil.markFailedAndStop(KeywordUtil.java:29)
+	at com.kms.katalon.core.util.KeywordUtil$markFailedAndStop$0.call(Unknown Source)
+	at Finalizar Pedido - Pago online con cupon.run(Finalizar Pedido - Pago online con cupon:119)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:151)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1670354995232.run(TempTestSuite1670354995232.groovy:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+"/>
+         <system-out><![CDATA[2022-12-06 16:36:35 - [TEST_CASE][FAILED] - Test Cases/Finalizar Pedido - Pago online con cupon: Test Cases/Finalizar Pedido - Pago online con cupon FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: EL MONTO DEL CUPON: 16710000 Y EL MONTO DE DESCUENTO: 10000 NO COINCIDEN
+	at com.kms.katalon.core.util.KeywordUtil.markFailedAndStop(KeywordUtil.java:29)
+	at com.kms.katalon.core.util.KeywordUtil$markFailedAndStop$0.call(Unknown Source)
+	at Finalizar Pedido - Pago online con cupon.run(Finalizar Pedido - Pago online con cupon:119)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:151)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1670354995232.run(TempTestSuite1670354995232.groovy:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+
+
+2022-12-06 16:36:35 - [TEST_STEP][PASSED] - startExistingApplication("com.artico.delivery.pedidos"): Starting app with application ID: 'com.artico.delivery.pedidos'
+
+2022-12-06 16:36:47 - [MESSAGE][PASSED] - Starting app with application ID: 'com.artico.delivery.pedidos'
+
+2022-12-06 16:36:47 - [TEST_STEP][PASSED] - delay(5, STOP_ON_FAILURE): Delayed 5 second(s)
+
+2022-12-06 16:36:52 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2022-12-06 16:36:52 - [TEST_STEP][NOT_RUN] - tap(findTestObject("Object Repository/Finalizar con Cupon/android.view.ViewGroup - Selector de direccion"), 0): NOT_RUN: tap(findTestObject("Object Repository/Finalizar con Cupon/android.view.ViewGroup - Selector de direccion"), 0)
+
+2022-12-06 16:36:52 - [MESSAGE][NOT_RUN] - NOT_RUN: tap(findTestObject("Object Repository/Finalizar con Cupon/android.view.ViewGroup - Selector de direccion"), 0)
+
+2022-12-06 16:36:52 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/Finalizar con Cupon/android.view.ViewGroup - Banner comida"), 0): Tapped on element 'Object Repository/Finalizar con Cupon/android.view.ViewGroup - Banner comida'
+
+2022-12-06 16:36:52 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:36:54 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar con Cupon/android.view.ViewGroup - Banner comida'
+
+2022-12-06 16:36:54 - [TEST_STEP][PASSED] - delay(3, STOP_ON_FAILURE): Delayed 3 second(s)
+
+2022-12-06 16:36:57 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2022-12-06 16:36:57 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/Finalizar con Cupon/android.widget.TextView - Pago Online"), 0): Tapped on element 'Object Repository/Finalizar con Cupon/android.widget.TextView - Pago Online'
+
+2022-12-06 16:36:57 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:37:01 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar con Cupon/android.widget.TextView - Pago Online'
+
+2022-12-06 16:37:01 - [TEST_STEP][PASSED] - delay(5, STOP_ON_FAILURE): Delayed 5 second(s)
+
+2022-12-06 16:37:06 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2022-12-06 16:37:06 - [TEST_STEP][PASSED] - tap(findTestObject("Finalizar POS/android.widget.EditText - Buscar en todas las categoras"), 0): Tapped on element 'Object Repository/Finalizar POS/android.widget.EditText - Buscar en todas las categoras'
+
+2022-12-06 16:37:06 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:37:06 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar POS/android.widget.EditText - Buscar en todas las categoras'
+
+2022-12-06 16:37:06 - [TEST_STEP][PASSED] - setText(findTestObject("Finalizar POS/android.widget.EditText - Buscar en todas las categoras"), "masapan" + "\n", 0): Text 'masapan\n' has been set to element 'Object Repository/Finalizar POS/android.widget.EditText - Buscar en todas las categoras'
+
+2022-12-06 16:37:06 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:37:09 - [MESSAGE][PASSED] - Text 'masapan\n' has been set to element 'Object Repository/Finalizar POS/android.widget.EditText - Buscar en todas las categoras'
+
+2022-12-06 16:37:09 - [TEST_STEP][PASSED] - delay(5, STOP_ON_FAILURE): Delayed 5 second(s)
+
+2022-12-06 16:37:14 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2022-12-06 16:37:14 - [TEST_STEP][PASSED] - tap(findTestObject("Finalizar Efectivo/android.widget.TextView - Titulo Masapan"), 0): Tapped on element 'Object Repository/Finalizar Efectivo/android.widget.TextView - Titulo Masapan'
+
+2022-12-06 16:37:14 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:37:17 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar Efectivo/android.widget.TextView - Titulo Masapan'
+
+2022-12-06 16:37:17 - [TEST_STEP][PASSED] - delay(5, STOP_ON_FAILURE): Delayed 5 second(s)
+
+2022-12-06 16:37:22 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2022-12-06 16:37:22 - [TEST_STEP][PASSED] - tap(findTestObject("Finalizar POS/android.view.ViewGroup - PrimerProducto Monchis Store"), 0): Tapped on element 'Object Repository/Finalizar POS/android.view.ViewGroup - PrimerProducto Monchis Store'
+
+2022-12-06 16:37:22 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:37:23 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar POS/android.view.ViewGroup - PrimerProducto Monchis Store'
+
+2022-12-06 16:37:23 - [TEST_STEP][PASSED] - tap(findTestObject("Finalizar con Cupon/android.widget.TextView - Suma cantidad"), 0): Tapped on element 'Object Repository/Finalizar con Cupon/android.widget.TextView - Suma cantidad'
+
+2022-12-06 16:37:24 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:37:26 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar con Cupon/android.widget.TextView - Suma cantidad'
+
+2022-12-06 16:37:26 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/Finalizar con Cupon/android.widget.TextView - Agregar"), 0): Tapped on element 'Object Repository/Finalizar con Cupon/android.widget.TextView - Agregar'
+
+2022-12-06 16:37:26 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:37:27 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar con Cupon/android.widget.TextView - Agregar'
+
+2022-12-06 16:37:27 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/Finalizar con Cupon/android.widget.TextView - Carrito"), 0): Tapped on element 'Object Repository/Finalizar con Cupon/android.widget.TextView - Carrito'
+
+2022-12-06 16:37:27 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:37:32 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar con Cupon/android.widget.TextView - Carrito'
+
+2022-12-06 16:37:32 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/Finalizar con Cupon/android.widget.TextView - Pago y Facturacin"), 0): Tapped on element 'Object Repository/Finalizar con Cupon/android.widget.TextView - Pago y Facturacin'
+
+2022-12-06 16:37:32 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:37:38 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar con Cupon/android.widget.TextView - Pago y Facturacin'
+
+2022-12-06 16:37:38 - [TEST_STEP][PASSED] - delay(7, STOP_ON_FAILURE): Delayed 7 second(s)
+
+2022-12-06 16:37:45 - [MESSAGE][PASSED] - Delayed 7 second(s)
+
+2022-12-06 16:37:45 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/Finalizar con Cupon/android.widget.ImageView - Abre selector de metodo pago"), 0): Tapped on element 'Object Repository/Finalizar con Cupon/android.widget.ImageView - Abre selector de metodo pago'
+
+2022-12-06 16:37:45 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:37:49 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar con Cupon/android.widget.ImageView - Abre selector de metodo pago'
+
+2022-12-06 16:37:49 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/Finalizar con Cupon/android.widget.TextView - BANCARD - CHECK - ENT. PRUEBA 1"), 0): Tapped on element 'Object Repository/Finalizar con Cupon/android.widget.TextView - BANCARD - CHECK - ENT. PRUEBA 1'
+
+2022-12-06 16:37:49 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:37:50 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar con Cupon/android.widget.TextView - BANCARD - CHECK - ENT. PRUEBA 1'
+
+2022-12-06 16:37:50 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/Finalizar con Cupon/android.widget.ImageView - Abre selector de cupones"), 0): Tapped on element 'Object Repository/Finalizar con Cupon/android.widget.ImageView - Abre selector de cupones'
+
+2022-12-06 16:37:50 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:37:55 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar con Cupon/android.widget.ImageView - Abre selector de cupones'
+
+2022-12-06 16:37:55 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/Finalizar con Cupon/android.widget.TextView - Seleccionar primer cupon"), 0): Tapped on element 'Object Repository/Finalizar con Cupon/android.widget.TextView - Seleccionar primer cupon'
+
+2022-12-06 16:37:55 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:37:56 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar con Cupon/android.widget.TextView - Seleccionar primer cupon'
+
+2022-12-06 16:37:56 - [TEST_STEP][PASSED] - getText(findTestObject("Finalizar con Cupon/android.widget.TextView - Cupn verificado exitosamente"), 0): Text of element 'Object Repository/Finalizar con Cupon/android.widget.TextView - Cupn verificado exitosamente' is: 'Cupón verificado exitosamente.'
+
+2022-12-06 16:37:56 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:38:12 - [MESSAGE][PASSED] - Text of element 'Object Repository/Finalizar con Cupon/android.widget.TextView - Cupn verificado exitosamente' is: 'Cupón verificado exitosamente.'
+
+2022-12-06 16:38:12 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/Finalizar con Cupon/android.view.ViewGroup - Cierra mensaje de cupon"), 0): Tapped on element 'Object Repository/Finalizar con Cupon/android.view.ViewGroup - Cierra mensaje de cupon'
+
+2022-12-06 16:38:13 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:38:13 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/Finalizar con Cupon/android.view.ViewGroup - Cierra mensaje de cupon'
+
+2022-12-06 16:38:13 - [TEST_STEP][PASSED] - extractInt1 = TextView - Monto total finalize"), 0).replaceAll("[^0-9]", ""): Text of element 'Object Repository/Finalizar Efectivo/android.widget.TextView - Monto total finalize' is: 'Gs. 25.000'
+
+2022-12-06 16:38:13 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:38:18 - [MESSAGE][PASSED] - Text of element 'Object Repository/Finalizar Efectivo/android.widget.TextView - Monto total finalize' is: 'Gs. 25.000'
+
+2022-12-06 16:38:18 - [TEST_STEP][PASSED] - println(extractInt1): null
+
+2022-12-06 16:38:18 - [TEST_STEP][PASSED] - extractCupon = TextView - Monto descuento cupon"), 0).replaceAll("[^0-9]", ""): Text of element 'Object Repository/Finalizar con Cupon/android.widget.TextView - Monto descuento cupon' is: 'MONCHIS167 - 10.000 Gs.'
+
+2022-12-06 16:38:19 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:38:23 - [MESSAGE][PASSED] - Text of element 'Object Repository/Finalizar con Cupon/android.widget.TextView - Monto descuento cupon' is: 'MONCHIS167 - 10.000 Gs.'
+
+2022-12-06 16:38:23 - [TEST_STEP][PASSED] - println(extractCupon): null
+
+2022-12-06 16:38:23 - [TEST_STEP][PASSED] - extractDescuento = TextView - Monto descuento aplicado"), 0).replaceAll("[^0-9]", ""): Text of element 'Object Repository/Finalizar con Cupon/android.widget.TextView - Monto descuento aplicado' is: '-10.000'
+
+2022-12-06 16:38:23 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-12-06 16:38:26 - [MESSAGE][PASSED] - Text of element 'Object Repository/Finalizar con Cupon/android.widget.TextView - Monto descuento aplicado' is: '-10.000'
+
+2022-12-06 16:38:26 - [TEST_STEP][PASSED] - println(extractDescuento): null
+
+2022-12-06 16:38:26 - [TEST_STEP][PASSED] - delay(3, STOP_ON_FAILURE): Delayed 3 second(s)
+
+2022-12-06 16:38:29 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2022-12-06 16:38:29 - [TEST_STEP][PASSED] - if (extractCupon == extractDescuento): null
+
+2022-12-06 16:38:29 - [TEST_STEP][PASSED] - else: null
+
+2022-12-06 16:38:29 - [TEST_STEP][PASSED] - markFailedAndStop("EL MONTO DEL CUPON:" + " " + extractCupon + " " + "Y EL MONTO DE DESCUENTO:" + " " + extractDescuento + " " + "NO COINCIDEN"): null]]></system-out>
+         <system-err><![CDATA[2022-12-06 16:36:35 - [TEST_CASE][FAILED] - Test Cases/Finalizar Pedido - Pago online con cupon: Test Cases/Finalizar Pedido - Pago online con cupon FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: EL MONTO DEL CUPON: 16710000 Y EL MONTO DE DESCUENTO: 10000 NO COINCIDEN
+	at com.kms.katalon.core.util.KeywordUtil.markFailedAndStop(KeywordUtil.java:29)
+	at com.kms.katalon.core.util.KeywordUtil$markFailedAndStop$0.call(Unknown Source)
+	at Finalizar Pedido - Pago online con cupon.run(Finalizar Pedido - Pago online con cupon:119)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:151)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1670354995232.run(TempTestSuite1670354995232.groovy:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-12-06 16:30:04 - [TEST_SUITE][INCOMPLETE] - Regression Test: null]]></system-out>
+      <system-err><![CDATA[2022-12-06 16:30:04 - [TEST_SUITE][INCOMPLETE] - Regression Test: null]]></system-err>
+   </testsuite>
+</testsuites>
