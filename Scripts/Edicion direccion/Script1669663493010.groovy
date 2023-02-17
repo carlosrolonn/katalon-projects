@@ -79,9 +79,3 @@ Mobile.getText(findTestObject('Object Repository/Edicion direccion/android.widge
 
 Mobile.pressBack()
 
-Mobile.pressBack()
-
-Mobile.pressBack()
-
-Mobile.pressBack()
-

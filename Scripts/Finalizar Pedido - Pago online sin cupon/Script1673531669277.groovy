@@ -70,6 +70,8 @@ Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 'Abre selector de metodo pago'
 Mobile.tap(findTestObject('Finalizar con Cupon/android.widget.ImageView Seleccion de pago'), 0)
 
+Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+
 'Seleccion de tarjeta'
 Mobile.tap(findTestObject('Object Repository/Finalizar con Cupon/android.widget.TextView - BANCARD - CHECK - ENT. PRUEBA 1'), 
     0)
