@@ -24,7 +24,7 @@ Mobile.tap(findTestObject('Buscador General/android.widget.EditText - Buscador h
 'texto para buscar'
 Mobile.setText(findTestObject('Buscador General/android.widget.EditText - Buscador home'), 'masapan' + '\\n', 0)
 
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
 'Validacion de resultado exitoso'
 Mobile.getText(findTestObject('Object Repository/Buscador General/android.widget.TextView - Encontramos esto para vos'), 
@@ -33,12 +33,20 @@ Mobile.getText(findTestObject('Object Repository/Buscador General/android.widget
 'Validacion de comercio'
 Mobile.getText(findTestObject('Buscador General/android.widget.TextView - Masapan (1)'), 0)
 
+Mobile.tap(findTestObject('Buscador General/android.widget.TextView - Masapan (1)'), 0)
+
+Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.getText(findTestObject('Buscador General/android.widget.TextView - Local Masapan'), 0)
+
+Mobile.pressBack()
+
 Mobile.tap(findTestObject('Buscador General/android.widget.EditText - Bucador de locales'), 0)
 
 'texto para buscar'
 Mobile.setText(findTestObject('Buscador General/android.widget.EditText - Bucador de locales'), 'alberdin' + '\\n', 0)
 
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
 'Validacion de resultado exitoso'
 Mobile.getText(findTestObject('Object Repository/Buscador General/android.widget.TextView - Encontramos esto para vos'), 
@@ -47,13 +55,21 @@ Mobile.getText(findTestObject('Object Repository/Buscador General/android.widget
 'validacion de comercio'
 Mobile.getText(findTestObject('Buscador General/android.widget.TextView - Alberdin (1)'), 0)
 
+Mobile.tap(findTestObject('Buscador General/android.widget.TextView - Alberdin (1)'), 0)
+
+Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.getText(findTestObject('Buscador General/android.widget.TextView - Local Alberdin'), 0)
+
+Mobile.pressBack()
+
 Mobile.tap(findTestObject('Buscador General/android.widget.EditText - Bucador de locales'), 0)
 
 'texto para buscar'
 Mobile.setText(findTestObject('Buscador General/android.widget.EditText - Bucador de locales'), 'nutritiva store' + '\\n', 
     0)
 
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
 'Validacion de resultado exitoso'
 Mobile.getText(findTestObject('Object Repository/Buscador General/android.widget.TextView - Encontramos esto para vos'), 
@@ -61,6 +77,14 @@ Mobile.getText(findTestObject('Object Repository/Buscador General/android.widget
 
 'validacion de comercio'
 Mobile.getText(findTestObject('Buscador General/android.widget.TextView - Nutritiva Store (1)'), 0)
+
+Mobile.tap(findTestObject('Buscador General/android.widget.TextView - Nutritiva Store (1)'), 0)
+
+Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.getText(findTestObject('Buscador General/android.widget.TextView - Local Nutritiva Store'), 0)
+
+Mobile.pressBack()
 
 'atras buscador'
 Mobile.tap(findTestObject('Object Repository/Buscador General/android.widget.TextView - ir atras buscador'), 0)

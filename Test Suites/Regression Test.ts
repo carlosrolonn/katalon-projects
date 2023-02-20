@@ -68,6 +68,13 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
+      <guid>b8adfb41-13f0-47ed-88d0-bb605ba4ecca</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Finalizar Pickup</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
       <guid>1e2196fb-6abe-474b-b674-f4187572ae71</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>

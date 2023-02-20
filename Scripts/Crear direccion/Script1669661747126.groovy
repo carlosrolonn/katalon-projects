@@ -25,7 +25,7 @@ Mobile.tap(findTestObject('Crear direccion/android.widget.TextView - abre direcc
 'nueva direccion'
 Mobile.tap(findTestObject('Object Repository/Crear direccion/android.widget.TextView - Aadir nueva direccin'), 0)
 
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
 'siguiente confirmar ubicacion '
 Mobile.tap(findTestObject('Crear direccion/android.widget.TextView - Siguiente'), 0)
@@ -55,11 +55,11 @@ Mobile.setText(findTestObject('Object Repository/Crear direccion/android.widget.
 'crear direccion'
 Mobile.tap(findTestObject('Object Repository/Crear direccion/android.widget.TextView - Agregar'), 0)
 
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
 'validacion de direccion creada'
 Mobile.getText(findTestObject('Object Repository/Crear direccion/android.widget.TextView - Enviar a Direccion prueba'), 
     0)
 
-Mobile.tap(findTestObject('Crear direccion/android.widget.TextView - Enviar a Direccion prueba'), 0)
+not_run: Mobile.tap(findTestObject('Crear direccion/android.widget.TextView - Enviar a Direccion prueba'), 0)
 
