@@ -154,5 +154,3 @@ Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 'atras para volver a la home'
 Mobile.tap(findTestObject('Finalizar Efectivo/android.widget.TextView - Ir atras'), 0)
 
-Mobile.closeApplication()
-
