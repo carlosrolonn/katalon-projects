@@ -109,10 +109,10 @@ String extractDescuento = Mobile.getText(findTestObject('Object Repository/Final
 'imprime monto descuento (solo numero)'
 println(extractDescuento)
 
-'calculo de cupon con monto'
+'calculo de cuanto debe ser el total final'
 int calculoMonto = (extractFinalize.toInteger() - extractDescuento.toInteger())
 
-'imprime calculo de monto de descuento'
+'imprime calculo de cuanto debe ser el total final'
 println(calculoMonto)
 
 'obtiene monto total del finalize con descuento'

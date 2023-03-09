@@ -16,6 +16,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 'Inicio de app'
 Mobile.startExistingApplication('com.artico.delivery.pedidos')
@@ -43,17 +44,49 @@ Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 'validacion de modal direccion'
 Mobile.getText(findTestObject('Object Repository/Login email/android.widget.TextView - A dnde enviamos tu pedido'), 0)
 
-'extrae texto del titulo de direccion'
-String tituloDireccion = Mobile.getText(findTestObject('Login email/android.widget.TextView - Titulo de direccion Selector'), 0)
+'extrae titulo de la primera direccion en el selector'
+String DireccionSelector = Mobile.getText(findTestObject('Object Repository/Login email/android.widget.TextView - Primera direccion'), 0)
 
-'imprime texto del titulo de direccion'
-println(tituloDireccion)
+'imprime titulo de la primera direccion en el selector'
+println(DireccionSelector)
 
-'extrae texto de calles'
-String tituloCalles = Mobile.getText(findTestObject('Login email/android.widget.TextView - Descripcion de calles Selector'), 0)
+'extrae calle de la primera direccion en el selector'
+String CallesSelector = Mobile.getText(findTestObject('Object Repository/Login email/android.widget.TextView - Calles Primera Direccion'), 0)
 
-'imprime texto de las calles'
-println(tituloCalles)
+'imprime calle de la primera direccion en el selector'
+println(CallesSelector)
 
 'seleccion de direccion'
 Mobile.tap(findTestObject('Object Repository/Login email/android.widget.TextView - direccion'), 0)
+
+Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+
+'extrae titulo de la direccion en la home'
+String DireccionHome = Mobile.getText(findTestObject('Object Repository/Login email/android.widget.TextView - Direccin Home'), 0).replace("Enviar a ", "").replaceAll("\\s", "")
+
+'imprime titulo de la direccion en la home'
+println(DireccionHome)
+
+'extrae calle de la direccion en la home'
+String CallesHome = Mobile.getText(findTestObject('Object Repository/Login email/android.widget.TextView - Calles Direccin home'), 0)
+
+'imprime texto de la direccion en la home'
+println(CallesHome)
+
+'validacion de dirección seleccionada'
+if (DireccionSelector == DireccionHome) {
+	KeywordUtil.markPassed(((((((('LA DIRECCION SELECCIONADA:' + ' ') + DireccionSelector) + ' ') + 'Y LA DIRECCION APLICADA DESDE LA HOME:') +
+		' ') + DireccionHome) + ' ') + 'COINCIDEN CORRECTAMENTE')
+} else {
+	KeywordUtil.markFailedAndStop(((((((('LA DIRECCION SELECCIONADA:' + ' ') + DireccionSelector) + ' ') + 'Y LA DIRECCION APLICADA DESDE LA HOME:') +
+		' ') + DireccionHome) + ' ') + 'NO COINCIDEN')
+}
+
+'validacion de las calles de la dirección seleccionada'
+if (CallesSelector == CallesHome) {
+	KeywordUtil.markPassed(((((((('LAS CALLES DE LA DIRECCION SELECCIONADA:' + ' ') + CallesSelector) + ' ') + 'Y LAS CALLES DE LA DIRECCION APLICADA DESDE LA HOME:') +
+		' ') + CallesHome) + ' ') + 'COINCIDEN CORRECTAMENTE')
+} else {
+	KeywordUtil.markFailedAndStop(((((((('LAS CALLES DE LA DIRECCION SELECCIONADA:' + ' ') + CallesSelector) + ' ') + 'Y LAS CALLES DE LA DIRECCION APLICADA DESDE LA HOME:') +
+		' ') + CallesHome) + ' ') + 'NO COINCIDEN')
+}

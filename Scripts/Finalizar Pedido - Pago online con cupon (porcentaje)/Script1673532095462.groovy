@@ -20,7 +20,7 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 Mobile.startExistingApplication('com.artico.delivery.pedidos')
 
-Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+not_run: Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
 'Seleccion de primer direccion'
 not_run: Mobile.tap(findTestObject('Object Repository/Finalizar con Cupon/android.view.ViewGroup - Selector de direccion'), 
@@ -37,21 +37,23 @@ Mobile.tap(findTestObject('Object Repository/Finalizar con Cupon/android.widget.
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
 'Entrar en campo de busqueda'
-Mobile.tap(findTestObject('Object Repository/Finalizar con Cupon/android.widget.EditText - Buscar en todas las categoras (1)'), 0)
+Mobile.tap(findTestObject('Object Repository/Finalizar con Cupon/android.widget.EditText - Buscar en todas las categoras (1)'), 
+    0)
 
 'busqueda de comercio'
-Mobile.setText(findTestObject('Object Repository/Finalizar con Cupon/android.widget.EditText - Buscar en todas las categoras (1)'), 'masapan' + '\\n', 
-    0)
+Mobile.setText(findTestObject('Object Repository/Finalizar con Cupon/android.widget.EditText - Buscar en todas las categoras (1)'), 
+    'masapan' + '\\n', 0)
 
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
 'entra en el comercio'
 Mobile.tap(findTestObject('Finalizar Efectivo/android.widget.TextView - Titulo Masapan'), 0)
 
-Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
 'Entra en el primer producto'
-Mobile.tap(findTestObject('Object Repository/Finalizar con Cupon/android.view.ViewGroup Seleccion de primer producto'), 0)
+Mobile.tap(findTestObject('Object Repository/Finalizar con Cupon/android.view.ViewGroup Seleccion de primer producto'), 
+    0)
 
 'Suma cantidad'
 Mobile.tap(findTestObject('Finalizar con Cupon/android.widget.TextView - Suma cantidad'), 0)
@@ -109,11 +111,17 @@ String extractCupon = Mobile.getText(findTestObject('Object Repository/Finalizar
 'imprime monto cupon del descuento aplicado (solo numero)'
 println(extractCupon)
 
-'calculo de cupon con porcentaje'
+'calculo de cuanto debe ser el monto a descontar según el porcentaje'
 int calculoPorcentaje = (extractFinalize.toInteger() * extractCuponPorcentaje.toInteger()) / 100
 
-'imprime calculo de porcentaje de descuento'
+'imprime calculo de cuanto debe ser el monto a descontar según el porcentaje'
 println(calculoPorcentaje)
+
+'calculo de cuanto debe ser el total final'
+int calculoMonto = (extractFinalize.toInteger() - extractCupon.toInteger())
+
+'imprime calculo de cuanto debe ser el total final'
+println(calculoMonto)
 
 'obtiene el total con descuento del finalize'
 String extractFinalizeDescontado = Mobile.getText(findTestObject('Object Repository/Finalizar con Cupon/android.widget.TextView - Total con descuento aplicado'), 
@@ -131,7 +139,16 @@ if (extractCupon == calculoPorcentaje.toString()) {
         ' ') + 'Y EL PORCENTAJE DESCONTADO:') + ' ') + extractCupon) + ' ') + 'NO COINCIDEN')
 }
 
-Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+'validacion de monto total final'
+if (extractFinalizeDescontado == calculoMonto.toString()) {
+	KeywordUtil.markPassed(((((((('EL CALCULO DE TOTAL A PAGAR:' + ' ') + calculoMonto.toString()) + ' ') +
+		'Y EL TOTAL DEL FINALIZE:') + ' ') + extractFinalizeDescontado) + ' ') + 'COINCIDEN CORRECTAMENTE')
+} else {
+	KeywordUtil.markFailedAndStop(((((((('EL CALCULO DE TOTAL A PAGAR:' + ' ') + calculoMonto.toString()) +
+		' ') + 'Y EL TOTAL DEL FINALIZE:') + ' ') + extractFinalizeDescontado) + ' ') + 'NO COINCIDEN')
+}
+
+Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
 'Finalizar'
 Mobile.tap(findTestObject('Object Repository/Finalizar con Cupon/android.widget.TextView - Finalizar Orden'), 0)
@@ -148,6 +165,8 @@ Mobile.getText(findTestObject('Finalizar con Cupon/android.widget.TextView - Rec
 'Verifica descripcion de pago y cupon'
 Mobile.getText(findTestObject('Object Repository/Finalizar con Cupon/android.widget.TextView - Pago Online - Cupn Descuento'), 
     0)
+
+Mobile.scrollToText('CONTANOS', FailureHandling.STOP_ON_FAILURE)
 
 'Verifica banner de calificacion'
 Mobile.getText(findTestObject('Object Repository/Finalizar con Cupon/android.widget.TextView - CONTANOS TU EXPERIENCIA'), 
@@ -171,8 +190,7 @@ if (extractFinalizeDescontado == extractEstado) {
         ' ') + extractEstado) + ' ') + 'NO COINCIDEN')
 }
 
-Mobile.tap(findTestObject('Object Repository/Finalizar con Cupon/android.widget.ImageView Abrir detalle de orden'), 
-    0)
+Mobile.tap(findTestObject('Object Repository/Finalizar con Cupon/android.widget.ImageView Abrir detalle de orden'), 0)
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
@@ -226,3 +244,4 @@ if (extractFinalizeDescontado == extractTotalDetallle) {
 
 'atras para volver al estado de la orden'
 Mobile.tap(findTestObject('Finalizar Efectivo/android.widget.TextView - Ir atras'), 0)
+
