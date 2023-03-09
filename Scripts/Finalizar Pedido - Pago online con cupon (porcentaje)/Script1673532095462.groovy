@@ -27,7 +27,7 @@ not_run: Mobile.tap(findTestObject('Object Repository/Finalizar con Cupon/androi
     0)
 
 'Banner comida'
-Mobile.tap(findTestObject('Finalizar con Cupon/android.view.ViewGroup Banner de comida'), 0)
+Mobile.tap(findTestObject('Object Repository/Finalizar con Cupon/android.widget.ImageView Comida Home'), 0)
 
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
@@ -37,10 +37,10 @@ Mobile.tap(findTestObject('Object Repository/Finalizar con Cupon/android.widget.
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
 'Entrar en campo de busqueda'
-Mobile.tap(findTestObject('Finalizar POS/android.widget.EditText - Buscar en todas las categoras'), 0)
+Mobile.tap(findTestObject('Object Repository/Finalizar con Cupon/android.widget.EditText - Buscar en todas las categoras (1)'), 0)
 
 'busqueda de comercio'
-Mobile.setText(findTestObject('Finalizar POS/android.widget.EditText - Buscar en todas las categoras'), 'masapan' + '\\n', 
+Mobile.setText(findTestObject('Object Repository/Finalizar con Cupon/android.widget.EditText - Buscar en todas las categoras (1)'), 'masapan' + '\\n', 
     0)
 
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
@@ -51,7 +51,7 @@ Mobile.tap(findTestObject('Finalizar Efectivo/android.widget.TextView - Titulo M
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
 'Entra en el primer producto'
-Mobile.tap(findTestObject('Finalizar con Cupon/android.view.ViewGroup Primera card producto'), 0)
+Mobile.tap(findTestObject('Object Repository/Finalizar con Cupon/android.view.ViewGroup Seleccion de primer producto'), 0)
 
 'Suma cantidad'
 Mobile.tap(findTestObject('Finalizar con Cupon/android.widget.TextView - Suma cantidad'), 0)
@@ -68,14 +68,14 @@ Mobile.tap(findTestObject('Object Repository/Finalizar con Cupon/android.widget.
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
 'obtiene el total sin descuento del finalize'
-String extractFinalize = Mobile.getText(findTestObject('Object Repository/Finalizar con Cupon/android.widget.TextView - Total finalize sin cupon'), 
+String extractFinalize = Mobile.getText(findTestObject('Object Repository/Finalizar Efectivo/android.widget.TextView - Finalize sin cupon Total'), 
     0).replaceAll('[^0-9]', '')
 
 'imprime monto finalize sin descuento (solo numero)'
 println(extractFinalize)
 
 'Abre selector de metodo pago'
-Mobile.tap(findTestObject('Finalizar con Cupon/android.widget.ImageView Seleccion de pago'), 0)
+Mobile.tap(findTestObject('Object Repository/Finalizar con Cupon/android.widget.ImageView abrir selector de pago'), 0)
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
@@ -103,7 +103,7 @@ Mobile.getText(findTestObject('Finalizar con Cupon/android.widget.TextView - Cup
 Mobile.tap(findTestObject('Object Repository/Finalizar con Cupon/android.view.ViewGroup - Cierra mensaje de cupon'), 0)
 
 'obtiene monto del descuento aplicado'
-String extractCupon = Mobile.getText(findTestObject('Object Repository/Finalizar con Cupon/android.widget.TextView - porcentaje descontado'), 
+String extractCupon = Mobile.getText(findTestObject('Object Repository/Finalizar con Cupon/android.widget.TextView - monto cupon aplicado'), 
     0).replaceAll('[^0-9]', '')
 
 'imprime monto cupon del descuento aplicado (solo numero)'
@@ -116,7 +116,7 @@ int calculoPorcentaje = (extractFinalize.toInteger() * extractCuponPorcentaje.to
 println(calculoPorcentaje)
 
 'obtiene el total con descuento del finalize'
-String extractFinalizeDescontado = Mobile.getText(findTestObject('Object Repository/Finalizar con Cupon/android.widget.TextView - Monto final con porcentaje'), 
+String extractFinalizeDescontado = Mobile.getText(findTestObject('Object Repository/Finalizar con Cupon/android.widget.TextView - Total con descuento aplicado'), 
     0).replaceAll('[^0-9]', '')
 
 'imprime monto finalize con descuento (solo numero)'
@@ -156,7 +156,7 @@ Mobile.getText(findTestObject('Object Repository/Finalizar con Cupon/android.wid
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
 'obtiene monto total en estado de pedido'
-String extractEstado = Mobile.getText(findTestObject('Object Repository/Finalizar con Cupon/android.widget.TextView - Estado Total'), 
+String extractEstado = Mobile.getText(findTestObject('Object Repository/Finalizar Efectivo/android.widget.TextView - Total estado de pedido'), 
     0).replaceAll('[^0-9]', '')
 
 'imprime monto total estado (solo numero)'
@@ -171,13 +171,13 @@ if (extractFinalizeDescontado == extractEstado) {
         ' ') + extractEstado) + ' ') + 'NO COINCIDEN')
 }
 
-Mobile.tap(findTestObject('Object Repository/Finalizar con Cupon/android.widget.TextView - Estado Total'), 
+Mobile.tap(findTestObject('Object Repository/Finalizar con Cupon/android.widget.ImageView Abrir detalle de orden'), 
     0)
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
 'obtiene monto total del detalle de orden de la cabecera'
-String extractTotalDetallleCabecera = Mobile.getText(findTestObject('Object Repository/Finalizar con Cupon/android.widget.TextView - Total cabecera detalle'), 
+String extractTotalDetallleCabecera = Mobile.getText(findTestObject('Object Repository/Finalizar con Cupon/android.widget.TextView - Total cabecera detalle con cupon'), 
     0).replaceAll('[^0-9]', '')
 
 'imprime monto total del detalle de orden (solo numero)'
@@ -193,7 +193,7 @@ if (extractFinalizeDescontado == extractTotalDetallleCabecera) {
 }
 
 'obtiene monto descuento del detalle de orden'
-String extractDescuentoDetalle = Mobile.getText(findTestObject('Object Repository/Finalizar con Cupon/android.widget.TextView - Monto descontado detalle orden'), 
+String extractDescuentoDetalle = Mobile.getText(findTestObject('Object Repository/Finalizar con Cupon/android.widget.TextView - descuento en detalle de orden'), 
     0).replaceAll('[^0-9]', '')
 
 'imprime monto descuento en detalle de orden (solo numero)'
@@ -209,7 +209,7 @@ if (extractCupon == extractDescuentoDetalle) {
 }
 
 'obtiene monto total del detalle de orden'
-String extractTotalDetallle = Mobile.getText(findTestObject('Object Repository/Finalizar con Cupon/android.widget.TextView - Total con cupon detalle de orden'), 
+String extractTotalDetallle = Mobile.getText(findTestObject('Object Repository/Finalizar con Cupon/android.widget.TextView - total con descuento aplicado detalle de orden'), 
     0).replaceAll('[^0-9]', '')
 
 'imprime monto total del detalle de orden (solo numero)'
@@ -226,9 +226,3 @@ if (extractFinalizeDescontado == extractTotalDetallle) {
 
 'atras para volver al estado de la orden'
 Mobile.tap(findTestObject('Finalizar Efectivo/android.widget.TextView - Ir atras'), 0)
-
-Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
-
-'atras para volver a la home'
-Mobile.tap(findTestObject('Finalizar Efectivo/android.widget.TextView - Ir atras'), 0)
-

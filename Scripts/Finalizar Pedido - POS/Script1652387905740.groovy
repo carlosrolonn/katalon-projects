@@ -26,7 +26,7 @@ Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 not_run: Mobile.tap(findTestObject('Finalizar Efectivo/android.view.ViewGroup - SeleccionaDireccion'), 0)
 
 'Click en banner comida'
-Mobile.tap(findTestObject('Finalizar POS/android.view.ViewGroup Banner de comida'), 0)
+Mobile.tap(findTestObject('Object Repository/Finalizar POS/android.widget.ImageView Comida Home'), 0)
 
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
@@ -36,24 +36,25 @@ Mobile.tap(findTestObject('Finalizar POS/android.widget.TextView - Pago con POS'
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
 'Entrar en campo de busqueda'
-Mobile.tap(findTestObject('Finalizar POS/android.widget.EditText - Buscar en todas las categoras'), 0)
+Mobile.tap(findTestObject('Object Repository/Finalizar POS/android.widget.EditText - Buscar en todas las categoras (1)'), 
+    0)
 
 'busqueda de comercio'
-Mobile.setText(findTestObject('Finalizar POS/android.widget.EditText - Buscar en todas las categoras'), 'masapan' + '\\n', 
-    0)
+Mobile.setText(findTestObject('Object Repository/Finalizar POS/android.widget.EditText - Buscar en todas las categoras (1)'), 
+    'masapan' + '\\n', 0)
 
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
 'entrar en comercio'
 Mobile.tap(findTestObject('Finalizar Efectivo/android.widget.TextView - Titulo Masapan'), 0)
 
-'Entra en el comercio solo monchis store'
-not_run: Mobile.tap(findTestObject('Finalizar POS/android.widget.TextView - Monchis Store'), 0)
+'Entra en el comercio'
+not_run: Mobile.tap(findTestObject('Finalizar Efectivo/android.widget.TextView - Titulo Masapan'), 0)
 
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
 'Entra en el primer producto'
-Mobile.tap(findTestObject('Finalizar POS/android.view.ViewGroup Primera card producto'), 0)
+Mobile.tap(findTestObject('Object Repository/Finalizar POS/android.view.ViewGroup Seleccion de primer producto'), 0)
 
 'suma cantidad de producto'
 Mobile.tap(findTestObject('Finalizar Efectivo/android.widget.TextView - SumaProducto'), 0)
@@ -67,16 +68,18 @@ Mobile.tap(findTestObject('Finalizar POS/android.widget.TextView - Carrito (1)')
 'Pasar a pago y facturación'
 Mobile.tap(findTestObject('Finalizar Efectivo/android.widget.TextView - Pago y Facturacin'), 0)
 
-Mobile.delay(7, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
 'Abrir selector de método de pagos'
-Mobile.tap(findTestObject('Finalizar POS/android.widget.ImageView Seleccion de pago'), 0)
+Mobile.tap(findTestObject('Object Repository/Finalizar POS/android.widget.ImageView abrir selector de pago'), 0)
+
+Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
 'Seleccionar POS'
 Mobile.tap(findTestObject('Finalizar POS/android.widget.TextView - Seleccionar Pago con POS'), 0)
 
 'obtiene monto total del finalize'
-String extractFinalize = Mobile.getText(findTestObject('Object Repository/Finalizar Efectivo/android.widget.TextView - Total finalize sin cupon'), 
+String extractFinalize = Mobile.getText(findTestObject('Object Repository/Finalizar Efectivo/android.widget.TextView - Finalize sin cupon Total'), 
     0).replaceAll('[^0-9]', '')
 
 'imprime monto (solo numero)'
@@ -86,13 +89,14 @@ println(extractFinalize)
 Mobile.tap(findTestObject('Finalizar Efectivo/android.widget.TextView - Finalizar Orden'), 0)
 
 'Verifica proceso de pago'
-not_run: Mobile.getText(findTestObject('Finalizar con Cupon/android.widget.TextView - Ya casi estamos, procesando pago'), 
-    0)
+Mobile.getText(findTestObject('Finalizar con Cupon/android.widget.TextView - Ya casi estamos, procesando pago'), 0)
 
 Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
 'Verifica pedido finalizado'
 Mobile.getText(findTestObject('Finalizar Efectivo/android.widget.TextView - Recibido'), 0)
+
+Mobile.scrollToText('CONTANOS', FailureHandling.STOP_ON_FAILURE)
 
 'verifica banner de calificacion'
 Mobile.getText(findTestObject('Finalizar con Cupon/android.widget.TextView - CONTANOS TU EXPERIENCIA'), 0)
@@ -102,7 +106,7 @@ Mobile.getText(findTestObject('Finalizar POS/android.widget.TextView - Pago con 
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
 'obtiene monto total en estado de pedido'
-String extractEstado = Mobile.getText(findTestObject('Object Repository/Finalizar Efectivo/android.widget.TextView - Estado Total'), 
+String extractEstado = Mobile.getText(findTestObject('Object Repository/Finalizar Efectivo/android.widget.TextView - Total estado de pedido'), 
     0).replaceAll('[^0-9]', '')
 
 'imprime monto total estado (solo numero)'
@@ -117,13 +121,10 @@ if (extractFinalize == extractEstado) {
         ' ') + extractEstado) + ' ') + 'NO COINCIDEN')
 }
 
-Mobile.tap(findTestObject('Object Repository/Finalizar Efectivo/android.widget.TextView - Estado Total'), 
-    0)
-
-Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+Mobile.tap(findTestObject('Object Repository/Finalizar POS/android.widget.ImageView Abrir detalle de orden'), 0)
 
 'obtiene monto total del detalle de orden de la cabecera'
-String extractTotalDetalleCabecera = Mobile.getText(findTestObject('Object Repository/Finalizar Efectivo/android.widget.TextView - Total cabecera detalle'), 
+String extractTotalDetalleCabecera = Mobile.getText(findTestObject('Object Repository/Finalizar Efectivo/android.widget.TextView - Cabecera detalle Total'), 
     0).replaceAll('[^0-9]', '')
 
 'imprime monto total del detalle de orden (solo numero)'
@@ -139,7 +140,7 @@ if (extractFinalize == extractTotalDetalleCabecera) {
 }
 
 'obtiene monto total del detalle de orden'
-String extractTotalDetalle = Mobile.getText(findTestObject('Object Repository/Finalizar Efectivo/android.widget.TextView - Total detalle orden sin cupon'), 
+String extractTotalDetalle = Mobile.getText(findTestObject('Object Repository/Finalizar Efectivo/android.widget.TextView - Detalle orden sin cupon Total'), 
     0).replaceAll('[^0-9]', '')
 
 'imprime monto total del detalle de orden (solo numero)'
@@ -155,8 +156,5 @@ if (extractFinalize == extractTotalDetalle) {
 }
 
 'atras para volver al estado de la orden'
-Mobile.tap(findTestObject('Finalizar Efectivo/android.widget.TextView - Ir atras'), 0)
-
-'atras para volver a la home'
 Mobile.tap(findTestObject('Finalizar Efectivo/android.widget.TextView - Ir atras'), 0)
 

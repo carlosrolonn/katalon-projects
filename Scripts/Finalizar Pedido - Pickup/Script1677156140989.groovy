@@ -18,65 +18,50 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
-'Abre la app'
-Mobile.startExistingApplication('com.artico.delivery.pedidos', FailureHandling.STOP_ON_FAILURE)
+Mobile.startExistingApplication('com.artico.delivery.pedidos')
 
-not_run: Mobile.delay(15, FailureHandling.STOP_ON_FAILURE)
+Mobile.tap(findTestObject('Object Repository/Finalizar Pickup/android.widget.ImageView Comida Home'), 0)
 
-'Selección de dirección'
-not_run: Mobile.tap(findTestObject('Object Repository/Finalizar Efectivo/android.view.ViewGroup - SeleccionaDireccion'), 
+Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Object Repository/Finalizar Pickup/android.widget.TextView - Pasar a buscar'), 0)
+
+Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Object Repository/Finalizar Pickup/android.widget.EditText - Buscar en todas las categoras (1)'), 
     0)
 
-not_run: Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
-
-'Click en campo de búsqueda'
-Mobile.tap(findTestObject('Finalizar Efectivo/android.widget.EditText - Busc locales o productos (1)'), 0)
-
-Mobile.setText(findTestObject('Finalizar Efectivo/android.widget.EditText - Busc locales o productos (1)'), 'masapan' + 
-    '\\n', 0)
+Mobile.setText(findTestObject('Object Repository/Finalizar Pickup/android.widget.EditText - Buscar en todas las categoras (1)'), 
+    'alberdin' + '\\n', 0)
 
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
-'Verifica resultado solo para santa fe'
-Mobile.getText(findTestObject('Finalizar Efectivo/android.widget.TextView - Titulo Masapan'), 0)
+Mobile.getText(findTestObject('Object Repository/Finalizar Pickup/android.widget.TextView - Alberdin'), 0)
 
-'Entra en el comercio solo santa fe'
-Mobile.tap(findTestObject('Finalizar Efectivo/android.widget.TextView - Titulo Masapan'), 0)
+Mobile.tap(findTestObject('Finalizar Pickup/android.widget.TextView - Alberdin'), 0)
 
-Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
-
-'Entra en el primer producto'
-Mobile.tap(findTestObject('Object Repository/Finalizar Efectivo/android.view.ViewGroup Seleccion de primer producto'), 0)
-
-'Suma la cantidad del producto +1'
-Mobile.tap(findTestObject('Object Repository/Finalizar Efectivo/android.widget.TextView - SumaProducto'), 0)
-
-'Agregar al carrito'
-Mobile.tap(findTestObject('Finalizar Efectivo/android.widget.TextView - Agregar a carrito'), 0)
-
-'Abrir carrito'
-Mobile.tap(findTestObject('Finalizar Efectivo/android.widget.TextView - Carrito (1)'), 0)
-
-Mobile.tap(findTestObject('Object Repository/Finalizar Efectivo/android.widget.TextView - Suma en el carrito'), 0)
+Mobile.tap(findTestObject('Object Repository/Finalizar Pickup/android.widget.TextView - Alberdin Villa Morra'), 
+    0)
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Object Repository/Finalizar Efectivo/android.widget.TextView - - Resta en el carrito'), 0)
+Mobile.tap(findTestObject('Object Repository/Finalizar Pickup/android.view.ViewGroup Seleccion de primer producto'), 0)
+
+Mobile.tap(findTestObject('Object Repository/Finalizar Pickup/android.widget.TextView - Agregar'), 0)
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
-'Pasar a pago y facturación'
-Mobile.tap(findTestObject('Object Repository/Finalizar Efectivo/android.widget.TextView - Pago y Facturacin'), 0)
+Mobile.tap(findTestObject('Object Repository/Finalizar Pickup/android.widget.TextView - Carrito'), 0)
+
+Mobile.tap(findTestObject('Object Repository/Finalizar Pickup/android.widget.TextView - Pago y Facturacin'), 0)
 
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
-'Abrir selector de método de pagos'
-Mobile.tap(findTestObject('Object Repository/Finalizar Efectivo/android.widget.ImageView abrir selector de pago'), 0)
+Mobile.tap(findTestObject('Object Repository/Finalizar Pickup/android.widget.ImageView abrir selector de pago'), 0)
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
-'Seleccionar Efectivo'
-Mobile.tap(findTestObject('Object Repository/Finalizar Efectivo/android.widget.TextView - Efectivo'), 0)
+Mobile.tap(findTestObject('Object Repository/Finalizar Pickup/android.widget.TextView - Efectivo'), 0)
 
 'obtiene monto total del finalize'
 String extractFinalize = Mobile.getText(findTestObject('Object Repository/Finalizar Efectivo/android.widget.TextView - Finalize sin cupon Total'), 
@@ -85,8 +70,15 @@ String extractFinalize = Mobile.getText(findTestObject('Object Repository/Finali
 'imprime monto (solo numero)'
 println(extractFinalize)
 
-'Finalizar orden'
-Mobile.tap(findTestObject('Object Repository/Finalizar Efectivo/android.widget.TextView - Finalizar Orden'), 0)
+Mobile.tap(findTestObject('Object Repository/Finalizar Pickup/android.widget.TextView - Finalizar Orden'), 0)
+
+Mobile.getText(findTestObject('Object Repository/Finalizar Pickup/android.widget.TextView - Desea confirmar la orden'), 
+    0)
+
+Mobile.getText(findTestObject('Object Repository/Finalizar Pickup/android.widget.TextView - Su pedido para PICK UP de Alberdin, estar disponible en'), 
+    0)
+
+Mobile.tap(findTestObject('Object Repository/Finalizar Pickup/android.widget.TextView - Confirmar'), 0)
 
 'Verifica proceso de pago'
 Mobile.getText(findTestObject('Finalizar con Cupon/android.widget.TextView - Ya casi estamos, procesando pago'), 0)
@@ -120,7 +112,7 @@ if (extractFinalize == extractEstado) {
         ' ') + extractEstado) + ' ') + 'NO COINCIDEN')
 }
 
-Mobile.tap(findTestObject('Object Repository/Finalizar Efectivo/android.widget.ImageView Abrir detalle de orden'), 0)
+Mobile.tap(findTestObject('Object Repository/Finalizar Pickup/android.widget.ImageView Abrir detalle de orden'), 0)
 
 'obtiene monto total del detalle de orden de la cabecera'
 String extractTotalDetalleCabecera = Mobile.getText(findTestObject('Object Repository/Finalizar Efectivo/android.widget.TextView - Cabecera detalle Total'), 
@@ -139,7 +131,7 @@ if (extractFinalize == extractTotalDetalleCabecera) {
 }
 
 'obtiene monto total del detalle de orden'
-String extractTotalDetalle = Mobile.getText(findTestObject('Object Repository/Finalizar Efectivo/android.widget.TextView - Detalle orden sin cupon Total'), 
+String extractTotalDetalle = Mobile.getText(findTestObject('Object Repository/Finalizar Pickup/android.widget.TextView - Total detalle orden sin cupon pickup'), 
     0).replaceAll('[^0-9]', '')
 
 'imprime monto total del detalle de orden (solo numero)'
@@ -156,4 +148,3 @@ if (extractFinalize == extractTotalDetalle) {
 
 'atras para volver al estado de la orden'
 Mobile.tap(findTestObject('Finalizar Efectivo/android.widget.TextView - Ir atras'), 0)
-

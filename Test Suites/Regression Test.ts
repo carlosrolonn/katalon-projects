@@ -71,7 +71,7 @@
       <guid>b8adfb41-13f0-47ed-88d0-bb605ba4ecca</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Finalizar Pickup</testCaseId>
+      <testCaseId>Test Cases/Finalizar Pedido - Pickup</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
