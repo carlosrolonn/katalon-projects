@@ -102,6 +102,24 @@ Mobile.getText(findTestObject('Finalizar con Cupon/android.widget.TextView - CON
 
 Mobile.getText(findTestObject('Finalizar Efectivo/android.widget.TextView - Pago en Efectivo'), 0)
 
+Mobile.tap(findTestObject('Object Repository/Finalizar Efectivo/android.widget.ImageView - Llamar al local logo'), 0)
+
+Mobile.verifyElementExist(findTestObject('Finalizar Efectivo/android.widget.FrameLayout'), 0)
+
+Mobile.pressBack()
+
+Mobile.pressBack()
+
+Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Object Repository/Finalizar Efectivo/android.widget.ImageView - Chat con soporte logo'), 0)
+
+Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.getText(findTestObject('Object Repository/Soporte en Linea/android.widget.TextView - Cmo podemos ayudarte'), 0)
+
+Mobile.tap(findTestObject('Object Repository/Soporte en Linea/android.view.View'), 0)
+
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
 'obtiene monto total en estado de pedido'

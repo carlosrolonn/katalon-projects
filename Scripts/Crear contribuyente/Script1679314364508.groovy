@@ -40,9 +40,11 @@ Mobile.setText(findTestObject('Object Repository/Crear contribuyente/android.wid
 
 Mobile.tap(findTestObject('Object Repository/Crear contribuyente/android.widget.TextView - Guardar'), 0)
 
+Mobile.getText(findTestObject('Crear contribuyente/android.widget.TextView - Cambios guardados con exito'), 0)
+
 Mobile.getText(findTestObject('Object Repository/Crear contribuyente/android.widget.TextView - Razon Prueba'), 0)
 
-Mobile.getText(findTestObject('Object Repository/Crear contribuyente/android.widget.TextView - 123456-7'),
-	0)
+Mobile.getText(findTestObject('Object Repository/Crear contribuyente/android.widget.TextView - 123456-7'), 0)
 
 Mobile.tap(findTestObject('Object Repository/Crear contribuyente/android.view.ViewGroup'), 0)
+
