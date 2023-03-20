@@ -22,7 +22,8 @@ Mobile.startExistingApplication('com.artico.delivery.pedidos')
 Mobile.tap(findTestObject('Object Repository/Buscador General/android.widget.EditText - Busc locales o productos'), 0)
 
 'texto para buscar'
-Mobile.setText(findTestObject('Object Repository/Buscador General/android.widget.EditText - Busc locales o productos'), 'masapan' + '\\n', 0)
+Mobile.setText(findTestObject('Object Repository/Buscador General/android.widget.EditText - Busc locales o productos'), 
+    'masapan' + '\\n', 0)
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
@@ -43,10 +44,12 @@ Mobile.getText(findTestObject('Buscador General/android.widget.TextView - Local 
 
 Mobile.pressBack()
 
-Mobile.tap(findTestObject('Object Repository/Buscador General/android.widget.EditText - Busc locales o productos (1)'), 0)
+Mobile.tap(findTestObject('Object Repository/Buscador General/android.widget.EditText - Busc locales o productos (1)'), 
+    0)
 
 'texto para buscar'
-Mobile.setText(findTestObject('Object Repository/Buscador General/android.widget.EditText - Busc locales o productos (1)'), 'alberdin' + '\\n', 0)
+Mobile.setText(findTestObject('Object Repository/Buscador General/android.widget.EditText - Busc locales o productos (1)'), 
+    'alberdin' + '\\n', 0)
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
@@ -67,11 +70,12 @@ Mobile.getText(findTestObject('Buscador General/android.widget.TextView - Local 
 
 Mobile.pressBack()
 
-Mobile.tap(findTestObject('Object Repository/Buscador General/android.widget.EditText - Busc locales o productos (1)'), 0)
+Mobile.tap(findTestObject('Object Repository/Buscador General/android.widget.EditText - Busc locales o productos (1)'), 
+    0)
 
 'texto para buscar'
-Mobile.setText(findTestObject('Object Repository/Buscador General/android.widget.EditText - Busc locales o productos (1)'), 'nutritiva store' + '\\n', 
-    0)
+Mobile.setText(findTestObject('Object Repository/Buscador General/android.widget.EditText - Busc locales o productos (1)'), 
+    'nutritiva store' + '\\n', 0)
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
