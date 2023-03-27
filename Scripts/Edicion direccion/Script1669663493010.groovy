@@ -62,7 +62,7 @@ Mobile.setText(findTestObject('Object Repository/Edicion direccion/android.widge
 'guardar edicion direccion'
 Mobile.tap(findTestObject('Object Repository/Edicion direccion/android.widget.TextView - Guardar'), 0)
 
-Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
 'abrir modal direccion'
 Mobile.tap(findTestObject('Object Repository/Edicion direccion/android.view.ViewGroup Menu con cupon'), 0)
@@ -74,3 +74,4 @@ Mobile.getText(findTestObject('Object Repository/Edicion direccion/android.widge
     0)
 
 Mobile.pressBack()
+

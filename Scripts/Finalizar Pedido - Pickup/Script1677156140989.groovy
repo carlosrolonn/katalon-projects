@@ -97,7 +97,7 @@ Mobile.getText(findTestObject('Finalizar Efectivo/android.widget.TextView - Pago
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
 'obtiene monto total en estado de pedido'
-String extractEstado = Mobile.getText(findTestObject('Object Repository/Finalizar Efectivo/android.widget.TextView - Total estado de pedido'), 
+String extractEstado = Mobile.getText(findTestObject('Object Repository/Finalizar Efectivo/android.widget.TextView - Total estado de pedido 2'), 
     0).replaceAll('[^0-9]', '')
 
 'imprime monto total estado (solo numero)'
@@ -112,10 +112,10 @@ if (extractFinalize == extractEstado) {
         ' ') + extractEstado) + ' ') + 'NO COINCIDEN')
 }
 
-Mobile.tap(findTestObject('Object Repository/Finalizar Pickup/android.widget.ImageView Abrir detalle de orden'), 0)
+Mobile.tap(findTestObject('Object Repository/Finalizar Efectivo/android.widget.ImageView - Desplegar detalle de orden'), 0)
 
 'obtiene monto total del detalle de orden de la cabecera'
-String extractTotalDetalleCabecera = Mobile.getText(findTestObject('Object Repository/Finalizar Efectivo/android.widget.TextView - Cabecera detalle Total'), 
+String extractTotalDetalleCabecera = Mobile.getText(findTestObject('Object Repository/Finalizar Efectivo/android.widget.TextView - Total cabecera detalle'), 
     0).replaceAll('[^0-9]', '')
 
 'imprime monto total del detalle de orden (solo numero)'
@@ -131,7 +131,7 @@ if (extractFinalize == extractTotalDetalleCabecera) {
 }
 
 'obtiene monto total del detalle de orden'
-String extractTotalDetalle = Mobile.getText(findTestObject('Object Repository/Finalizar Pickup/android.widget.TextView - Total detalle orden sin cupon pickup'), 
+String extractTotalDetalle = Mobile.getText(findTestObject('Object Repository/Finalizar Pickup/android.widget.TextView - Total detalle orden sin cupon pickup 2'), 
     0).replaceAll('[^0-9]', '')
 
 'imprime monto total del detalle de orden (solo numero)'

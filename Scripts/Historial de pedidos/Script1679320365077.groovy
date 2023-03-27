@@ -30,16 +30,19 @@ Mobile.getText(findTestObject('Object Repository/Historial de pedidos/android.wi
 
 Mobile.tap(findTestObject('Object Repository/Historial de pedidos/android.widget.TextView - Ver Detalles'), 0)
 
+Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+
 Mobile.getText(findTestObject('Object Repository/Historial de pedidos/android.widget.TextView - Detalles del Pedido'), 0)
 
 Mobile.tap(findTestObject('Object Repository/Historial de pedidos/android.widget.TextView - Calificar Orden'), 0)
 
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.getText(findTestObject('Object Repository/Historial de pedidos/android.widget.TextView - 1.Cmo califics la experiencia de tu ltima compra'), 
-    0)
+Mobile.getText(findTestObject('Historial de pedidos/android.widget.Image - SurveyMonkey'), 0)
 
 Mobile.tap(findTestObject('Object Repository/Historial de pedidos/android.widget.Button - SALIR'), 0)
+
+Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.pressBack()
 
@@ -47,10 +50,11 @@ Mobile.tap(findTestObject('Object Repository/Historial de pedidos/android.widget
 
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.getText(findTestObject('Object Repository/Historial de pedidos/android.widget.TextView - 1.Cmo califics la experiencia de tu ltima compra'),
-	0)
+Mobile.getText(findTestObject('Historial de pedidos/android.widget.Image - SurveyMonkey'), 0)
 
 Mobile.tap(findTestObject('Object Repository/Historial de pedidos/android.widget.Button - SALIR'), 0)
+
+Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.pressBack()
 

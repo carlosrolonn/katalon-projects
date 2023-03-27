@@ -29,15 +29,17 @@ Mobile.tap(findTestObject('Object Repository/Editar contribuyente/android.widget
 
 Mobile.tap(findTestObject('Object Repository/Editar contribuyente/android.widget.EditText - Razon Prueba'), 0)
 
-Mobile.setText(findTestObject('Object Repository/Crear contribuyente/android.widget.EditText - Razn Social'), 'Razon Prueba Edit' +
-	'\\n', 0)
+Mobile.setText(findTestObject('Object Repository/Crear contribuyente/android.widget.EditText - Razn Social'), 'Razon Prueba Edit' + 
+    '\\n', 0)
 
 Mobile.tap(findTestObject('Object Repository/Editar contribuyente/android.widget.EditText - 123456-7'), 0)
 
-Mobile.setText(findTestObject('Object Repository/Crear contribuyente/android.widget.EditText - 1234567-8'), '1234567-8' +
-	'\\n', 0)
+Mobile.setText(findTestObject('Object Repository/Crear contribuyente/android.widget.EditText - 1234567-8'), '1234567-8' + 
+    '\\n', 0)
 
 Mobile.tap(findTestObject('Object Repository/Editar contribuyente/android.widget.TextView - Guardar'), 0)
+
+Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.getText(findTestObject('Object Repository/Editar contribuyente/android.widget.TextView - Cambios guardados con exito'), 
     0)

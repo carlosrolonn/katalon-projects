@@ -167,7 +167,7 @@ Mobile.getText(findTestObject('Object Repository/Finalizar con Cupon/android.wid
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
 'obtiene monto total en estado de pedido'
-String extractEstado = Mobile.getText(findTestObject('Object Repository/Finalizar Efectivo/android.widget.TextView - Total estado de pedido'), 
+String extractEstado = Mobile.getText(findTestObject('Object Repository/Finalizar Efectivo/android.widget.TextView - Total estado de pedido 2'), 
     0).replaceAll('[^0-9]', '')
 
 'imprime monto total estado (solo numero)'
@@ -182,12 +182,12 @@ if (extractFinalizeDescontado == extractEstado) {
         ' ') + extractEstado) + ' ') + 'NO COINCIDEN')
 }
 
-Mobile.tap(findTestObject('Object Repository/Finalizar con Cupon/android.widget.ImageView Abrir detalle de orden'), 0)
+Mobile.tap(findTestObject('Object Repository/Finalizar Efectivo/android.widget.ImageView - Desplegar detalle de orden'), 0)
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
 'obtiene monto total del detalle de orden de la cabecera'
-String extractTotalDetalleCabecera = Mobile.getText(findTestObject('Object Repository/Finalizar con Cupon/android.widget.TextView - Total cabecera detalle con cupon'), 
+String extractTotalDetalleCabecera = Mobile.getText(findTestObject('Object Repository/Finalizar con Cupon/android.widget.TextView - Total cabecera detalle con cupon 2'), 
     0).replaceAll('[^0-9]', '')
 
 'imprime monto total del detalle de orden (solo numero)'
@@ -203,7 +203,7 @@ if (extractFinalizeDescontado == extractTotalDetalleCabecera) {
 }
 
 'obtiene monto descuento del detalle de orden'
-String extractDescuentoDetalle = Mobile.getText(findTestObject('Object Repository/Finalizar con Cupon/android.widget.TextView - descuento en detalle de orden'), 
+String extractDescuentoDetalle = Mobile.getText(findTestObject('Object Repository/Finalizar con Cupon/android.widget.TextView - Descuento en detalle de orden 2'), 
     0).replaceAll('[^0-9]', '')
 
 'imprime monto descuento en detalle de orden (solo numero)'
@@ -219,7 +219,7 @@ if (extractDescuento == extractDescuentoDetalle) {
 }
 
 'obtiene monto total del detalle de orden'
-String extractTotalDetallle = Mobile.getText(findTestObject('Object Repository/Finalizar con Cupon/android.widget.TextView - total con descuento aplicado detalle de orden'), 
+String extractTotalDetallle = Mobile.getText(findTestObject('Object Repository/Finalizar con Cupon/android.widget.TextView - Total con descuento aplicado detalle de orden 2'), 
     0).replaceAll('[^0-9]', '')
 
 'imprime monto total del detalle de orden (solo numero)'

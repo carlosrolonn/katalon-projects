@@ -40,7 +40,15 @@ Mobile.setText(findTestObject('Object Repository/Crear contribuyente/android.wid
 
 Mobile.tap(findTestObject('Object Repository/Crear contribuyente/android.widget.TextView - Guardar'), 0)
 
+Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+
 Mobile.getText(findTestObject('Crear contribuyente/android.widget.TextView - Cambios guardados con exito'), 0)
+
+Mobile.pressBack()
+
+Mobile.tap(findTestObject('Object Repository/Crear contribuyente/android.view.ViewGroup Menu con cupon'), 0)
+
+Mobile.tap(findTestObject('Object Repository/Crear contribuyente/android.widget.TextView - Datos Contribuyentes'), 0)
 
 Mobile.getText(findTestObject('Object Repository/Crear contribuyente/android.widget.TextView - Razon Prueba'), 0)
 

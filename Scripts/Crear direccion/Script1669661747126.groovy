@@ -55,7 +55,7 @@ Mobile.setText(findTestObject('Object Repository/Crear direccion/android.widget.
 'crear direccion'
 Mobile.tap(findTestObject('Object Repository/Crear direccion/android.widget.TextView - Agregar'), 0)
 
-Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
 'validacion de direccion creada'
 Mobile.getText(findTestObject('Object Repository/Crear direccion/android.widget.TextView - Enviar a Direccion prueba'), 

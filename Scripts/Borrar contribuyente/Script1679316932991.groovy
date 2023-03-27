@@ -29,6 +29,8 @@ Mobile.tap(findTestObject('Editar contribuyente/android.widget.ImageView (2)'), 
 
 Mobile.tap(findTestObject('Editar contribuyente/android.widget.TextView - S, eliminar'), 0)
 
+Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+
 Mobile.getText(findTestObject('Object Repository/Editar contribuyente/android.widget.TextView - Cambios guardados con exito'), 
     0)
 
