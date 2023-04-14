@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication('com.artico.delivery.pedidos')
 
-Mobile.tap(findTestObject('Object Repository/Metodos de pago/android.view.ViewGroup Menu con cupon'), 0)
+Mobile.tap(findTestObject('Object Repository/Perfil/android.view.ViewGroup - Menu cupon'), 0)
 
 Mobile.tap(findTestObject('Object Repository/Metodos de pago/android.widget.TextView - Mtodos de pago'), 0)
 
@@ -29,7 +29,7 @@ Mobile.getText(findTestObject('Object Repository/Metodos de pago/android.widget.
 
 Mobile.getText(findTestObject('Object Repository/Metodos de pago/android.widget.TextView - Aadir mtodo de pago'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Metodos de pago/android.widget.Switch'), 0)
+Mobile.tap(findTestObject('Object Repository/Metodos de pago/android.view.ViewGroup - Switch 2'), 0)
 
 Mobile.getText(findTestObject('Object Repository/Metodos de pago/android.widget.TextView - Seleccionar la tarjeta como preferida'), 0)
 
@@ -39,7 +39,7 @@ Mobile.tap(findTestObject('Object Repository/Metodos de pago/android.widget.Text
 
 Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Object Repository/Metodos de pago/android.widget.Switch (1)'), 0)
+Mobile.tap(findTestObject('Object Repository/Metodos de pago/android.view.ViewGroup - Switch 1'), 0)
 
 Mobile.getText(findTestObject('Object Repository/Metodos de pago/android.widget.TextView - Seleccionar la tarjeta como preferida'), 0)
 

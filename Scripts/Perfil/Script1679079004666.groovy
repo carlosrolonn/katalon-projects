@@ -19,9 +19,9 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication('com.artico.delivery.pedidos')
 
-Mobile.tap(findTestObject('Perfil/android.view.ViewGroup Menu con cupon'), 0)
+Mobile.tap(findTestObject('Object Repository/Perfil/android.view.ViewGroup - Menu cupon'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Perfil/android.widget.ImageView'), 0)
+Mobile.tap(findTestObject('Object Repository/Perfil/android.widget.ImageView Logo Perfil'), 0)
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 

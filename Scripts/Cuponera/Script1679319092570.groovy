@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication('com.artico.delivery.pedidos')
 
-Mobile.tap(findTestObject('Object Repository/Cuponera/android.view.ViewGroup Menu con cupon'), 0)
+Mobile.tap(findTestObject('Object Repository/Perfil/android.view.ViewGroup - Menu cupon'), 0)
 
 Mobile.tap(findTestObject('Object Repository/Cuponera/android.widget.TextView - Cupones de Descuento'), 0)
 

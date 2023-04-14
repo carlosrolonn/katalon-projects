@@ -26,7 +26,7 @@ Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 not_run: Mobile.tap(findTestObject('Finalizar Efectivo/android.view.ViewGroup - SeleccionaDireccion'), 0)
 
 'Click en banner comida'
-Mobile.tap(findTestObject('Object Repository/Finalizar POS/android.widget.ImageView Comida Home'), 0)
+Mobile.tap(findTestObject('Object Repository/Finalizar POS/android.view.ViewGroup - Banner comida'), 0)
 
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
@@ -36,11 +36,11 @@ Mobile.tap(findTestObject('Finalizar POS/android.widget.TextView - Pago con POS'
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
 'Entrar en campo de busqueda'
-Mobile.tap(findTestObject('Object Repository/Finalizar POS/android.widget.EditText - Buscar en todas las categoras (1)'), 
+Mobile.tap(findTestObject('Object Repository/Finalizar POS/android.widget.EditText - Buscar en todas las categoras'), 
     0)
 
 'busqueda de comercio'
-Mobile.setText(findTestObject('Object Repository/Finalizar POS/android.widget.EditText - Buscar en todas las categoras (1)'), 
+Mobile.setText(findTestObject('Object Repository/Finalizar POS/android.widget.EditText - Buscar en todas las categoras'), 
     'masapan' + '\\n', 0)
 
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
@@ -54,7 +54,7 @@ not_run: Mobile.tap(findTestObject('Finalizar Efectivo/android.widget.TextView -
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
 'Entra en el primer producto'
-Mobile.tap(findTestObject('Object Repository/Finalizar POS/android.view.ViewGroup Seleccion de primer producto'), 0)
+Mobile.tap(findTestObject('Object Repository/Finalizar Efectivo/android.view.ViewGroup - Primer Producto'), 0)
 
 'suma cantidad de producto'
 Mobile.tap(findTestObject('Finalizar Efectivo/android.widget.TextView - SumaProducto'), 0)
@@ -71,7 +71,7 @@ Mobile.tap(findTestObject('Finalizar Efectivo/android.widget.TextView - Pago y F
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
 'Abrir selector de método de pagos'
-Mobile.tap(findTestObject('Object Repository/Finalizar POS/android.widget.ImageView abrir selector de pago'), 0)
+Mobile.tap(findTestObject('Object Repository/Finalizar Efectivo/android.view.ViewGroup - Selector de pago'), 0)
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
@@ -79,7 +79,7 @@ Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 Mobile.tap(findTestObject('Finalizar POS/android.widget.TextView - Seleccionar Pago con POS'), 0)
 
 'obtiene monto total del finalize'
-String extractFinalize = Mobile.getText(findTestObject('Object Repository/Finalizar Efectivo/android.widget.TextView - Finalize sin cupon Total'), 
+String extractFinalize = Mobile.getText(findTestObject('Object Repository/Finalizar Efectivo/android.widget.TextView - Total finalize sin cupon'), 
     0).replaceAll('[^0-9]', '')
 
 'imprime monto (solo numero)'
@@ -106,7 +106,7 @@ Mobile.getText(findTestObject('Finalizar POS/android.widget.TextView - Pago con 
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
 'obtiene monto total en estado de pedido'
-String extractEstado = Mobile.getText(findTestObject('Object Repository/Finalizar Efectivo/android.widget.TextView - Total estado de pedido 2'), 
+String extractEstado = Mobile.getText(findTestObject('Object Repository/Finalizar Efectivo/android.widget.TextView - Total estado de pedido'), 
     0).replaceAll('[^0-9]', '')
 
 'imprime monto total estado (solo numero)'
@@ -115,16 +115,16 @@ println(extractEstado)
 'validacion de monto en finalize y estado de pedido (exito)'
 if (extractFinalize == extractEstado) {
     KeywordUtil.markPassed(((((((('EL MONTO TOTAL DEL FINALIZE:' + ' ') + extractFinalize) + ' ') + 'Y EL MONTO TOTAL DEL ESTADO DE LA ORDEN:') + 
-        ' ') + extractEstado) + ' ') + 'COINCIDEN CORRECTAMENTE')
+        ' ') + extractEstado) + ' ') + 'COINCIDEN')
 } else {
     KeywordUtil.markFailedAndStop(((((((('EL MONTO TOTAL DEL FINALIZE:' + ' ') + extractFinalize) + ' ') + 'Y EL MONTO TOTAL DEL ESTADO DE LA ORDEN:') + 
         ' ') + extractEstado) + ' ') + 'NO COINCIDEN')
 }
 
-Mobile.tap(findTestObject('Object Repository/Finalizar Efectivo/android.widget.ImageView - Desplegar detalle de orden'), 0)
+Mobile.tap(findTestObject('Object Repository/Finalizar Efectivo/android.view.ViewGroup - Desplegar detalle de orden 2'), 0)
 
 'obtiene monto total del detalle de orden de la cabecera'
-String extractTotalDetalleCabecera = Mobile.getText(findTestObject('Object Repository/Finalizar Efectivo/android.widget.TextView - Total cabecera detalle'), 
+String extractTotalDetalleCabecera = Mobile.getText(findTestObject('Object Repository/Finalizar Efectivo/android.widget.TextView - Total cabecera detalle 2'), 
     0).replaceAll('[^0-9]', '')
 
 'imprime monto total del detalle de orden (solo numero)'
@@ -133,14 +133,14 @@ println(extractTotalDetalleCabecera)
 'validacion de monto total y descuento en detalle de orden de la cabecera'
 if (extractFinalize == extractTotalDetalleCabecera) {
     KeywordUtil.markPassed(((((((('EL MONTO TOTAL DEL FINALIZE:' + ' ') + extractFinalize) + ' ') + 'Y EL MONTO TOTAL DEL DETALLE DE LA ORDEN EN CABECERA:') + 
-        ' ') + extractTotalDetalleCabecera) + ' ') + 'COINCIDEN CORRECTAMENTE')
+        ' ') + extractTotalDetalleCabecera) + ' ') + 'COINCIDEN')
 } else {
     KeywordUtil.markFailedAndStop(((((((('EL MONTO TOTAL DEL FINALIZE:' + ' ') + extractFinalize) + ' ') + 'Y EL MONTO TOTAL DEL DETALLE DE LA ORDEN EN CABECERA:') + 
         ' ') + extractTotalDetalleCabecera) + ' ') + 'NO COINCIDEN')
 }
 
 'obtiene monto total del detalle de orden'
-String extractTotalDetalle = Mobile.getText(findTestObject('Object Repository/Finalizar Efectivo/android.widget.TextView - Total detalle sin cupon'), 
+String extractTotalDetalle = Mobile.getText(findTestObject('Object Repository/Finalizar Efectivo/android.widget.TextView - Total detalle sin cupon 2'), 
     0).replaceAll('[^0-9]', '')
 
 'imprime monto total del detalle de orden (solo numero)'
@@ -149,7 +149,7 @@ println(extractTotalDetalle)
 'validacion de monto total y descuento en detalle de orden'
 if (extractFinalize == extractTotalDetalle) {
     KeywordUtil.markPassed(((((((('EL MONTO TOTAL DEL FINALIZE:' + ' ') + extractFinalize) + ' ') + 'Y EL MONTO TOTAL DEL DETALLE DE LA ORDEN:') + 
-        ' ') + extractTotalDetalle) + ' ') + 'COINCIDEN CORRECTAMENTE')
+        ' ') + extractTotalDetalle) + ' ') + 'COINCIDEN')
 } else {
     KeywordUtil.markFailedAndStop(((((((('EL MONTO TOTAL DEL FINALIZE:' + ' ') + extractFinalize) + ' ') + 'Y EL MONTO TOTAL DEL DETALLE DE LA ORDEN:') + 
         ' ') + extractTotalDetalle) + ' ') + 'NO COINCIDEN')

@@ -20,17 +20,17 @@ import org.openqa.selenium.Keys as Keys
 Mobile.startExistingApplication('com.artico.delivery.pedidos')
 
 'abrir modal de direccion'
-Mobile.tap(findTestObject('Object Repository/Edicion direccion/android.view.ViewGroup Menu con cupon'), 0)
+Mobile.tap(findTestObject('Object Repository/Perfil/android.view.ViewGroup - Menu cupon'), 0)
 
 Mobile.tap(findTestObject('Edicion direccion/android.widget.TextView - Direcciones'), 0)
 
 'click en tres puntos'
-Mobile.tap(findTestObject('Object Repository/Edicion direccion/android.widget.ImageView 3 puntitos'), 0)
+Mobile.tap(findTestObject('Object Repository/Edicion direccion/android.view.ViewGroup - Tres puntos 2'), 0)
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
 'click en lapiz'
-Mobile.tap(findTestObject('Object Repository/Edicion direccion/android.widget.ImageView Lapiz de edicion'), 0)
+Mobile.tap(findTestObject('Object Repository/Edicion direccion/android.view.ViewGroup - Lapiz edicion'), 0)
 
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
@@ -53,7 +53,7 @@ Mobile.setText(findTestObject('Object Repository/Edicion direccion/android.widge
     0)
 
 'edicion logo'
-Mobile.tap(findTestObject('Object Repository/Edicion direccion/android.widget.ImageView Logo edicion (1)'), 0)
+Mobile.tap(findTestObject('Object Repository/Edicion direccion/android.view.ViewGroup - Logo Edicion'), 0)
 
 'edicion de nombre direccion'
 Mobile.setText(findTestObject('Object Repository/Edicion direccion/android.widget.EditText - Direccion prueba'), 'Direccion prueba editado', 
@@ -65,7 +65,7 @@ Mobile.tap(findTestObject('Object Repository/Edicion direccion/android.widget.Te
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
 'abrir modal direccion'
-Mobile.tap(findTestObject('Object Repository/Edicion direccion/android.view.ViewGroup Menu con cupon'), 0)
+Mobile.tap(findTestObject('Object Repository/Perfil/android.view.ViewGroup - Menu cupon'), 0)
 
 Mobile.tap(findTestObject('Edicion direccion/android.widget.TextView - Direcciones'), 0)
 

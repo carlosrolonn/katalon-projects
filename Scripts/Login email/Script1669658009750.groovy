@@ -45,13 +45,13 @@ Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 Mobile.getText(findTestObject('Object Repository/Login email/android.widget.TextView - A dnde enviamos tu pedido'), 0)
 
 'extrae titulo de la primera direccion en el selector'
-String DireccionSelector = Mobile.getText(findTestObject('Object Repository/Login email/android.widget.TextView - Primera direccion'), 0)
+String DireccionSelector = Mobile.getText(findTestObject('Object Repository/Login email/android.widget.TextView - Primera direccion 2'), 0)
 
 'imprime titulo de la primera direccion en el selector'
 println(DireccionSelector)
 
 'extrae calle de la primera direccion en el selector'
-String CallesSelector = Mobile.getText(findTestObject('Object Repository/Login email/android.widget.TextView - Calles Primera Direccion'), 0)
+String CallesSelector = Mobile.getText(findTestObject('Object Repository/Login email/android.widget.TextView - Calles Primera Direccion 2'), 0)
 
 'imprime calle de la primera direccion en el selector'
 println(CallesSelector)
@@ -62,13 +62,13 @@ Mobile.tap(findTestObject('Object Repository/Login email/android.widget.TextView
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
 'extrae titulo de la direccion en la home'
-String DireccionHome = Mobile.getText(findTestObject('Object Repository/Login email/android.widget.TextView - Direccin Home'), 0).replace("Enviar a ", "").replaceAll("\\s", "")
+String DireccionHome = Mobile.getText(findTestObject('Object Repository/Login email/android.widget.TextView - Direccion Home'), 0).replace("Enviar a ", "").replaceAll("\\s", "")
 
 'imprime titulo de la direccion en la home'
 println(DireccionHome)
 
 'extrae calle de la direccion en la home'
-String CallesHome = Mobile.getText(findTestObject('Object Repository/Login email/android.widget.TextView - Calles Direccin home'), 0)
+String CallesHome = Mobile.getText(findTestObject('Object Repository/Login email/android.widget.TextView - Calles Direccion Home'), 0)
 
 'imprime texto de la direccion en la home'
 println(CallesHome)

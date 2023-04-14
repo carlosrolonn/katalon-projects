@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication('com.artico.delivery.pedidos')
 
-Mobile.tap(findTestObject('Object Repository/Ultimas opciones del menu/android.view.ViewGroup Menu con cupon'), 0)
+Mobile.tap(findTestObject('Object Repository/Perfil/android.view.ViewGroup - Menu cupon'), 0)
 
 Mobile.tap(findTestObject('Object Repository/Ultimas opciones del menu/android.widget.TextView - Quejas y Sugerencias'), 
     0)
@@ -29,7 +29,9 @@ Mobile.getText(findTestObject('Object Repository/Ultimas opciones del menu/andro
 
 Mobile.pressBack()
 
-Mobile.tap(findTestObject('Object Repository/Ultimas opciones del menu/android.view.ViewGroup Menu con cupon'), 0)
+Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Object Repository/Perfil/android.view.ViewGroup - Menu cupon'), 0)
 
 Mobile.tap(findTestObject('Object Repository/Ultimas opciones del menu/android.widget.TextView - Sugerir un Local'), 0)
 
@@ -44,7 +46,9 @@ Mobile.getText(findTestObject('Object Repository/Ultimas opciones del menu/andro
 
 Mobile.pressBack()
 
-Mobile.tap(findTestObject('Object Repository/Ultimas opciones del menu/android.view.ViewGroup Menu con cupon'), 0)
+Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Object Repository/Perfil/android.view.ViewGroup - Menu cupon'), 0)
 
 Mobile.tap(findTestObject('Object Repository/Ultimas opciones del menu/android.widget.TextView - Quiero estar en Monchis'), 
     0)
@@ -63,7 +67,9 @@ Mobile.getText(findTestObject('Object Repository/Ultimas opciones del menu/andro
 
 Mobile.pressBack()
 
-Mobile.tap(findTestObject('Object Repository/Ultimas opciones del menu/android.view.ViewGroup Menu con cupon'), 0)
+Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Object Repository/Perfil/android.view.ViewGroup - Menu cupon'), 0)
 
 Mobile.tap(findTestObject('Object Repository/Ultimas opciones del menu/android.widget.TextView - Trminos y Condiciones'), 
     0)

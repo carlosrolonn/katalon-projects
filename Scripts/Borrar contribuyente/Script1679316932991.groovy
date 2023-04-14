@@ -19,13 +19,14 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication('com.artico.delivery.pedidos')
 
-Mobile.tap(findTestObject('Object Repository/Editar contribuyente/android.view.ViewGroup Menu con cupon'), 0)
+Mobile.tap(findTestObject('Object Repository/Perfil/android.view.ViewGroup - Menu cupon'), 0)
 
 Mobile.tap(findTestObject('Object Repository/Editar contribuyente/android.widget.TextView - Datos Contribuyentes'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Editar contribuyente/android.widget.ImageView'), 0)
+Mobile.tap(findTestObject('Object Repository/Editar contribuyente/android.view.ViewGroup - Tres puntos contribuyente'), 
+    0)
 
-Mobile.tap(findTestObject('Editar contribuyente/android.widget.ImageView (2)'), 0)
+Mobile.tap(findTestObject('Object Repository/Editar contribuyente/android.view.ViewGroup - Borrar contribuyente'), 0)
 
 Mobile.tap(findTestObject('Editar contribuyente/android.widget.TextView - S, eliminar'), 0)
 
@@ -33,6 +34,15 @@ Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.getText(findTestObject('Object Repository/Editar contribuyente/android.widget.TextView - Cambios guardados con exito'), 
     0)
+
+Mobile.pressBack()
+
+Mobile.tap(findTestObject('Object Repository/Perfil/android.view.ViewGroup - Menu cupon'), 0)
+
+Mobile.tap(findTestObject('Object Repository/Editar contribuyente/android.widget.TextView - Datos Contribuyentes'), 0)
+
+Mobile.verifyElementNotExist(findTestObject('Object Repository/Crear contribuyente/android.widget.TextView - Razon Prueba'), 
+    5)
 
 Mobile.pressBack()
 

@@ -19,10 +19,10 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication('com.artico.delivery.pedidos')
 
-Mobile.tap(findTestObject('Object Repository/Buscador General/android.widget.EditText - Busc locales o productos'), 0)
+Mobile.tap(findTestObject('Object Repository/Buscador General/android.view.ViewGroup - Buscador Home'), 0)
 
 'texto para buscar'
-Mobile.setText(findTestObject('Object Repository/Buscador General/android.widget.EditText - Busc locales o productos'), 
+Mobile.setText(findTestObject('Object Repository/Buscador General/android.widget.EditText - Busca locales o productos'), 
     'masapan' + '\\n', 0)
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
@@ -44,11 +44,11 @@ Mobile.getText(findTestObject('Buscador General/android.widget.TextView - Local 
 
 Mobile.pressBack()
 
-Mobile.tap(findTestObject('Object Repository/Buscador General/android.widget.EditText - Busc locales o productos (1)'), 
+Mobile.tap(findTestObject('Object Repository/Buscador General/android.widget.EditText - Buscador de locales'), 
     0)
 
 'texto para buscar'
-Mobile.setText(findTestObject('Object Repository/Buscador General/android.widget.EditText - Busc locales o productos (1)'), 
+Mobile.setText(findTestObject('Object Repository/Buscador General/android.widget.EditText - Buscador de locales'), 
     'alberdin' + '\\n', 0)
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
@@ -70,11 +70,11 @@ Mobile.getText(findTestObject('Buscador General/android.widget.TextView - Local 
 
 Mobile.pressBack()
 
-Mobile.tap(findTestObject('Object Repository/Buscador General/android.widget.EditText - Busc locales o productos (1)'), 
+Mobile.tap(findTestObject('Object Repository/Buscador General/android.widget.EditText - Buscador de locales'), 
     0)
 
 'texto para buscar'
-Mobile.setText(findTestObject('Object Repository/Buscador General/android.widget.EditText - Busc locales o productos (1)'), 
+Mobile.setText(findTestObject('Object Repository/Buscador General/android.widget.EditText - Buscador de locales'), 
     'nutritiva store' + '\\n', 0)
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)

@@ -61,6 +61,13 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
+      <guid>c871d38d-7215-4f48-bda8-caebc1316f0f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Borrar direccion</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
       <guid>83a5d911-6739-47e2-976d-620110c488b0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>

@@ -20,7 +20,7 @@ import org.openqa.selenium.Keys as Keys
 Mobile.startExistingApplication('com.artico.delivery.pedidos')
 
 'abrir modal de direcciones'
-Mobile.tap(findTestObject('Object Repository/Crear direccion/android.widget.TextView - Selector Direccion Home'), 0)
+Mobile.tap(findTestObject('Object Repository/Crear direccion/android.view.ViewGroup Selector Direccion Home 2'), 0)
 
 'nueva direccion'
 Mobile.tap(findTestObject('Object Repository/Crear direccion/android.widget.TextView - Aadir nueva direccin'), 0)
@@ -46,7 +46,7 @@ Mobile.setText(findTestObject('Object Repository/Crear direccion/android.widget.
     'Referencia', 0)
 
 'logo'
-Mobile.tap(findTestObject('Object Repository/Crear direccion/android.widget.ImageView Logo Direcciones'), 0)
+Mobile.tap(findTestObject('Object Repository/Crear direccion/android.view.ViewGroup Logo Direccion'), 0)
 
 'nombre de direccion'
 Mobile.setText(findTestObject('Object Repository/Crear direccion/android.widget.EditText - Casa, Oficina'), 'Direccion prueba', 

@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication('com.artico.delivery.pedidos')
 
-Mobile.tap(findTestObject('Object Repository/Historial de pedidos/android.view.ViewGroup Menu con cupon'), 0)
+Mobile.tap(findTestObject('Object Repository/Perfil/android.view.ViewGroup - Menu cupon'), 0)
 
 Mobile.tap(findTestObject('Object Repository/Historial de pedidos/android.widget.TextView - Historial de Pedidos'), 0)
 
@@ -30,7 +30,7 @@ Mobile.getText(findTestObject('Object Repository/Historial de pedidos/android.wi
 
 Mobile.tap(findTestObject('Object Repository/Historial de pedidos/android.widget.TextView - Ver Detalles'), 0)
 
-Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.getText(findTestObject('Object Repository/Historial de pedidos/android.widget.TextView - Detalles del Pedido'), 0)
 
@@ -42,11 +42,11 @@ Mobile.getText(findTestObject('Historial de pedidos/android.widget.Image - Surve
 
 Mobile.tap(findTestObject('Object Repository/Historial de pedidos/android.widget.Button - SALIR'), 0)
 
-Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.pressBack()
 
-Mobile.tap(findTestObject('Object Repository/Historial de pedidos/android.widget.TextView - Calificar Orden (1)'), 0)
+Mobile.tap(findTestObject('Object Repository/Historial de pedidos/android.widget.TextView - Calificar Orden 1'), 0)
 
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
@@ -54,7 +54,7 @@ Mobile.getText(findTestObject('Historial de pedidos/android.widget.Image - Surve
 
 Mobile.tap(findTestObject('Object Repository/Historial de pedidos/android.widget.Button - SALIR'), 0)
 
-Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.pressBack()
 

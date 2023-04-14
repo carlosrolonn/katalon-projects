@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication('com.artico.delivery.pedidos')
 
-Mobile.tap(findTestObject('Object Repository/Crear contribuyente/android.view.ViewGroup Menu con cupon'), 0)
+Mobile.tap(findTestObject('Object Repository/Perfil/android.view.ViewGroup - Menu cupon'), 0)
 
 Mobile.tap(findTestObject('Object Repository/Crear contribuyente/android.widget.TextView - Datos Contribuyentes'), 0)
 
@@ -46,7 +46,7 @@ Mobile.getText(findTestObject('Crear contribuyente/android.widget.TextView - Cam
 
 Mobile.pressBack()
 
-Mobile.tap(findTestObject('Object Repository/Crear contribuyente/android.view.ViewGroup Menu con cupon'), 0)
+Mobile.tap(findTestObject('Object Repository/Perfil/android.view.ViewGroup - Menu cupon'), 0)
 
 Mobile.tap(findTestObject('Object Repository/Crear contribuyente/android.widget.TextView - Datos Contribuyentes'), 0)
 
