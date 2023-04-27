@@ -53,9 +53,21 @@ Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Object Repository/Finalizar Pickup/android.widget.TextView - Carrito'), 0)
 
+'extrae titulo de la direccion en el carrito'
+String DireccionCarrito = Mobile.getText(findTestObject('Object Repository/Finalizar Efectivo/android.widget.TextView - Direccion Carrito'), 0)
+
+'imprime titulo de la direccion en el carrito'
+println(DireccionCarrito)
+
 Mobile.tap(findTestObject('Object Repository/Finalizar Pickup/android.widget.TextView - Pago y Facturacin'), 0)
 
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+
+'extrae titulo de la direccion en el finalize'
+String DireccionFinalize = Mobile.getText(findTestObject('Object Repository/Finalizar Efectivo/android.widget.TextView - Direccion Finalize'), 0)
+
+'imprime titulo de la direccion en el finalize'
+println(DireccionFinalize)
 
 Mobile.tap(findTestObject('Object Repository/Finalizar Efectivo/android.view.ViewGroup - Selector de pago'), 0)
 
@@ -84,6 +96,24 @@ Mobile.tap(findTestObject('Object Repository/Finalizar Pickup/android.widget.Tex
 Mobile.getText(findTestObject('Finalizar con Cupon/android.widget.TextView - Ya casi estamos, procesando pago'), 0)
 
 Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+
+'extrae titulo de la direccion en el estado del pedido'
+String DireccionEstado = Mobile.getText(findTestObject('Object Repository/Finalizar Pickup/android.widget.TextView -  Direccion Estado para Pickup'), 0).substring(3)
+
+'imprime titulo de la direccion en el estado del pedido'
+println(DireccionEstado)
+
+'validacion de las direcciones'
+if (DireccionCarrito == DireccionFinalize && DireccionCarrito == DireccionEstado) {
+	KeywordUtil.markPassed('LA DIRECCION EN EL CARRITO:' + ' ' + DireccionCarrito + '\n' +
+						'LA DIRECCION EN EL FINALIZE:' + ' ' + DireccionFinalize + '\n'  +
+						'LA DIRECCION EN EL ESTADO DE PEDIDO:' + ' ' + DireccionEstado + ' '  + 'COINCIDEN')
+} else {
+	KeywordUtil.markFailedAndStop('UNA DE LAS SIGUIENTES DIRECCIONES NO COINCIDE:\n' +
+						'DIRECCION EN EL CARRITO:' + ' ' + DireccionCarrito + '\n' +
+						'DIRECCION EN EL FINALIZE:' + ' ' + DireccionFinalize + '\n'  +
+						'DIRECCION EN EL ESTADO DE PEDIDO:' + ' ' + DireccionEstado)
+}
 
 'Verifica pedido finalizado'
 Mobile.getText(findTestObject('Object Repository/Finalizar Efectivo/android.widget.TextView - Recibido'), 0)

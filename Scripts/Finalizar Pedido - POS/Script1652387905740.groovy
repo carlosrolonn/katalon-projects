@@ -25,6 +25,12 @@ Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 'Selección de dirección'
 not_run: Mobile.tap(findTestObject('Finalizar Efectivo/android.view.ViewGroup - SeleccionaDireccion'), 0)
 
+'extrae titulo de la direccion en la home'
+String DireccionHome = Mobile.getText(findTestObject('Object Repository/Login email/android.widget.TextView - Direccion Home'), 0).replace("Enviar a ", "").replaceAll("\\s", "")
+
+'imprime titulo de la direccion en la home'
+println(DireccionHome)
+
 'Click en banner comida'
 Mobile.tap(findTestObject('Object Repository/Finalizar POS/android.view.ViewGroup - Banner comida'), 0)
 
@@ -65,10 +71,22 @@ Mobile.tap(findTestObject('Finalizar POS/android.widget.TextView - Agregar a car
 'Abrir carrito'
 Mobile.tap(findTestObject('Finalizar POS/android.widget.TextView - Carrito (1)'), 0)
 
+'extrae titulo de la direccion en el carrito'
+String DireccionCarrito = Mobile.getText(findTestObject('Object Repository/Finalizar Efectivo/android.widget.TextView - Direccion Carrito'), 0)
+
+'imprime titulo de la direccion en el carrito'
+println(DireccionCarrito)
+
 'Pasar a pago y facturación'
 Mobile.tap(findTestObject('Finalizar Efectivo/android.widget.TextView - Pago y Facturacin'), 0)
 
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+
+'extrae titulo de la direccion en el finalize'
+String DireccionFinalize = Mobile.getText(findTestObject('Object Repository/Finalizar Efectivo/android.widget.TextView - Direccion Finalize'), 0)
+
+'imprime titulo de la direccion en el finalize'
+println(DireccionFinalize)
 
 'Abrir selector de método de pagos'
 Mobile.tap(findTestObject('Object Repository/Finalizar Efectivo/android.view.ViewGroup - Selector de pago'), 0)
@@ -92,6 +110,26 @@ Mobile.tap(findTestObject('Finalizar Efectivo/android.widget.TextView - Finaliza
 Mobile.getText(findTestObject('Finalizar con Cupon/android.widget.TextView - Ya casi estamos, procesando pago'), 0)
 
 Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+
+'extrae titulo de la direccion en el estado del pedido'
+String DireccionEstado = Mobile.getText(findTestObject('Object Repository/Finalizar Efectivo/android.widget.TextView - Direccion Estado Pedido'), 0)
+
+'imprime titulo de la direccion en el estado del pedido'
+println(DireccionEstado)
+
+'validacion de las direcciones'
+if (DireccionHome == DireccionCarrito && DireccionHome == DireccionFinalize && DireccionHome == DireccionEstado) {
+	KeywordUtil.markPassed('LA DIRECCION EN LA HOME:' + ' ' + DireccionHome + '\n' +
+						'LA DIRECCION EN EL CARRITO:' + ' ' + DireccionCarrito + '\n' +
+						'LA DIRECCION EN EL FINALIZE:' + ' ' + DireccionFinalize + '\n'  +
+						'LA DIRECCION EN EL ESTADO DE PEDIDO:' + ' ' + DireccionEstado + ' '  + 'COINCIDEN')
+} else {
+	KeywordUtil.markFailedAndStop('UNA DE LAS SIGUIENTES DIRECCIONES NO COINCIDE:\n' +
+						'DIRECCION EN LA HOME:' + ' ' + DireccionHome + '\n' +
+						'DIRECCION EN EL CARRITO:' + ' ' + DireccionCarrito + '\n' +
+						'DIRECCION EN EL FINALIZE:' + ' ' + DireccionFinalize + '\n'  +
+						'DIRECCION EN EL ESTADO DE PEDIDO:' + ' ' + DireccionEstado)
+}
 
 'Verifica pedido finalizado'
 Mobile.getText(findTestObject('Finalizar Efectivo/android.widget.TextView - Recibido'), 0)

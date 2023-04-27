@@ -26,6 +26,12 @@ not_run: Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 not_run: Mobile.tap(findTestObject('Object Repository/Finalizar con Cupon/android.view.ViewGroup - Selector de direccion'), 
     0)
 
+'extrae titulo de la direccion en la home'
+String DireccionHome = Mobile.getText(findTestObject('Object Repository/Login email/android.widget.TextView - Direccion Home'), 0).replace("Enviar a ", "").replaceAll("\\s", "")
+
+'imprime titulo de la direccion en la home'
+println(DireccionHome)
+
 'Banner comida'
 Mobile.tap(findTestObject('Object Repository/Finalizar POS/android.view.ViewGroup - Banner comida'), 30)
 
@@ -62,10 +68,22 @@ Mobile.tap(findTestObject('Finalizar con Cupon/android.widget.TextView - Agregar
 'Va al carrito'
 Mobile.tap(findTestObject('Finalizar con Cupon/android.widget.TextView - Carrito (1)'), 0)
 
+'extrae titulo de la direccion en el carrito'
+String DireccionCarrito = Mobile.getText(findTestObject('Object Repository/Finalizar Efectivo/android.widget.TextView - Direccion Carrito'), 0)
+
+'imprime titulo de la direccion en el carrito'
+println(DireccionCarrito)
+
 'Pago y facturacion'
 Mobile.tap(findTestObject('Object Repository/Finalizar con Cupon/android.widget.TextView - Pago y Facturacin'), 0)
 
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+
+'extrae titulo de la direccion en el finalize'
+String DireccionFinalize = Mobile.getText(findTestObject('Object Repository/Finalizar Efectivo/android.widget.TextView - Direccion Finalize'), 0)
+
+'imprime titulo de la direccion en el finalize'
+println(DireccionFinalize)
 
 'Abre selector de metodo pago'
 Mobile.tap(findTestObject('Object Repository/Finalizar Efectivo/android.view.ViewGroup - Selector de pago'), 0)
@@ -93,6 +111,26 @@ Mobile.getText(findTestObject('Object Repository/Finalizar con Cupon/android.wid
     0)
 
 Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
+
+'extrae titulo de la direccion en el estado del pedido'
+String DireccionEstado = Mobile.getText(findTestObject('Object Repository/Finalizar Efectivo/android.widget.TextView - Direccion Estado Pedido'), 0)
+
+'imprime titulo de la direccion en el estado del pedido'
+println(DireccionEstado)
+
+'validacion de las direcciones'
+if (DireccionHome == DireccionCarrito && DireccionHome == DireccionFinalize && DireccionHome == DireccionEstado) {
+	KeywordUtil.markPassed('LA DIRECCION EN LA HOME:' + ' ' + DireccionHome + '\n' +
+						'LA DIRECCION EN EL CARRITO:' + ' ' + DireccionCarrito + '\n' +
+						'LA DIRECCION EN EL FINALIZE:' + ' ' + DireccionFinalize + '\n'  +
+						'LA DIRECCION EN EL ESTADO DE PEDIDO:' + ' ' + DireccionEstado + ' '  + 'COINCIDEN')
+} else {
+	KeywordUtil.markFailedAndStop('UNA DE LAS SIGUIENTES DIRECCIONES NO COINCIDE:\n' +
+						'DIRECCION EN LA HOME:' + ' ' + DireccionHome + '\n' +
+						'DIRECCION EN EL CARRITO:' + ' ' + DireccionCarrito + '\n' +
+						'DIRECCION EN EL FINALIZE:' + ' ' + DireccionFinalize + '\n'  +
+						'DIRECCION EN EL ESTADO DE PEDIDO:' + ' ' + DireccionEstado)
+}
 
 'Verifica estado recibido'
 Mobile.getText(findTestObject('Finalizar con Cupon/android.widget.TextView - Recibido Estado de Pedido'), 0)
