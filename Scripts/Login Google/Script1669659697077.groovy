@@ -22,7 +22,7 @@ Mobile.startExistingApplication('com.artico.delivery.pedidos')
 
 Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Login email/android.widget.ImageView Logo inicio'), 0)
+Mobile.verifyElementExist(findTestObject('Login email/V4/android.widget.ImageView - Logo de inicio'), 0)
 
 'click en google'
 Mobile.tap(findTestObject('Object Repository/Login Google/android.widget.TextView - Google'), 0)
@@ -49,5 +49,5 @@ Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Login Facebook/android.widget.TextView - menu lateral'), 0)
 
-Mobile.tap(findTestObject('Login email/android.widget.TextView - Cerrar Sesion'), 0)
+Mobile.tap(findTestObject('Login email/V4/android.widget.TextView - Cerrar Sesion'), 0)
 

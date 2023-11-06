@@ -30,7 +30,7 @@ not_run: Mobile.tap(findTestObject('Object Repository/Finalizar Efectivo/android
 not_run: Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
 'extrae titulo de la direccion en la home'
-String DireccionHome = Mobile.getText(findTestObject('Object Repository/Login email/android.widget.TextView - Direccion Home'), 0).replace("Enviar a ", "").replaceAll("\\s", "")
+String DireccionHome = Mobile.getText(findTestObject('Object Repository/Login email/V4/android.widget.TextView - Direccion Home'), 0).replace("Enviar a ", "").replaceAll("\\s", "")
 
 'imprime titulo de la direccion en la home'
 println(DireccionHome)

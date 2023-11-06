@@ -24,69 +24,74 @@ Mobile.startExistingApplication('com.artico.delivery.pedidos')
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
 'Verifica logo en inicio de sesión'
-Mobile.verifyElementExist(findTestObject('Login email/android.widget.ImageView Logo inicio'), 0)
+Mobile.verifyElementExist(findTestObject('Object Repository/Login email/V5/android.widget.ImageView - Logo de inicio'), 0)
 
 'Ingresar con email'
-Mobile.tap(findTestObject('Object Repository/Login email/android.widget.TextView - Ingresar con E-mail'), 0)
+Mobile.tap(findTestObject('Object Repository/Login email/V5/android.widget.TextView - Ingresar con e-mail'), 0)
 
 'Ingreso de usuario'
-Mobile.setText(findTestObject('Object Repository/Login email/android.widget.EditText - Correo'), 'carlosrolon@monchis.com.py', 
+Mobile.setText(findTestObject('Object Repository/Login email/V5/android.widget.EditText - Campo Correo'), 'carlosrolon@monchis.com.py', 
     0)
 
 'Ingreso de pass'
-Mobile.setText(findTestObject('Object Repository/Login email/android.widget.EditText - Contrasea'), '123456', 0)
+Mobile.setText(findTestObject('Object Repository/Login email/V5/android.widget.EditText - Campo Contrasea'), '123456', 0)
 
 'click en ingresar'
-Mobile.tap(findTestObject('Login email/android.widget.TextView - Boton Ingresar'), 0)
+Mobile.tap(findTestObject('Object Repository/Login email/V5/android.widget.TextView - Ingresar'), 0)
 
 Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
 'validacion de modal direccion'
-Mobile.getText(findTestObject('Object Repository/Login email/android.widget.TextView - A dnde enviamos tu pedido'), 0)
+Mobile.getText(findTestObject('Object Repository/Login email/V5/android.widget.TextView - A donde enviamos tu pedido'), 0)
 
 'extrae titulo de la primera direccion en el selector'
-String DireccionSelector = Mobile.getText(findTestObject('Object Repository/Login email/android.widget.TextView - Primera direccion 2'), 0)
+String DireccionSelector = Mobile.getText(findTestObject('Object Repository/Login email/V5/android.widget.TextView - Primera direccion modal'), 
+    0)
 
 'imprime titulo de la primera direccion en el selector'
 println(DireccionSelector)
 
 'extrae calle de la primera direccion en el selector'
-String CallesSelector = Mobile.getText(findTestObject('Object Repository/Login email/android.widget.TextView - Calles Primera Direccion 2'), 0)
+String CallesSelector = Mobile.getText(findTestObject('Object Repository/Login email/V5/android.widget.TextView - Calle modal'), 
+    0)
 
 'imprime calle de la primera direccion en el selector'
 println(CallesSelector)
 
 'seleccion de direccion'
-Mobile.tap(findTestObject('Object Repository/Login email/android.widget.TextView - direccion'), 0)
+Mobile.tap(findTestObject('Object Repository/Login email/V5/android.view.ViewGroup - Primera direccion'), 0)
 
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
 'extrae titulo de la direccion en la home'
-String DireccionHome = Mobile.getText(findTestObject('Object Repository/Login email/android.widget.TextView - Direccion Home'), 0).replace("Enviar a ", "").replaceAll("\\s", "")
+String DireccionHome = Mobile.getText(findTestObject('Object Repository/Login email/V5/android.widget.TextView - Direccion en home'), 
+    0).replace('Enviar a ', '').replaceAll('\\s', '')
 
 'imprime titulo de la direccion en la home'
 println(DireccionHome)
 
 'extrae calle de la direccion en la home'
-String CallesHome = Mobile.getText(findTestObject('Object Repository/Login email/android.widget.TextView - Calles Direccion Home'), 0)
+String CallesHome = Mobile.getText(findTestObject('Object Repository/Login email/V5/android.widget.TextView - Calles en home'), 
+    0)
 
 'imprime texto de la direccion en la home'
 println(CallesHome)
 
 'validacion de dirección seleccionada'
 if (DireccionSelector == DireccionHome) {
-	KeywordUtil.markPassed(((((((('LA DIRECCION SELECCIONADA:' + ' ') + DireccionSelector) + ' ') + 'Y LA DIRECCION APLICADA DESDE LA HOME:') +
-		' ') + DireccionHome) + ' ') + 'COINCIDEN CORRECTAMENTE')
+    KeywordUtil.markPassed(((((((('LA DIRECCION SELECCIONADA:' + ' ') + DireccionSelector) + ' ') + 'Y LA DIRECCION APLICADA DESDE LA HOME:') + 
+        ' ') + DireccionHome) + ' ') + 'COINCIDEN')
 } else {
-	KeywordUtil.markFailedAndStop(((((((('LA DIRECCION SELECCIONADA:' + ' ') + DireccionSelector) + ' ') + 'Y LA DIRECCION APLICADA DESDE LA HOME:') +
-		' ') + DireccionHome) + ' ') + 'NO COINCIDEN')
+    KeywordUtil.markFailedAndStop(((((((('LA DIRECCION SELECCIONADA:' + ' ') + DireccionSelector) + ' ') + 'Y LA DIRECCION APLICADA DESDE LA HOME:') + 
+        ' ') + DireccionHome) + ' ') + 'NO COINCIDEN')
 }
 
 'validacion de las calles de la dirección seleccionada'
 if (CallesSelector == CallesHome) {
-	KeywordUtil.markPassed(((((((('LAS CALLES DE LA DIRECCION SELECCIONADA:' + ' ') + CallesSelector) + ' ') + 'Y LAS CALLES DE LA DIRECCION APLICADA DESDE LA HOME:') +
-		' ') + CallesHome) + ' ') + 'COINCIDEN CORRECTAMENTE')
+    KeywordUtil.markPassed(((((((('LAS CALLES DE LA DIRECCION SELECCIONADA:' + ' ') + CallesSelector) + ' ') + 'Y LAS CALLES DE LA DIRECCION APLICADA DESDE LA HOME:') + 
+        ' ') + CallesHome) + ' ') + 'COINCIDEN')
 } else {
-	KeywordUtil.markFailedAndStop(((((((('LAS CALLES DE LA DIRECCION SELECCIONADA:' + ' ') + CallesSelector) + ' ') + 'Y LAS CALLES DE LA DIRECCION APLICADA DESDE LA HOME:') +
-		' ') + CallesHome) + ' ') + 'NO COINCIDEN')
+    KeywordUtil.markFailedAndStop(((((((('LAS CALLES DE LA DIRECCION SELECCIONADA:' + ' ') + CallesSelector) + ' ') + 'Y LAS CALLES DE LA DIRECCION APLICADA DESDE LA HOME:') + 
+        ' ') + CallesHome) + ' ') + 'NO COINCIDEN')
 }
+
